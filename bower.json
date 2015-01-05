@@ -1,0 +1,7 @@
+{
+  "name": "chordex",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "~3.2.0"
+  }
+}
