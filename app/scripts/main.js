@@ -24,10 +24,12 @@ function createStatistics() {
             if (statistics[person.name] === undefined) {
                 statistics[person.name] = {
                     'index': index,
-                    'collaborators': getCollaborators(publication.authors, [])
+                    'collaborators': getCollaborators(publication.authors, []),
+                    'publications': 1
                 };
                 index = index + 1;
             } else {
+                statistics[person.name].publications = statistics[person.name].publications + 1;
                 statistics[person.name].collaborators = getCollaborators(publication.authors, statistics[person.name].collaborators);
             }
         });
@@ -36,7 +38,13 @@ function createStatistics() {
 }
 
 
-function createMatrix(statistics, minCollabs) {
+function createMatrix(statistics, minCollabs, maxCollabs, minPub, maxPub) {
+
+
+    minCollabs = (minCollabs !== null) ? minCollabs : 0;
+    maxCollabs = (maxCollabs !== null) ? maxCollabs : 999;
+    minPub = (minPub !== null) ? minPub : 0;
+    maxPub = (maxPub !== null) ? maxPub : 999;
 
     var matrix = [],
         biggestIndex = 0;
@@ -46,8 +54,22 @@ function createMatrix(statistics, minCollabs) {
             matrix[details.index] = [];
         }
         for (var collaborator in details.collaborators) {
-            var collabCount = details.collaborators[collaborator].count;
-            matrix[details.index][statistics[collaborator].index] = (collabCount > minCollabs) ? collabCount : 0;
+
+            var displayedLinkValue = 0;
+
+            var targetCollabCount = details.collaborators[collaborator].count;
+            var targetPubCount = statistics[collaborator].publications;
+            //filter
+            if (
+                (targetCollabCount >= minCollabs && targetCollabCount <= maxCollabs) &&
+                (targetPubCount >= minPub && targetPubCount <= maxPub)
+            ) {
+                displayedLinkValue = targetCollabCount;
+            } else {
+                displayedLinkValue = 0;
+            }
+            matrix[details.index][statistics[collaborator].index] = displayedLinkValue;
+
             biggestIndex = (statistics[collaborator].index > biggestIndex) ? statistics[collaborator].index : biggestIndex;
         }
     });
@@ -92,7 +114,7 @@ function main() {
     var statistics = createStatistics();
     //console.log(statistics);
     var names = createNameArray(statistics);
-    var matrix = createMatrix(statistics, 10);
+    var matrix = createMatrix(statistics, 10, 15, 169, 170);
     //console.log(matrix);
 
     //filter
@@ -108,43 +130,49 @@ $.getJSON('assets/pubdb.json', function(data) {
 
 
 function drawDiagram(matrix, namesArray)  {
-   
-var width = 660,
-    height = 660,
-    innerRadius = Math.min(width, height) * .35,
-    outerRadius = innerRadius * 1.1;
-    
-var svg = d3.select("#viz").append("svg")
-    .attr("width", width)
-    .attr("height", height)
-    .append("g")
-    .attr("transform", "translate("+width/2+","+height/2+")");
-    
-var chord = d3.layout.chord()
-    .matrix(matrix)
-    .padding(0)
-    .sortSubgroups(d3.descending);
-    
-var fill = d3.scale.category10();
 
-var g = svg.selectAll("g.group")
-    .data(chord.groups)
-    .enter().append("svg:g")
-    .attr("class", "group");
-    
-var arc = d3.svg.arc()
-    .innerRadius(innerRadius)
-    .outerRadius(outerRadius);
-    
-g.append("path")
-    .attr("d", arc)
-    .style("fill", function(d) { return fill(d.index); })
-    .style("stroke", function(d) { return fill(d.index); })
-    .attr("id", function(d, i) { return"group-" + d.index });
-    
+    var width = 660,
+        height = 660,
+        innerRadius = Math.min(width, height) * .35,
+        outerRadius = innerRadius * 1.1;
 
-function chordColor(d) {
-    return fill(d.source.index);
+    var svg = d3.select("#viz").append("svg")
+        .attr("width", width)
+        .attr("height", height)
+        .append("g")
+        .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+
+    var chord = d3.layout.chord()
+        .matrix(matrix)
+        .padding(0)
+        .sortSubgroups(d3.descending);
+
+    var fill = d3.scale.category10();
+
+    var g = svg.selectAll("g.group")
+        .data(chord.groups)
+        .enter().append("svg:g")
+        .attr("class", "group");
+
+    var arc = d3.svg.arc()
+        .innerRadius(innerRadius)
+        .outerRadius(outerRadius);
+
+    g.append("path")
+        .attr("d", arc)
+        .style("fill", function(d) {
+            return fill(d.index);
+        })
+        .style("stroke", function(d) {
+            return fill(d.index);
+        })
+        .attr("id", function(d, i) {
+            return "group-" + d.index
+        });
+
+
+    function chordColor(d) {
+        return fill(d.source.index);
 
     }
 
@@ -168,36 +196,35 @@ function chordColor(d) {
                 .style("opacity", opacity);
         };
     }
- 
-g.on("mouseover", fade(0.1))
- .on("mouseout", fade(1));
 
-     var c = -1;
+    g.on("mouseover", fade(0.1))
+        .on("mouseout", fade(1));
 
-     //erstellt Liste von Werten mit Namen als Label
-     //zusätzlich wird der Winkel des Labels zurückgegeben
-     function groupNames(d) {
-     c++;
-      var k = (d.endAngle - d.startAngle) / d.value;
-      return d3.range(0, 1, 1).map(function(v, i) {
-        return {
-          angle: v * k + d.startAngle,
-          label: namesArray[c]
-        };
-      });
+    var c = -1;
+
+    //erstellt Liste von Werten mit Namen als Label
+    //zusätzlich wird der Winkel des Labels zurückgegeben
+    function groupNames(d) {
+        c++;
+        var k = (d.endAngle - d.startAngle) / d.value;
+        return d3.range(0, 1, 1).map(function(v, i) {
+            return {
+                angle: v * k + d.startAngle,
+                label: namesArray[c]
+            };
+        });
     }
-    
-        //die Namen werden um den Kreis angeordnet
-       var names = g.selectAll("g")
+
+    //die Namen werden um den Kreis angeordnet
+    var names = g.selectAll("g")
         .data(groupNames)
         .enter().append("g")
         .attr("transform", function(d) {
-          return"rotate(" + (d.angle * 180 / Math.PI - 90) + ")"
-              + "translate(" + outerRadius + ",0)";
+            return "rotate(" + (d.angle * 180 / Math.PI - 90) + ")" + "translate(" + outerRadius + ",0)";
         });
-        
-        //der Text wird hinzugefügt
-        names.append("text")
+
+    //der Text wird hinzugefügt
+    names.append("text")
         .attr("dx", 8)
         .attr("dy", 15)
         .attr("transform", function(d) {
@@ -208,7 +235,9 @@ g.on("mouseover", fade(0.1))
         .style("text-anchor", function(d) {
             return d.angle > Math.PI ? "end" : null;
         })
-        .text(function(d) { return d.label; }); 
- 
+        .text(function(d) {
+            return d.label;
+        });
+
 
 }
