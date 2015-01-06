@@ -11,6 +11,7 @@
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/seiyria-bootstrap-slider/dist/css/bootstrap-slider.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -46,6 +47,20 @@
                 <h4>The chord diagram</h4>
                 <p>Chord diagrams show relationships among a group of entities. In this example visualizing the PubDb, a database containing the paper-releases of the mmi-faculty of the lmu </p>
             </div>
+
+            <div class="col-lg-6">
+                <div class="well">
+                    <h4> Filters: </h4>
+                    <p>Number of collaborators: <b>1 </b>
+                    <input id="collabFilter" type="text" class="span2" value="" data-slider-min="0" data-slider-max="50" data-slider-step="1" data-slider-value="[5,15]"/> 
+                    <b> 50</b></p>
+                    <p>Number of publications: <b>1 </b>
+                    <input id="publicationFilter" type="text" class="span2" value="" data-slider-min="0" data-slider-max="200" data-slider-step="1" data-slider-value="[10,40]"/> 
+                    <b> 200</b></p>
+                    <p><button id="redraw" type="send" class="btn btn-default">Redraw graph</button></p>
+                </div>
+            </div>
+
         </div>
 
         <div class="footer">
@@ -57,8 +72,11 @@
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
+    <script src="bower_components/modernizr/modernizr.js"></script>
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/d3/d3.js"></script>
+    <script src="bower_components/jquery-bridget/jquery.bridget.js"></script>
+    <script src="bower_components/seiyria-bootstrap-slider/js/bootstrap-slider.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 

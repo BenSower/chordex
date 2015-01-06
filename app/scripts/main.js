@@ -1,5 +1,25 @@
 'use strict';
 
+// Slider init
+var collabSlider = $('#collabFilter').slider({});
+
+var pubSlider = $('#publicationFilter').slider({});
+
+$('#redraw').on('click', function(evt) {
+    redrawDiagramWithFilter();
+});
+
+
+
+function redrawDiagramWithFilter(minCollabs, maxCollabs, minPub, maxPub) {
+    var minCollabs = collabSlider.slider('getValue')[0],
+        maxCollabs = collabSlider.slider('getValue')[1],
+        minPub = pubSlider.slider('getValue')[0],
+        maxPub = pubSlider.slider('getValue')[1],
+        matrix = createMatrix(statistics, minCollabs, maxCollabs, minPub, maxPub);
+    drawDiagram(matrix, names);
+}
+
 //LOAD PUBDB Data
 var pubdb;
 
@@ -109,12 +129,15 @@ function filterMatrix(matrix, minPubs) {
     return matrix;
 }
 
+var statistics, names, matrix;
 
 function main() {
-    var statistics = createStatistics();
+
+
+    statistics = createStatistics();
     //console.log(statistics);
-    var names = createNameArray(statistics);
-    var matrix = createMatrix(statistics, 10, 15, 169, 170);
+    names = createNameArray(statistics);
+    matrix = createMatrix(statistics, 10, 15, 15, null);
     //console.log(matrix);
 
     //filter
