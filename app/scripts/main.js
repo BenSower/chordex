@@ -24,12 +24,10 @@ function createStatistics() {
             if (statistics[person.name] === undefined) {
                 statistics[person.name] = {
                     'index': index,
-                    'publications' : 1,
                     'collaborators': getCollaborators(publication.authors, [])
                 };
                 index = index + 1;
             } else {
-                statistics[person.name].publications = statistics[person.name].publications + 1;
                 statistics[person.name].collaborators = getCollaborators(publication.authors, statistics[person.name].collaborators);
             }
         });
@@ -38,7 +36,7 @@ function createStatistics() {
 }
 
 
-function createMatrix(statistics) {
+function createMatrix(statistics, minCollabs) {
 
     var matrix = [],
         biggestIndex = 0;
@@ -48,7 +46,8 @@ function createMatrix(statistics) {
             matrix[details.index] = [];
         }
         for (var collaborator in details.collaborators) {
-            matrix[details.index][statistics[collaborator].index] = details.collaborators[collaborator].count;
+            var collabCount = details.collaborators[collaborator].count;
+            matrix[details.index][statistics[collaborator].index] = (collabCount > minCollabs) ? collabCount : 0;
             biggestIndex = (statistics[collaborator].index > biggestIndex) ? statistics[collaborator].index : biggestIndex;
         }
     });
@@ -59,32 +58,53 @@ function createMatrix(statistics) {
             if (matrix[i][j] === undefined) {
                 matrix[i][j] = 0;
             }
+            //remove references to self
+            if (i === j) {
+                matrix[i][j] = 0;
+            }
         }
     }
     return matrix;
 }
 
-function createNameArray(statistics){
+function createNameArray(statistics) {
     var names = [];
-    $.each(statistics, function(key, value){
+    $.each(statistics, function(key, value) {
         names[value.index] = key;
     });
     return names;
+}
+
+function filterMatrix(matrix, minPubs) {
+    var filtered = [];
+    for (var i = 0; i < matrix.length; i++) {
+        if (matrix[i][i] > minPubs) {
+            filtered[i] = matrix[i];
+        } else {
+
+        }
+    }
+    return matrix;
+}
+
+
+function main() {
+    var statistics = createStatistics();
+    //console.log(statistics);
+    var names = createNameArray(statistics);
+    var matrix = createMatrix(statistics, 20);
+    //console.log(matrix);
+
+    //filter
+    //matrix = filterMatrix(matrix, 20);
+    //names = filterNames(names);
+    drawDiagram(matrix, names);
 }
 
 $.getJSON('assets/pubdb.json', function(data) {
     pubdb = data;
     main();
 });
-
-function main(){
-    var statistics = createStatistics();
-    console.log(statistics);
-    var names = createNameArray(statistics);
-    var matrix = createMatrix(statistics);
-    //console.log(matrix);
-    drawDiagram(matrix, names);
-}
 
 
 function drawDiagram(matrix, names)  {
