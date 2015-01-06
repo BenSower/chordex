@@ -106,6 +106,7 @@ $.getJSON('assets/pubdb.json', function(data) {
     main();
 });
 
+<<<<<<< Updated upstream
 
 function drawDiagram(matrix, names)  {
     var width = 560,
@@ -150,6 +151,46 @@ function drawDiagram(matrix, names)  {
 
     function chordColor(d) {
         return fill(d.source.index);
+=======
+function drawDiagram(matrix)  {
+   
+var width = 660,
+    height = 660,
+    innerRadius = Math.min(width, height) * .35,
+    outerRadius = innerRadius * 1.1;
+    
+var svg = d3.select("#viz").append("svg")
+    .attr("width", width)
+    .attr("height", height)
+    .append("g")
+    .attr("transform", "translate("+width/2+","+height/2+")");
+    
+var chord = d3.layout.chord()
+    .matrix(matrix)
+    .padding(0)
+    .sortSubgroups(d3.descending);
+    
+var fill = d3.scale.category10();
+
+var g = svg.selectAll("g.group")
+    .data(chord.groups)
+    .enter().append("svg:g")
+    .attr("class", "group");
+    
+var arc = d3.svg.arc()
+    .innerRadius(innerRadius)
+    .outerRadius(outerRadius);
+    
+g.append("path")
+    .attr("d", arc)
+    .style("fill", function(d) { return fill(d.index); })
+    .style("stroke", function(d) { return fill(d.index); })
+    .attr("id", function(d, i) { return"group-" + d.index });
+    
+
+function chordColor(d) {
+    return fill(d.source.index);
+>>>>>>> Stashed changes
     }
 
     svg.append("g")
@@ -172,6 +213,7 @@ function drawDiagram(matrix, names)  {
                 .style("opacity", opacity);
         };
     }
+<<<<<<< Updated upstream
 
     g.on("mouseover", fade(0.1))
         .on("mouseout", fade(1));
@@ -192,4 +234,51 @@ function drawDiagram(matrix, names)  {
         });
 
 
+=======
+ 
+g.on("mouseover", fade(0.1))
+ .on("mouseout", fade(1));
+
+ var namesArray = ["Mueller","Hoffman","Cazzo","horst","ayfa","felix"];
+
+     var c = -1;
+
+     //erstellt Liste von Werten mit Namen als Label
+     //zusätzlich wird der Winkel des Labels zurückgegeben
+     function groupNames(d) {
+     c++;
+      var k = (d.endAngle - d.startAngle) / d.value;
+      return d3.range(0, 1, 1).map(function(v, i) {
+        return {
+          angle: v * k + d.startAngle,
+          label: namesArray[c]
+        };
+      });
+    }
+    
+        //die Namen werden um den Kreis angeordnet
+       var names = g.selectAll("g")
+        .data(groupNames)
+        .enter().append("g")
+        .attr("transform", function(d) {
+          return"rotate(" + (d.angle * 180 / Math.PI - 90) + ")"
+              + "translate(" + outerRadius + ",0)";
+        });
+        
+        //der Text wird hinzugefügt
+        names.append("text")
+        .attr("dx", 8)
+        .attr("dy", 15)
+        .attr("transform", function(d) {
+            // Beschriftung drehen wenn Kreiswinkel > 180°
+            return d.angle > Math.PI ?
+                "rotate(180)translate(-16, -20)" : null;
+        })
+        .style("text-anchor", function(d) {
+            return d.angle > Math.PI ? "end" : null;
+        })
+        .text(function(d) { return d.label; }); 
+ 
+ 
+>>>>>>> Stashed changes
 }
