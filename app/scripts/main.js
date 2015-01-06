@@ -35,9 +35,16 @@ function createStatistics() {
     return statistics;
 }
 
-
+function createZeroArray(len) {
+    var matrix = new Array(len);
+    while (--len >= 0) {
+        matrix[len] = createZeroArray(len);
+    }
+    return matrix;
+}
 function createMatrix(statistics) {
-    var matrix = [],
+
+    var matrix  = [],
         biggestIndex = 0;
 
     $.each(statistics, function(key, details) {
@@ -45,11 +52,13 @@ function createMatrix(statistics) {
             matrix[details.index] = [];
         }
         for (var collaborator in details.collaborators) {
-            matrix[details.index][statistics[collaborator].index] = details.collaborators[collaborator].count;
+            var collabCount = details.collaborators[collaborator].count;
+            matrix[details.index][statistics[collaborator].index] = (collabCount < 10) ? 0 : collabCount;
             biggestIndex = (statistics[collaborator].index > biggestIndex) ? statistics[collaborator].index : biggestIndex;
         }
     });
 
+    
     //fill empty columns with zeroes
     for (var i = 0; i <= biggestIndex; i++){
         for (var j = 0; j <= biggestIndex; j++){
@@ -58,6 +67,7 @@ function createMatrix(statistics) {
             } 
         }
     }
+    
 
     return matrix;
 }
@@ -65,11 +75,12 @@ function createMatrix(statistics) {
 $.getJSON('assets/pubdb.json', function(data) {
     pubdb = data;
     var statistics = createStatistics();
-    console.log(statistics);
+    //console.log(statistics);
     var matrix = createMatrix(statistics);
-    console.log(matrix);
+    //console.log(matrix);
     drawDiagram(matrix);
 });
+
 
 function drawDiagram(matrix)  {
 var width = 560,
