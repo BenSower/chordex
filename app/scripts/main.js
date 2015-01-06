@@ -1,13 +1,77 @@
 'use strict';
+  
+//LOAD PUBDB Data
+var pubdb;
 
-// From http://mkweb.bcgsc.ca/circos/guide/tables/
-var matrix = [
-[0,3,3],
-[3,0,3],
-[3,3,0],
+function getCollaborators(authors, collaborators) {
+    $.each(authors, function(key, value) {
+        if (collaborators[value.name] === undefined) {
+            collaborators[value.name] = {
+                'count': 1
+            };
+        } else {
+            collaborators[value.name].count = collaborators[value.name].count + 1;
+        }
+    });
+    return collaborators;
+}
 
-];
+function createStatistics() {
+    var statistics = {};
+    var index = 0;
+    $.each(pubdb, function(key, publication) {
+        $.each(publication.authors, function(key, person) {
+            if (statistics[person.name] === undefined) {
+                statistics[person.name] = {
+                    'index': index,
+                    'collaborators': getCollaborators(publication.authors, [])
+                };
+                index = index + 1;
+            } else {
+                statistics[person.name].collaborators = getCollaborators(publication.authors, statistics[person.name].collaborators);
+            }
+        });
+    });
+    return statistics;
+}
 
+
+function createMatrix(statistics) {
+    var matrix = [],
+        biggestIndex = 0;
+
+    $.each(statistics, function(key, details) {
+        if (matrix[details.index] === undefined) {
+            matrix[details.index] = [];
+        }
+        for (var collaborator in details.collaborators) {
+            matrix[details.index][statistics[collaborator].index] = details.collaborators[collaborator].count;
+            biggestIndex = (statistics[collaborator].index > biggestIndex) ? statistics[collaborator].index : biggestIndex;
+        }
+    });
+
+    //fill empty columns with zeroes
+    for (var i = 0; i <= biggestIndex; i++){
+        for (var j = 0; j <= biggestIndex; j++){
+            if (matrix[i][j] === undefined ) {
+                matrix[i][j] = 0;
+            } 
+        }
+    }
+
+    return matrix;
+}
+
+$.getJSON('assets/pubdb.json', function(data) {
+    pubdb = data;
+    var statistics = createStatistics();
+    console.log(statistics);
+    var matrix = createMatrix(statistics);
+    console.log(matrix);
+    drawDiagram(matrix);
+});
+
+function drawDiagram(matrix)  {
 var width = 560,
     height = 560,
     innerRadius = Math.min(width, height) * .41,
@@ -79,5 +143,6 @@ var countries = ["Mueller","Hoffman","Cazzo"];
     .append("svg:textPath")
         .attr("xlink:href", function(d) { return "#group-" + d.index; })
         .text(function(d) { return countries[d.index]; });   
- 
- 
+
+   
+}
