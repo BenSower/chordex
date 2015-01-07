@@ -1,4 +1,4 @@
-[{
+var pubdb = [{
     "id": "pub_1",
     "year": "2015",
     "authors": [{
@@ -18086,4 +18086,4 @@
     "bibfile": null,
     "downloads": [],
     "award": false
-}]
+}];
