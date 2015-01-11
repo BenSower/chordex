@@ -202,6 +202,8 @@ function drawDiagram(matrix, namesArray, cb)  {
                     if (document.getElementById(d.source.index).id == i || document.getElementById(d.target.index).id == i) {
                         document.getElementById(d.source.index).nextSibling.firstChild.style.opacity = Math.abs(opacity - 1);
                         document.getElementById(d.target.index).nextSibling.firstChild.style.opacity = Math.abs(opacity - 1);
+                        document.getElementById(d.source.index).nextSibling.firstChild.nextSibling.style.opacity = Math.abs(opacity - 1);
+                        document.getElementById(d.target.index).nextSibling.firstChild.nextSibling.style.opacity = Math.abs(opacity - 1);
                     }
                     return null;
                 });
@@ -248,6 +250,7 @@ function drawDiagram(matrix, namesArray, cb)  {
             return 'rotate(' + (d.angle * 180 / Math.PI - 90) + ')' + 'translate(' + outerRadius + ',0)';
         });
 
+    
 
     //der Text wird hinzugefügt
     names.append('text')
@@ -269,6 +272,14 @@ function drawDiagram(matrix, namesArray, cb)  {
             }
             return null;
         });
+        
+    names.append("svg:line")
+         .attr("x1", 1)
+         .attr("y1", 0)
+         .attr("x2", 5)
+         .attr("y2", 0)
+         .attr('opacity', 0)
+         .attr("stroke", '#000');
 
     cb();
 }
@@ -328,3 +339,5 @@ $('#redraw').on('click', function() {
 });
 
 main();
+
+
