@@ -223,9 +223,15 @@ function drawDiagram(matrix, namesArray, cb)  {
                 .style('opacity', opacity);
         };
     }
-
+    
+    function splitFunc(g,i){
+        
+        var fadeF = fade(0.1);
+        fadeF(g,i);
+        
+    }
     //call fade function on mouseover 
-    g.on('mouseover', fade(0.1))
+    g.on('mouseover', splitFunc)
         .on('mouseout', fade(1));
 
     var c = -1;
@@ -281,6 +287,7 @@ function drawDiagram(matrix, namesArray, cb)  {
         .attr('y2', 0)
         .attr('opacity', 0)
         .attr('stroke', '#000');
+
 
     cb();
 }
@@ -358,6 +365,9 @@ function main() {
     redrawDiagramWithFilter();
 }
 
+$(function () {
+  $('[data-toggle="popover"]').popover()
+})
 // Slider init
 var yearslider = $('#yearFilter').slider({});
 
