@@ -146,10 +146,12 @@ function drawDiagram(matrix, namesArray, cb)  {
 
     //create an chord element    
     var chord = d3.layout.chord()
-        .matrix(matrix);
+        .matrix(matrix)
+        .sortSubgroups(d3.descending);
+    
 
     //generate colors
-    var fill = d3.scale.category20();
+    var fill = d3.scale.category20c();
 
     //add to g
     var g = svg.selectAll('g.group')
@@ -306,9 +308,9 @@ function main() {
     statistics = createStatistics();
     //console.log(statistics);
     names = createNameArray(statistics);
-    matrix = createMatrix(statistics, 10, 15, 15, null);
 
-    //console.log(matrix);
+
+
 
     //filter
     //matrix = filterMatrix(matrix, 20);
