@@ -21,6 +21,7 @@
   "latedef" : false,
   "globals" : {
     "d3" : false,
-    "pubdb" : false
+    "pubdb" : false,
+    "Ladda" : false
   }
 }

@@ -177,73 +177,84 @@ function fade(opacity) {
             return d.source.index !== i &&
                 d.target.index !== i;
                 })
-        .transition()
-        .style('opacity', opacity);
+                .transition()
+                .style('opacity', opacity);
         };
     }
 
-//call fade function on mouseover 
-g.on('mouseover', fade(0.1))
- .on('mouseout', fade(1));
+    //call fade function on mouseover 
+    g.on('mouseover', fade(0.1))
+        .on('mouseout', fade(1));
 
-var c = -1;
+    var c = -1;
 
-//erstellt Liste von Werten mit Namen als Label
-//zusätzlich wird der Winkel des Labels zurückgegeben
-function groupNames(d) {
-    c++;
-    var k = (d.endAngle - d.startAngle) / d.value;
-    return d3.range(0, 1, 1).map(function(v) {
-        return {
-        angle: v * k + d.startAngle + (d.endAngle - d.startAngle)/2,
-        label: namesArray[c]
-        };
-    });
-}
+    //erstellt Liste von Werten mit Namen als Label
+    //zusätzlich wird der Winkel des Labels zurückgegeben
+    function groupNames(d) {
+        c++;
+        var k = (d.endAngle - d.startAngle) / d.value;
+        return d3.range(0, 1, 1).map(function(v) {
+            return {
+                angle: v * k + d.startAngle + (d.endAngle - d.startAngle) / 2,
+                label: namesArray[c]
+            };
+        });
+    }
 
-//die Namen werden um den Kreis angeordnet
-var names = g.selectAll('g')
-    .data(groupNames)
-    .enter().append('g')
-    .attr('transform', function(d) {
-        return 'rotate(' + (d.angle * 180 / Math.PI - 90) + ')' + 'translate(' + outerRadius + ',0)';
-    });
+    //die Namen werden um den Kreis angeordnet
+    var names = g.selectAll('g')
+        .data(groupNames)
+        .enter().append('g')
+        .attr('transform', function(d) {
+            return 'rotate(' + (d.angle * 180 / Math.PI - 90) + ')' + 'translate(' + outerRadius + ',0)';
+        });
 
-        
-//der Text wird hinzugefügt
-names.append('text')
-    .attr('dx', 8)
-    .attr('dy', 0)
-    .attr('opacity', 0)
-    .attr('transform', function(d) {
-    // Beschriftung drehen wenn Kreiswinkel > 180°
-        return d.angle > Math.PI ?
-            'rotate(180)translate(-16, 0)' : null;
-    })
-    .style('text-anchor', function(d) {
-        return d.angle > Math.PI ? 'end' : null;
+    
+    //der Text wird hinzugefügt
+    names.append('text')
+        .attr('dx', 8)
+        .attr('dy', 0)
+        .attr('opacity', 0)
+        .attr('transform', function(d) {
+            // Beschriftung drehen wenn Kreiswinkel > 180°
+            return d.angle > Math.PI ?
+                'rotate(180)translate(-16, 0)' : null;
+        })
+        .style('text-anchor', function(d) {
+            return d.angle > Math.PI ? 'end' : null;
 
-    })
-    .text(function(d) { return d.label; }); 
- 
+        })
+        .text(function(d) {
+            return d.label;
+        });
 
+    cb();
 }
 
 //redraw if sliders are used
-function redrawDiagramWithFilter() {
+function redrawDiagramWithFilter(cb) {
+
+    d3.select('#viz svg').remove();
+    $('#fa-spinner').show();
+    //remove old graph
+
+    //get filter values
     var minCollabs = collabSlider.slider('getValue')[0],
         maxCollabs = collabSlider.slider('getValue')[1],
         minPub = pubSlider.slider('getValue')[0],
         maxPub = pubSlider.slider('getValue')[1],
         matrix = createMatrix(statistics, minCollabs, maxCollabs, minPub, maxPub);
-    drawDiagram(matrix, names);
+    //draw new diagram
+    drawDiagram(matrix, names, function() {
+        $('#fa-spinner').hide();
+    });
+
 }
 
 var statistics, names, matrix;
 
 
 function main() {
-
 
     statistics = createStatistics();
     //console.log(statistics);
@@ -255,18 +266,19 @@ function main() {
     //filter
     //matrix = filterMatrix(matrix, 20);
     //names = filterNames(names);
-    drawDiagram(matrix, names);
+    redrawDiagramWithFilter();
 }
 
-
+//Ladda.bind('#redraw');
 
 // Slider init
 var collabSlider = $('#collabFilter').slider({});
 
 var pubSlider = $('#publicationFilter').slider({});
 
-$('#redraw').on('click', function() {
+$('#redraw').on('click', function(e) {
+    e.preventDefault();
     redrawDiagramWithFilter();
 });
 
-main(); 
+main();
