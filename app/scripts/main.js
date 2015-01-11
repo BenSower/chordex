@@ -124,7 +124,7 @@ function createNameArray(statistics) {
 }
 
 //generate chord diagram
-function drawDiagram(matrix, namesArray)  {
+function drawDiagram(matrix, namesArray, cb)  {
 
 //set the svg width and height and the chord radius
 var width = 860,
