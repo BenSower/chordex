@@ -300,15 +300,12 @@ function main() {
     redrawDiagramWithFilter();
 }
 
-//Ladda.bind('#redraw');
-
 // Slider init
 var collabSlider = $('#collabFilter').slider({});
 
 var pubSlider = $('#publicationFilter').slider({});
 
 $('#redraw').on('click', function(e) {
-    e.preventDefault();
     redrawDiagramWithFilter();
 });
 
