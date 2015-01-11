@@ -141,7 +141,7 @@ var svg = d3.select('#viz').append('svg')
  
  //create an chord element    
 var chord = d3.layout.chord()
-    .matrix(matrix)
+    .matrix(matrix);
     
 //generate colors
 var fill = d3.scale.category20();
@@ -186,13 +186,12 @@ function fade(opacity) {
         
         svg.selectAll('.chord path')
             .filter(function(d) {
-                if (document.getElementById(d.source.index).id == i || document.getElementById(d.target.index).id == i ) {
+                if (document.getElementById(d.source.index).id === i || document.getElementById(d.target.index).id === i ) {
                     document.getElementById(d.source.index).nextSibling.firstChild.style.opacity = Math.abs(opacity-1);
                     document.getElementById(d.target.index).nextSibling.firstChild.style.opacity = Math.abs(opacity-1);      
-
                 }
                 return null;
-            })
+            });
             
           
             //.style('opacity', 1);
@@ -262,7 +261,7 @@ function fade(opacity) {
 }
 
 //redraw if sliders are used
-function redrawDiagramWithFilter(cb) {
+function redrawDiagramWithFilter() {
 
     d3.select('#viz svg').remove();
     $('#fa-spinner').show();
@@ -287,6 +286,7 @@ var statistics, names, matrix;
 function main() {
 
     var dataByYear = getDataByYear();
+    dataByYear = [];
     statistics = createStatistics();
     //console.log(statistics);
     names = createNameArray(statistics);
@@ -305,7 +305,7 @@ var collabSlider = $('#collabFilter').slider({});
 
 var pubSlider = $('#publicationFilter').slider({});
 
-$('#redraw').on('click', function(e) {
+$('#redraw').on('click', function() {
     redrawDiagramWithFilter();
 });
 
