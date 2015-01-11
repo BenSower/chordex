@@ -95,115 +95,123 @@ function createNameArray(statistics) {
     return names;
 }
 
-
+//generate chord diagram
 function drawDiagram(matrix, namesArray)  {
 
+//set the svg width and height and the chord radius
 var width = 860,
     height = 860,
-    innerRadius = Math.min(width, height) * 0.31,
+    innerRadius = height * 0.31,
     outerRadius = innerRadius * 1.1;
     
+//append the svg to the #viz element
 var svg = d3.select('#viz').append('svg')
     .attr('width', width)
     .attr('height', height)
     .append('g')
     .attr('transform', 'translate('+width/2+','+height/2+')');
-    
+ 
+ //create an chord element    
 var chord = d3.layout.chord()
     .matrix(matrix)
-    .padding(0)
-    .sortSubgroups(d3.descending);
     
-var fill = d3.scale.category10();
+//generate colors
+var fill = d3.scale.category20();
 
+//add to g
 var g = svg.selectAll('g.group')
     .data(chord.groups)
     .enter().append('svg:g')
     .attr('class', 'group');
-    
+
+//create link arcs  
 var arc = d3.svg.arc()
     .innerRadius(innerRadius)
     .outerRadius(outerRadius);
     
+//add color and the arc to g
 g.append('path')
     .attr('d', arc)
     .style('fill', function(d) { return fill(d.index); })
     .style('stroke', function(d) { return fill(d.index); })
     .attr('id', function(d) { return 'group-' + d.index; });
     
-
+//color chords
 function chordColor(d) {
     return fill(d.source.index);
 
     }
 
-    svg.append('g')
-        .attr('class', 'chord')
-        .selectAll('path')
-        .data(chord.chords)
-        .enter().append('path')
-        .attr('d', d3.svg.chord().radius(innerRadius))
-        .style('fill', chordColor)
-        .style('opacity', 1);
-
-    function fade(opacity) {
-        return function(g, i) {
-            svg.selectAll('.chord path')
-                .filter(function(d) {
-                    return d.source.index !== i &&
-                        d.target.index !== i;
+//add g to the svg
+svg.append('g')
+    .attr('class', 'chord')
+    .selectAll('path')
+    .data(chord.chords)
+    .enter().append('path')
+    .attr('d', d3.svg.chord().radius(innerRadius))
+    .style('fill', chordColor)
+    .style('opacity', 1);
+    
+//fade function for the chord paths
+function fade(opacity) {
+    return function(g, i) {
+        svg.selectAll('.chord path')
+        .filter(function(d) {
+            return d.source.index !== i &&
+                d.target.index !== i;
                 })
-                .transition()
-                .style('opacity', opacity);
+        .transition()
+        .style('opacity', opacity);
         };
     }
 
- 
+//call fade function on mouseover 
 g.on('mouseover', fade(0.1))
  .on('mouseout', fade(1));
 
-     var c = -1;
+var c = -1;
 
-     //erstellt Liste von Werten mit Namen als Label
-     //zusätzlich wird der Winkel des Labels zurückgegeben
-     function groupNames(d) {
-     c++;
-      var k = (d.endAngle - d.startAngle) / d.value;
-      return d3.range(0, 1, 1).map(function(v) {
+//erstellt Liste von Werten mit Namen als Label
+//zusätzlich wird der Winkel des Labels zurückgegeben
+function groupNames(d) {
+    c++;
+    var k = (d.endAngle - d.startAngle) / d.value;
+    return d3.range(0, 1, 1).map(function(v) {
         return {
-          angle: v * k + d.startAngle + (d.endAngle - d.startAngle)/2,
-          label: namesArray[c]
+        angle: v * k + d.startAngle + (d.endAngle - d.startAngle)/2,
+        label: namesArray[c]
         };
-      });
-    }
+    });
+}
 
-    //die Namen werden um den Kreis angeordnet
-    var names = g.selectAll('g')
-        .data(groupNames)
-        .enter().append('g')
-        .attr('transform', function(d) {
-            return 'rotate(' + (d.angle * 180 / Math.PI - 90) + ')' + 'translate(' + outerRadius + ',0)';
-        });
+//die Namen werden um den Kreis angeordnet
+var names = g.selectAll('g')
+    .data(groupNames)
+    .enter().append('g')
+    .attr('transform', function(d) {
+        return 'rotate(' + (d.angle * 180 / Math.PI - 90) + ')' + 'translate(' + outerRadius + ',0)';
+    });
 
         
-        //der Text wird hinzugefügt
-        names.append('text')
-            .attr('dx', 8)
-            .attr('dy', 0)
-            .attr('transform', function(d) {
-            // Beschriftung drehen wenn Kreiswinkel > 180°
-                return d.angle > Math.PI ?
-                    'rotate(180)translate(-16, 0)' : null;
-            })
-            .style('text-anchor', function(d) {
-            return d.angle > Math.PI ? 'end' : null;
+//der Text wird hinzugefügt
+names.append('text')
+    .attr('dx', 8)
+    .attr('dy', 0)
+    .attr('transform', function(d) {
+    // Beschriftung drehen wenn Kreiswinkel > 180°
+        return d.angle > Math.PI ?
+            'rotate(180)translate(-16, 0)' : null;
+    })
+    .style('text-anchor', function(d) {
+        return d.angle > Math.PI ? 'end' : null;
 
-            })
-            .text(function(d) { return d.label; }); 
+    })
+    .text(function(d) { return d.label; }); 
  
 
 }
 
+//redraw if sliders are used
 function redrawDiagramWithFilter() {
     var minCollabs = collabSlider.slider('getValue')[0],
         maxCollabs = collabSlider.slider('getValue')[1],
@@ -214,6 +222,7 @@ function redrawDiagramWithFilter() {
 }
 
 var statistics, names, matrix;
+
 
 function main() {
 
