@@ -12,6 +12,8 @@
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="bower_components/seiyria-bootstrap-slider/dist/css/bootstrap-slider.css" />
+    <link rel="stylesheet" href="bower_components/ladda/dist/ladda.min.css" />
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -39,7 +41,9 @@
         </div>
 
         <div class="jumbotron">
-            <div id="viz"></div>
+            <div id="viz">
+                <i id="fa-spinner" class="fa fa-spinner fa-4x fa-spin"></i>
+            </div>
         </div>
 
         <div class="row marketing">
@@ -57,7 +61,7 @@
                     <p>Number of publications: <b>1 </b>
                     <input id="publicationFilter" type="text" class="span2" value="" data-slider-min="0" data-slider-max="200" data-slider-step="1" data-slider-value="[10,40]"/> 
                     <b> 200</b></p>
-                    <p><button id="redraw" type="send" class="btn btn-default">Redraw graph</button></p>
+                    <p><button type="send" id="redraw" class="btn btn-primary">Redraw Graph</span></button></p>
                 </div>
             </div>
 
@@ -77,6 +81,8 @@
     <script src="bower_components/d3/d3.js"></script>
     <script src="bower_components/jquery-bridget/jquery.bridget.js"></script>
     <script src="bower_components/seiyria-bootstrap-slider/js/bootstrap-slider.js"></script>
+    <script src="bower_components/spin.js/spin.js"></script>
+    <script src="bower_components/ladda/dist/ladda.min.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 

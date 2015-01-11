@@ -4,6 +4,8 @@
   "dependencies": {
     "bootstrap": "~3.2.0",
     "d3": "3.5.x",
-    "seiyria-bootstrap-slider" : "4.4.x"
+    "seiyria-bootstrap-slider": "4.4.x",
+    "ladda": "~0.9.4",
+    "font-awesome": "~4.2.0"
   }
 }

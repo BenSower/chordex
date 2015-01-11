@@ -96,7 +96,7 @@ function createNameArray(statistics) {
 }
 
 //generate chord diagram
-function drawDiagram(matrix, namesArray)  {
+function drawDiagram(matrix, namesArray, cb)  {
 
     //set the svg width and height and the chord radius
     var width = 860,
@@ -216,14 +216,17 @@ function drawDiagram(matrix, namesArray)  {
             return d.label;
         });
 
+    cb();
 
 }
 
 //redraw if sliders are used
-function redrawDiagramWithFilter() {
+function redrawDiagramWithFilter(cb) {
 
-    //remove old graph
     d3.select('#viz svg').remove();
+    $('#fa-spinner').show();
+    //remove old graph
+
     //get filter values
     var minCollabs = collabSlider.slider('getValue')[0],
         maxCollabs = collabSlider.slider('getValue')[1],
@@ -231,7 +234,10 @@ function redrawDiagramWithFilter() {
         maxPub = pubSlider.slider('getValue')[1],
         matrix = createMatrix(statistics, minCollabs, maxCollabs, minPub, maxPub);
     //draw new diagram
-    drawDiagram(matrix, names);
+    drawDiagram(matrix, names, function() {
+        $('#fa-spinner').hide();
+    });
+
 }
 
 var statistics, names, matrix;
@@ -252,14 +258,15 @@ function main() {
     redrawDiagramWithFilter();
 }
 
-
+//Ladda.bind('#redraw');
 
 // Slider init
 var collabSlider = $('#collabFilter').slider({});
 
 var pubSlider = $('#publicationFilter').slider({});
 
-$('#redraw').on('click', function() {
+$('#redraw').on('click', function(e) {
+    e.preventDefault();
     redrawDiagramWithFilter();
 });
 
