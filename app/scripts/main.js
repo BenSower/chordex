@@ -187,7 +187,6 @@ function fade(opacity) {
         svg.selectAll('.chord path')
             .filter(function(d) {
                 if (document.getElementById(d.source.index).id == i || document.getElementById(d.target.index).id == i ) {
-                    console.log(document.getElementById(d.source.index).id)
                     document.getElementById(d.source.index).nextSibling.firstChild.style.opacity = Math.abs(opacity-1);
                     document.getElementById(d.target.index).nextSibling.firstChild.style.opacity = Math.abs(opacity-1);      
 
@@ -253,7 +252,11 @@ function fade(opacity) {
 
         })
         .text(function(d) {
-            return d.label;
+            console.log(d.angle)
+            if (!isNaN(d.angle)) {
+                return d.label;
+            }
+            return null;
         });
 
     cb();
