@@ -149,7 +149,7 @@ function drawDiagram(matrix, namesArray, cb)  {
     var chord = d3.layout.chord()
         .matrix(matrix)
         .sortSubgroups(d3.descending);
-    
+
 
     //generate colors
     var fill = d3.scale.category20c();
@@ -251,7 +251,7 @@ function drawDiagram(matrix, namesArray, cb)  {
             return 'rotate(' + (d.angle * 180 / Math.PI - 90) + ')' + 'translate(' + outerRadius + ',0)';
         });
 
-    
+
 
     //der Text wird hinzugefügt
     names.append('text')
@@ -273,14 +273,14 @@ function drawDiagram(matrix, namesArray, cb)  {
             }
             return null;
         });
-        
-    names.append("svg:line")
-         .attr("x1", 1)
-         .attr("y1", 0)
-         .attr("x2", 5)
-         .attr("y2", 0)
-         .attr('opacity', 0)
-         .attr("stroke", '#000');
+
+    names.append('svg:line')
+        .attr('x1', 1)
+        .attr('y1', 0)
+        .attr('x2', 5)
+        .attr('y2', 0)
+        .attr('opacity', 0)
+        .attr('stroke', '#000');
 
     cb();
 }
@@ -293,22 +293,20 @@ function redrawDiagramWithFilter() {
 
     var dataByYear = groupDataByYear();
 
-    //remove old graph
-
     //get filter values
-    var minCollabs = collabSlider.slider('getValue')[0],
-        maxCollabs = collabSlider.slider('getValue')[1],
-        minPub = pubSlider.slider('getValue')[0],
-        maxPub = pubSlider.slider('getValue')[1],
-        //matrix = createMatrix(statistics, minCollabs, maxCollabs, minPub, maxPub);
-        matrix = getStatisticsForYear(dataByYear['2011']);
+    var //minCollabs = collabSlider.slider('getValue')[0],
+    //maxCollabs = collabSlider.slider('getValue')[1],
+    //minPub = pubSlider.slider('getValue')[0],
+    //maxPub = pubSlider.slider('getValue')[1],
+    //matrix = createMatrix(statistics, minCollabs, maxCollabs, minPub, maxPub);
+        matrix = getStatisticsForYear(dataByYear[yearslider.slider('getValue')]);
     //draw new diagram
     drawDiagram(matrix, names, function() {
         $('#fa-spinner').hide();
     });
 }
 
-var statistics, names, matrix;
+var statistics, names, matrix, dataByYear;
 
 function getStatisticsForYear(dataOfYear) {
 
@@ -336,7 +334,6 @@ function getStatisticsForYear(dataOfYear) {
                 var collaboratorIndex = $.inArray(publication.authors[i].name, dataOfYear.peoplePerYear);
                 matrix[authorIndex][collaboratorIndex] ++;
                 matrix[collaboratorIndex][authorIndex] ++;
-
             }
         });
 
@@ -348,15 +345,12 @@ function getStatisticsForYear(dataOfYear) {
 
 function main() {
 
-    var dataByYear = groupDataByYear();
-    var statsPerYear = getStatisticsForYear(dataByYear['2015']);
+    //TODO: SAVE TO FILE!
+    dataByYear = groupDataByYear();
 
     statistics = createStatistics();
     //console.log(statistics);
     names = createNameArray(statistics);
-
-
-
 
     //filter
     //matrix = filterMatrix(matrix, 20);
@@ -365,14 +359,15 @@ function main() {
 }
 
 // Slider init
-var collabSlider = $('#collabFilter').slider({});
+var yearslider = $('#yearFilter').slider({});
 
-var pubSlider = $('#publicationFilter').slider({});
+yearslider.on('slide', function() {
+    redrawDiagramWithFilter();
+});
+
 
 $('#redraw').on('click', function() {
     redrawDiagramWithFilter();
 });
 
 main();
-
-
