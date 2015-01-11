@@ -13,6 +13,34 @@ function getCollaborators(authors, collaborators) {
     return collaborators;
 }
 
+function getDataByYear() {
+    var dataByYear = {};
+    $.each(pubdb, function(key, publication) {
+        if (dataByYear[publication.year] === undefined) {
+            dataByYear[publication.year] = [];
+        }
+        dataByYear[publication.year].push(publication);
+    });
+
+    $.each(dataByYear, function(key, publicationsInYear) {
+        var namesPerYear = [];
+
+        $.each(publicationsInYear, function(key, publication) {
+            $.each(publication.authors, function(index, scientist) {
+                namesPerYear.push(scientist.name);
+            });
+        });
+
+        var uniqueNamesPerYear = [];
+        $.each(namesPerYear, function(i, el) {
+            if ($.inArray(el, uniqueNamesPerYear) === -1) {
+                uniqueNamesPerYear.push(el);
+            }
+        });
+        dataByYear[key].peoplePerYear = uniqueNamesPerYear.length;
+    });
+}
+
 function createStatistics() {
     var statistics = {};
     var index = 0;
@@ -256,6 +284,7 @@ var statistics, names, matrix;
 
 function main() {
 
+    var dataByYear = getDataByYear();
     statistics = createStatistics();
     //console.log(statistics);
     names = createNameArray(statistics);
