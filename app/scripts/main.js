@@ -13,8 +13,9 @@ function getCollaborators(authors, collaborators) {
     return collaborators;
 }
 
-function getDataByYear() {
+function groupDataByYear() {
     var dataByYear = {};
+    //order by year
     $.each(pubdb, function(key, publication) {
         if (dataByYear[publication.year] === undefined) {
             dataByYear[publication.year] = [];
@@ -22,6 +23,8 @@ function getDataByYear() {
         dataByYear[publication.year].push(publication);
     });
 
+    //count unique people per year
+    /*
     $.each(dataByYear, function(key, publicationsInYear) {
         var namesPerYear = [];
 
@@ -38,7 +41,9 @@ function getDataByYear() {
             }
         });
         dataByYear[key].peoplePerYear = uniqueNamesPerYear.length;
-    });
+
+    });*/
+    return dataByYear;
 }
 
 function createStatistics() {
@@ -126,82 +131,88 @@ function createNameArray(statistics) {
 //generate chord diagram
 function drawDiagram(matrix, namesArray, cb)  {
 
-//set the svg width and height and the chord radius
-var width = 860,
-    height = 860,
-    innerRadius = height * 0.31,
-    outerRadius = innerRadius * 1.1;
-    
-//append the svg to the #viz element
-var svg = d3.select('#viz').append('svg')
-    .attr('width', width)
-    .attr('height', height)
-    .append('g')
-    .attr('transform', 'translate('+width/2+','+height/2+')');
- 
- //create an chord element    
-var chord = d3.layout.chord()
-    .matrix(matrix);
-    
-//generate colors
-var fill = d3.scale.category20();
+    //set the svg width and height and the chord radius
+    var width = 860,
+        height = 860,
+        innerRadius = height * 0.31,
+        outerRadius = innerRadius * 1.1;
 
-//add to g
-var g = svg.selectAll('g.group')
-    .data(chord.groups)
-    .enter().append('svg:g')
-    .attr('class', 'group');
+    //append the svg to the #viz element
+    var svg = d3.select('#viz').append('svg')
+        .attr('width', width)
+        .attr('height', height)
+        .append('g')
+        .attr('transform', 'translate(' + width / 2 + ',' + height / 2 + ')');
 
-//create link arcs  
-var arc = d3.svg.arc()
-    .innerRadius(innerRadius)
-    .outerRadius(outerRadius);
-    
-//add color and the arc to g
-g.append('path')
-    .attr('d', arc)
-    .style('fill', function(d) { return fill(d.index); })
-    .style('stroke', function(d) { return fill(d.index); })
-    .attr('id', function(d) { return d.index; });
-    
-//color chords
-function chordColor(d) {
-    return fill(d.source.index);
+    //create an chord element    
+    var chord = d3.layout.chord()
+        .matrix(matrix);
+
+    //generate colors
+    var fill = d3.scale.category20();
+
+    //add to g
+    var g = svg.selectAll('g.group')
+        .data(chord.groups)
+        .enter().append('svg:g')
+        .attr('class', 'group');
+
+    //create link arcs  
+    var arc = d3.svg.arc()
+        .innerRadius(innerRadius)
+        .outerRadius(outerRadius);
+
+    //add color and the arc to g
+    g.append('path')
+        .attr('d', arc)
+        .style('fill', function(d) {
+            return fill(d.index);
+        })
+        .style('stroke', function(d) {
+            return fill(d.index);
+        })
+        .attr('id', function(d) {
+            return d.index;
+        });
+
+    //color chords
+    function chordColor(d) {
+        return fill(d.source.index);
 
     }
 
-//add g to the svg
-svg.append('g')
-    .attr('class', 'chord')
-    .selectAll('path')
-    .data(chord.chords)
-    .enter().append('path')
-    .attr('d', d3.svg.chord().radius(innerRadius))
-    .style('fill', chordColor)
-    .style('opacity', 1);
-    
-//fade function for the chord paths
-function fade(opacity) {
-    return function(g, i) {
-        
-        svg.selectAll('.chord path')
-            .filter(function(d) {
-                if (document.getElementById(d.source.index).id === i || document.getElementById(d.target.index).id === i ) {
-                    document.getElementById(d.source.index).nextSibling.firstChild.style.opacity = Math.abs(opacity-1);
-                    document.getElementById(d.target.index).nextSibling.firstChild.style.opacity = Math.abs(opacity-1);      
-                }
-                return null;
-            });
-            
-          
+    //add g to the svg
+    svg.append('g')
+        .attr('class', 'chord')
+        .selectAll('path')
+        .data(chord.chords)
+        .enter().append('path')
+        .attr('d', d3.svg.chord().radius(innerRadius))
+        .style('fill', chordColor)
+        .style('opacity', 1);
+ 
+    //fade function for the chord paths
+    function fade(opacity) {
+        return function(g, i) {
+
+            svg.selectAll('.chord path')
+                .filter(function(d) {
+                    if (document.getElementById(d.source.index).id == i || document.getElementById(d.target.index).id == i) {
+                        document.getElementById(d.source.index).nextSibling.firstChild.style.opacity = Math.abs(opacity - 1);
+                        document.getElementById(d.target.index).nextSibling.firstChild.style.opacity = Math.abs(opacity - 1);
+                    }
+                    return null;
+                });
+
+
             //.style('opacity', 1);
 
-        svg.selectAll('.chord path')
+            svg.selectAll('.chord path')
 
-        .filter(function(d) {
+            .filter(function(d) {
 
-            return d.source.index !== i &&
-                d.target.index !== i;
+                    return d.source.index !== i &&
+                        d.target.index !== i;
                 })
                 .transition()
                 .style('opacity', opacity);
@@ -235,7 +246,7 @@ function fade(opacity) {
             return 'rotate(' + (d.angle * 180 / Math.PI - 90) + ')' + 'translate(' + outerRadius + ',0)';
         });
 
-    
+
     //der Text wird hinzugefügt
     names.append('text')
         .attr('dx', 8)
@@ -277,16 +288,21 @@ function redrawDiagramWithFilter() {
     drawDiagram(matrix, names, function() {
         $('#fa-spinner').hide();
     });
-
 }
 
 var statistics, names, matrix;
 
+function getStatisticsForYear(dataOfYear) {
+
+
+}
+
 
 function main() {
 
-    var dataByYear = getDataByYear();
-    dataByYear = [];
+    //var dataByYear = groupDataByYear();
+    //var statsPerYear = getStatisticsForYear(dataByYear['2011']);
+
     statistics = createStatistics();
     //console.log(statistics);
     names = createNameArray(statistics);
