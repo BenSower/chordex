@@ -134,7 +134,7 @@ g.append('path')
     .attr('d', arc)
     .style('fill', function(d) { return fill(d.index); })
     .style('stroke', function(d) { return fill(d.index); })
-    .attr('id', function(d) { return 'group-' + d.index; });
+    .attr('id', function(d) { return d.index; });
     
 //color chords
 function chordColor(d) {
@@ -155,8 +155,25 @@ svg.append('g')
 //fade function for the chord paths
 function fade(opacity) {
     return function(g, i) {
+        
         svg.selectAll('.chord path')
+            .filter(function(d) {
+                if (document.getElementById(d.source.index).id == i || document.getElementById(d.target.index).id == i ) {
+                    console.log(document.getElementById(d.source.index).id)
+                    document.getElementById(d.source.index).nextSibling.firstChild.style.opacity = Math.abs(opacity-1);
+                    document.getElementById(d.target.index).nextSibling.firstChild.style.opacity = Math.abs(opacity-1);      
+
+                }
+                return null;
+            })
+            
+          
+            //.style('opacity', 1);
+
+        svg.selectAll('.chord path')
+
         .filter(function(d) {
+
             return d.source.index !== i &&
                 d.target.index !== i;
                 })
@@ -197,6 +214,7 @@ var names = g.selectAll('g')
 names.append('text')
     .attr('dx', 8)
     .attr('dy', 0)
+    .attr('opacity', 0)
     .attr('transform', function(d) {
     // Beschriftung drehen wenn Kreiswinkel > 180°
         return d.angle > Math.PI ?
