@@ -113,7 +113,7 @@ var svg = d3.select('#viz').append('svg')
  
  //create an chord element    
 var chord = d3.layout.chord()
-    .matrix(matrix)
+    .matrix(matrix);
     
 //generate colors
 var fill = d3.scale.category20();
@@ -237,7 +237,7 @@ function main() {
     //filter
     //matrix = filterMatrix(matrix, 20);
     //names = filterNames(names);
-    drawDiagram(matrix, names);
+    redrawDiagramWithFilter();
 }
 
 
