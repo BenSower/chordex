@@ -252,7 +252,6 @@ function fade(opacity) {
 
         })
         .text(function(d) {
-            console.log(d.angle)
             if (!isNaN(d.angle)) {
                 return d.label;
             }
