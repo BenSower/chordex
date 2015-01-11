@@ -1746,9 +1746,6 @@ var pubdb = [{
         "name": "Aurélien Tabard",
         "url": "http://www.medien.ifi.lmu.de/team/aurelien.tabard/"
     }, {
-        "name": "HASH(0x8319a6c)",
-        "url": null
-    }, {
         "name": "Andreas Butz",
         "url": "http://www.medien.ifi.lmu.de/team/andreas.butz/"
     }, {
@@ -5403,40 +5400,7 @@ var pubdb = [{
 }, {
     "id": "pub_215",
     "year": "2011",
-    "authors": [{
-        "name": "HASH(0x8319ab4)",
-        "url": null
-    }, {
-        "name": "HASH(0x8319ab4)",
-        "url": null
-    }, {
-        "name": "HASH(0x8319ab4)",
-        "url": null
-    }, {
-        "name": "HASH(0x8319ab4)",
-        "url": null
-    }, {
-        "name": "HASH(0x8319ab4)",
-        "url": null
-    }, {
-        "name": "HASH(0x8319ab4)",
-        "url": null
-    }, {
-        "name": "HASH(0x8319ab4)",
-        "url": null
-    }, {
-        "name": "HASH(0x8319ab4)",
-        "url": null
-    }, {
-        "name": "HASH(0x8319ab4)",
-        "url": null
-    }, {
-        "name": "HASH(0x8319ab4)",
-        "url": null
-    }, {
-        "name": "HASH(0x8319ab4)",
-        "url": null
-    }],
+    "authors": [],
     "title": {
         "url": "/forschung/publikationen/detail?pub=mueller2011perad",
         "name": "Pervasive Advertising"
