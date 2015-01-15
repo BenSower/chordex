@@ -1,20 +1,5 @@
 'use strict';
 
-/*
-    returns the number of times 
-*/
-function getCollaborators(authors, collaborators) {
-    $.each(authors, function(key, value) {
-        if (collaborators[value.name] === undefined) {
-            collaborators[value.name] = {
-                'count': 1
-            };
-        } else {
-            collaborators[value.name].count = collaborators[value.name].count + 1;
-        }
-    });
-    return collaborators;
-}
 
 function groupDataByYear() {
     var dataByYear = {};
@@ -47,87 +32,6 @@ function groupDataByYear() {
     return dataByYear;
 }
 
-function createStatistics() {
-    var statistics = {};
-    var index = 0;
-    $.each(pubdb, function(key, publication) {
-        $.each(publication.authors, function(key, person) {
-            if (statistics[person.name] === undefined) {
-                statistics[person.name] = {
-                    'index': index,
-                    'collaborators': getCollaborators(publication.authors, []),
-                    'publications': 1
-                };
-                index = index + 1;
-            } else {
-                statistics[person.name].publications = statistics[person.name].publications + 1;
-                statistics[person.name].collaborators = getCollaborators(publication.authors, statistics[person.name].collaborators);
-            }
-        });
-    });
-    return statistics;
-}
-
-
-function createMatrix(statistics, minCollabs, maxCollabs, minPub, maxPub) {
-
-
-    minCollabs = (minCollabs !== null) ? minCollabs : 0;
-    maxCollabs = (maxCollabs !== null) ? maxCollabs : 999;
-    minPub = (minPub !== null) ? minPub : 0;
-    maxPub = (maxPub !== null) ? maxPub : 999;
-
-    var matrix = [],
-        biggestIndex = 0;
-
-    $.each(statistics, function(key, details) {
-        if (matrix[details.index] === undefined) {
-            matrix[details.index] = [];
-        }
-        for (var collaborator in details.collaborators) {
-
-            var displayedLinkValue = 0;
-
-            var targetCollabCount = details.collaborators[collaborator].count;
-            var targetPubCount = statistics[collaborator].publications;
-            //filter
-            if (
-                (targetCollabCount >= minCollabs && targetCollabCount <= maxCollabs) &&
-                (targetPubCount >= minPub && targetPubCount <= maxPub)
-            ) {
-                displayedLinkValue = targetCollabCount;
-            } else {
-                displayedLinkValue = 0;
-            }
-            matrix[details.index][statistics[collaborator].index] = displayedLinkValue;
-
-            biggestIndex = (statistics[collaborator].index > biggestIndex) ? statistics[collaborator].index : biggestIndex;
-        }
-    });
-
-    //fill empty columns with zeroes
-    for (var i = 0; i <= biggestIndex; i++) {
-        for (var j = 0; j <= biggestIndex; j++) {
-            if (matrix[i][j] === undefined) {
-                matrix[i][j] = 0;
-            }
-            //remove references to self
-            if (i === j) {
-                matrix[i][j] = 0;
-            }
-        }
-    }
-    return matrix;
-}
-
-
-function createNameArray(statistics) {
-    var names = [];
-    $.each(statistics, function(key, value) {
-        names[value.index] = key;
-    });
-    return names;
-}
 
 //generate chord diagram
 function drawDiagram(matrix, namesArray, cb)  {
@@ -306,18 +210,19 @@ function redrawDiagramWithFilter() {
     //minPub = pubSlider.slider('getValue')[0],
     //maxPub = pubSlider.slider('getValue')[1],
     //matrix = createMatrix(statistics, minCollabs, maxCollabs, minPub, maxPub);
-        matrix = getStatisticsForYear(dataByYear[yearslider.slider('getValue')]);
+    matrix = getStatisticsForYear(dataByYear[yearslider.slider('getValue')]);
+
     //draw new diagram
     drawDiagram(matrix, names, function() {
         $('#fa-spinner').hide();
     });
 }
 
-var statistics, names, matrix, dataByYear;
+var statistics, names, dataByYear;
 
 function getStatisticsForYear(dataOfYear) {
 
-    //creates a array filled with values
+    //creates an array filled with values
     function newFilledArray(len, val) {
         var rv = new Array(len);
         while (--len >= 0) {
@@ -327,10 +232,11 @@ function getStatisticsForYear(dataOfYear) {
     }
 
     var matrix = [];
-
+    //0-filled array
     for (var i = 0; i < dataOfYear.peoplePerYear.length; i++) {
         matrix[i] = newFilledArray(dataOfYear.peoplePerYear.length, 0);
     }
+    names = new Array(dataOfYear.peoplePerYear.length);
 
     $.each(dataOfYear, function(index, publication) {
         $.each(publication.authors, function(index, author)  {
@@ -339,13 +245,20 @@ function getStatisticsForYear(dataOfYear) {
 
                 var authorIndex = $.inArray(author.name, dataOfYear.peoplePerYear);
                 var collaboratorIndex = $.inArray(publication.authors[i].name, dataOfYear.peoplePerYear);
+                //increment relation counter with each paper
                 matrix[authorIndex][collaboratorIndex] ++;
                 matrix[collaboratorIndex][authorIndex] ++;
+                //set names
+                if (names[authorIndex] === undefined){
+                    names[authorIndex] = author.name;
+                }
+                if (names[collaboratorIndex] === undefined){
+                    names[collaboratorIndex] = publication.authors[i].name;
+                }
             }
         });
 
     });
-
     return matrix;
 }
 
@@ -355,10 +268,6 @@ function main() {
     //TODO: SAVE TO FILE!
     dataByYear = groupDataByYear();
 
-    statistics = createStatistics();
-    //console.log(statistics);
-    names = createNameArray(statistics);
-
     //filter
     //matrix = filterMatrix(matrix, 20);
     //names = filterNames(names);
@@ -366,8 +275,8 @@ function main() {
 }
 
 $(function () {
-  $('[data-toggle="popover"]').popover()
-})
+  $('[data-toggle="popover"]').popover();
+});
 // Slider init
 var yearslider = $('#yearFilter').slider({});
 

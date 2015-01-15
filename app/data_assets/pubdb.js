@@ -2,6 +2,33 @@ var pubdb = [{
     "id": "pub_1",
     "year": "2015",
     "authors": [{
+        "name": "Max Pfeiffer"
+    }, {
+        "name": "Tim Duente"
+    }, {
+        "name": "Stefan Schneegass",
+        "url": "http://www.vis.uni-stuttgart.de/institut/mitarbeiter/stefan-schneegass.html"
+    }, {
+        "name": "Florian Alt",
+        "url": "http://www.medien.ifi.lmu.de/team/florian.alt/"
+    }, {
+        "name": "Michael Rohs"
+    }],
+    "title": {
+        "url": "/forschung/publikationen/detail?pub=pfeiffer2015chi",
+        "name": "Cruise Control for Pedestrians: Controlling Walking Direction using Electrical Muscle Stimulation"
+    },
+    "description": {
+        "html": ""
+    },
+    "additionalLinks": [],
+    "bibfile": null,
+    "downloads": [],
+    "award": false
+}, {
+    "id": "pub_2",
+    "year": "2015",
+    "authors": [{
         "name": "Daniel Buschek",
         "url": "http://www.medien.ifi.lmu.de/team/daniel.buschek/"
     }, {
@@ -23,7 +50,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_2",
+    "id": "pub_3",
     "year": "2015",
     "authors": [{
         "name": "Daniel Buschek",
@@ -44,7 +71,25 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_3",
+    "id": "pub_4",
+    "year": "2015",
+    "authors": [{
+        "name": "Sarah Tausch",
+        "url": "http://www.medien.ifi.lmu.de/team/sarah.tausch/"
+    }],
+    "title": {
+        "url": "/forschung/publikationen/detail?pub=tausch2015cscwDC",
+        "name": "Investigating the Different Characteristics of Group Mirrors"
+    },
+    "description": {
+        "html": "Doctoral Colloquium at the 18th ACM Conference on Computer Supported Cooperative Work and Social Computing (CSCW 2015), Vancouver, BC, Canada, March 14-18, 2015"
+    },
+    "additionalLinks": [],
+    "bibfile": null,
+    "downloads": [],
+    "award": false
+}, {
+    "id": "pub_5",
     "year": "2015",
     "authors": [{
         "name": "Simon Stusak",
@@ -62,7 +107,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_5",
+    "id": "pub_7",
     "year": "2014",
     "authors": [{
         "name": "Alexander Wiethoff",
@@ -84,7 +129,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/wiethoff2014mab/wiethoff2014mab.pdf"],
     "award": false
 }, {
-    "id": "pub_6",
+    "id": "pub_8",
     "year": "2014",
     "authors": [{
         "name": "Simon Stusak",
@@ -112,7 +157,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/stusak2014vis/stusak2014vis.pdf"],
     "award": false
 }, {
-    "id": "pub_7",
+    "id": "pub_9",
     "year": "2014",
     "authors": [{
         "name": "Alexander Wiethoff",
@@ -132,7 +177,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/wiethoff2014nordichi/wiethoff2014nordichi.pdf"],
     "award": false
 }, {
-    "id": "pub_8",
+    "id": "pub_10",
     "year": "2014",
     "authors": [{
         "name": "Emanuel von Zezschwitz",
@@ -156,7 +201,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/zezschwitz2014nordichi/zezschwitz2014nordichi.pdf"],
     "award": false
 }, {
-    "id": "pub_9",
+    "id": "pub_11",
     "year": "2014",
     "authors": [{
         "name": "Sarah Tausch",
@@ -184,7 +229,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/tausch2014nordichi/tausch2014nordichi.pdf"],
     "award": false
 }, {
-    "id": "pub_10",
+    "id": "pub_12",
     "year": "2014",
     "authors": [{
         "name": "Simon Stusak",
@@ -204,7 +249,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_11",
+    "id": "pub_13",
     "year": "2014",
     "authors": [{
         "name": "Alina Hang",
@@ -252,7 +297,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/hang2014usabilityHS/hang2014usabilityHS.pdf"],
     "award": false
 }, {
-    "id": "pub_12",
+    "id": "pub_14",
     "year": "2014",
     "authors": [{
         "name": "Stefan Schneegass",
@@ -280,7 +325,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/schneegass2014ubicomp/schneegass2014ubicomp.pdf"],
     "award": false
 }, {
-    "id": "pub_13",
+    "id": "pub_15",
     "year": "2014",
     "authors": [{
         "name": "Sebastian Osswald",
@@ -313,7 +358,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/loehmann2014auiworkshop/loehmann2014auiworkshop.pdf"],
     "award": false
 }, {
-    "id": "pub_14",
+    "id": "pub_16",
     "year": "2014",
     "authors": [{
         "name": "Sebastian Loehmann",
@@ -344,7 +389,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/loehmann2014auiPeriscope/loehmann2014auiPeriscope.pdf"],
     "award": false
 }, {
-    "id": "pub_15",
+    "id": "pub_17",
     "year": "2014",
     "authors": [{
         "name": "Sebastian Loehmann",
@@ -371,7 +416,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/loehmann2014auiHeartbeat/loehmann2014auiHeartbeat.pdf"],
     "award": false
 }, {
-    "id": "pub_16",
+    "id": "pub_18",
     "year": "2014",
     "authors": [{
         "name": "Marc Landau",
@@ -395,7 +440,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/loehmann2014auiEnergyFlow/loehmann2014auiEnergyFlow.pdf"],
     "award": false
 }, {
-    "id": "pub_17",
+    "id": "pub_19",
     "year": "2014",
     "authors": [{
         "name": "Felix Lauber",
@@ -418,7 +463,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/lauber2014autouiwip/lauber2014autouiwip.pdf"],
     "award": false
 }, {
-    "id": "pub_18",
+    "id": "pub_20",
     "year": "2014",
     "authors": [{
         "name": "Felix Lauber",
@@ -441,7 +486,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/lauber2014autoui/lauber2014autoui.pdf"],
     "award": false
 }, {
-    "id": "pub_19",
+    "id": "pub_21",
     "year": "2014",
     "authors": [{
         "name": "Alexander Wiethoff",
@@ -463,7 +508,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/wiethoff2014muc/wiethoff2014muc.pdf"],
     "award": false
 }, {
-    "id": "pub_20",
+    "id": "pub_22",
     "year": "2014",
     "authors": [{
         "name": "Sven Gehring"
@@ -483,7 +528,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/wiethoff2014sdi/wiethoff2014sdi.pdf"],
     "award": false
 }, {
-    "id": "pub_21",
+    "id": "pub_23",
     "year": "2014",
     "authors": [{
         "name": "Marian Harbach",
@@ -511,7 +556,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/harbach2014soups/harbach2014soups.pdf"],
     "award": false
 }, {
-    "id": "pub_22",
+    "id": "pub_24",
     "year": "2014",
     "authors": [{
         "name": "Nigel Davies"
@@ -533,7 +578,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_23",
+    "id": "pub_25",
     "year": "2014",
     "authors": [{
         "name": "Gilbert Beyer",
@@ -558,7 +603,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/beyer2014dis/beyer2014dis.pdf", "/pubdb/publications//pub/beyer2014dis/beyer2014dis.video.mp4"],
     "award": false
 }, {
-    "id": "pub_24",
+    "id": "pub_26",
     "year": "2014",
     "authors": [{
         "name": "Gilbert Beyer",
@@ -581,7 +626,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/beyer2014dis2/beyer2014dis2.pdf"],
     "award": false
 }, {
-    "id": "pub_25",
+    "id": "pub_27",
     "year": "2014",
     "authors": [{
         "name": "Felix Lauber",
@@ -604,7 +649,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/lauber2014dis/lauber2014dis.pdf"],
     "award": false
 }, {
-    "id": "pub_26",
+    "id": "pub_28",
     "year": "2014",
     "authors": [{
         "name": "Marius Hoggenmueller"
@@ -624,7 +669,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/wiethoff2014dis/wiethoff2014dis.pdf"],
     "award": false
 }, {
-    "id": "pub_27",
+    "id": "pub_29",
     "year": "2014",
     "authors": [{
         "name": "Tina Kothe"
@@ -651,7 +696,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/tausch2014idc/tausch2014idc.pdf"],
     "award": false
 }, {
-    "id": "pub_28",
+    "id": "pub_30",
     "year": "2014",
     "authors": [{
         "name": "Fabius Steinberger"
@@ -673,7 +718,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/steinberger2014perdis/steinberger2014perdis.pdf"],
     "award": false
 }, {
-    "id": "pub_29",
+    "id": "pub_31",
     "year": "2014",
     "authors": [{
         "name": "Stefan Schneegass",
@@ -699,7 +744,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/schneegass2014perdis2/schneegass2014perdis2.pdf"],
     "award": false
 }, {
-    "id": "pub_30",
+    "id": "pub_32",
     "year": "2014",
     "authors": [{
         "name": "Stefan Schneegass",
@@ -720,7 +765,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/schneegass2014perdis1/schneegass2014perdis1.pdf"],
     "award": false
 }, {
-    "id": "pub_31",
+    "id": "pub_33",
     "year": "2014",
     "authors": [{
         "name": "Nora Broy",
@@ -760,7 +805,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/broy2014perdis/broy2014perdis.pdf"],
     "award": false
 }, {
-    "id": "pub_32",
+    "id": "pub_34",
     "year": "2014",
     "authors": [{
         "name": "Andreas Butz",
@@ -814,7 +859,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/butz2014oosoosoof/butz2014oosoosoof.pdf"],
     "award": false
 }, {
-    "id": "pub_33",
+    "id": "pub_35",
     "year": "2014",
     "authors": [{
         "name": "Jonna Häkkilä"
@@ -844,7 +889,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/hakkila2014chi/hakkila2014chi.pdf"],
     "award": false
 }, {
-    "id": "pub_34",
+    "id": "pub_36",
     "year": "2014",
     "authors": [{
         "name": "Miriam Greis"
@@ -868,7 +913,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/greis2014chi/greis2014chi.pdf"],
     "award": false
 }, {
-    "id": "pub_35",
+    "id": "pub_37",
     "year": "2014",
     "authors": [{
         "name": "Nora Broy",
@@ -895,7 +940,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/broy2014chi/broy2014chi.pdf"],
     "award": false
 }, {
-    "id": "pub_36",
+    "id": "pub_38",
     "year": "2014",
     "authors": [{
         "name": "Simon Stusak",
@@ -915,7 +960,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/stusak2014chiPoster/stusak2014chiPoster.pdf"],
     "award": false
 }, {
-    "id": "pub_37",
+    "id": "pub_39",
     "year": "2014",
     "authors": [{
         "name": "Bernd Huber"
@@ -938,7 +983,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/tausch2014chiwip/tausch2014chiwip.pdf"],
     "award": false
 }, {
-    "id": "pub_38",
+    "id": "pub_40",
     "year": "2014",
     "authors": [{
         "name": "Doris Hausen",
@@ -961,7 +1006,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/hausen2014chiwip/hausen2014chiwip.pdf"],
     "award": false
 }, {
-    "id": "pub_39",
+    "id": "pub_41",
     "year": "2014",
     "authors": [{
         "name": "Stefan Schneegass",
@@ -989,7 +1034,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/schneegass2014chiea/schneegass2014chiea.pdf"],
     "award": false
 }, {
-    "id": "pub_40",
+    "id": "pub_42",
     "year": "2014",
     "authors": [{
         "name": "Sebastian Loehmann",
@@ -1010,7 +1055,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/loehmann2014chipiws/loehmann2014chipiws.pdf"],
     "award": false
 }, {
-    "id": "pub_41",
+    "id": "pub_43",
     "year": "2014",
     "authors": [{
         "name": "Julie Wagner"
@@ -1032,7 +1077,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/wagner2014chi/wagner2014chi.pdf"],
     "award": true
 }, {
-    "id": "pub_42",
+    "id": "pub_44",
     "year": "2014",
     "authors": [{
         "name": "Henri Palleis",
@@ -1053,7 +1098,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/palleis2014chi/palleis2014chi.pdf"],
     "award": false
 }, {
-    "id": "pub_43",
+    "id": "pub_45",
     "year": "2014",
     "authors": [{
         "name": "Sebastian Loehmann",
@@ -1078,7 +1123,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/loehmann2014chigestws/loehmann2014chigestws.pdf"],
     "award": false
 }, {
-    "id": "pub_44",
+    "id": "pub_46",
     "year": "2014",
     "authors": [{
         "name": "Felix Lauber",
@@ -1099,7 +1144,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/lauber2014chi/lauber2014chi.pdf"],
     "award": false
 }, {
-    "id": "pub_45",
+    "id": "pub_47",
     "year": "2014",
     "authors": [{
         "name": "Saskia Bakker"
@@ -1128,7 +1173,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/hausen2014chiworkshop/hausen2014chiworkshop.pdf"],
     "award": false
 }, {
-    "id": "pub_46",
+    "id": "pub_48",
     "year": "2014",
     "authors": [{
         "name": "Alexander De Luca",
@@ -1163,7 +1208,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/deluca2014chi/deluca2014chi.pdf"],
     "award": false
 }, {
-    "id": "pub_47",
+    "id": "pub_49",
     "year": "2014",
     "authors": [{
         "name": "Nora Broy",
@@ -1189,7 +1234,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/broy2014chiea/broy2014chiea.pdf"],
     "award": false
 }, {
-    "id": "pub_48",
+    "id": "pub_50",
     "year": "2014",
     "authors": [{
         "name": "Max Pfeiffer"
@@ -1214,7 +1259,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_49",
+    "id": "pub_51",
     "year": "2014",
     "authors": [{
         "name": "Florian Alt",
@@ -1238,7 +1283,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/alt2014pdapps/alt2014pdapps.pdf"],
     "award": false
 }, {
-    "id": "pub_50",
+    "id": "pub_52",
     "year": "2014",
     "authors": [{
         "name": "Emanuel von Zezschwitz",
@@ -1292,7 +1337,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/zezschwitz2014SecondaryTasksHS/zezschwitz2014SecondaryTasksHS.pdf"],
     "award": false
 }, {
-    "id": "pub_51",
+    "id": "pub_53",
     "year": "2014",
     "authors": [{
         "name": "Doris Hausen",
@@ -1310,7 +1355,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/hausen2014thesis/hausen2014thesis.pdf"],
     "award": false
 }, {
-    "id": "pub_52",
+    "id": "pub_54",
     "year": "2014",
     "authors": [{
         "name": "Max Pfeiffer"
@@ -1335,7 +1380,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/pfeiffer2014ah/pfeiffer2014ah.pdf"],
     "award": false
 }, {
-    "id": "pub_53",
+    "id": "pub_55",
     "year": "2014",
     "authors": [{
         "name": "Daniel Buschek",
@@ -1359,7 +1404,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/buschek2014iui/buschek2014iui.pdf"],
     "award": false
 }, {
-    "id": "pub_54",
+    "id": "pub_56",
     "year": "2014",
     "authors": [{
         "name": "Florian Alt",
@@ -1387,7 +1432,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/alt2014iui/alt2014iui.pdf"],
     "award": false
 }, {
-    "id": "pub_55",
+    "id": "pub_57",
     "year": "2014",
     "authors": [{
         "name": "Simon Stusak",
@@ -1405,7 +1450,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/stusak2014teiPoster/stusak2014teiPoster.pdf"],
     "award": false
 }, {
-    "id": "pub_56",
+    "id": "pub_58",
     "year": "2014",
     "authors": [{
         "name": "Sonja Rümelin",
@@ -1425,7 +1470,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_57",
+    "id": "pub_59",
     "year": "2014",
     "authors": [{
         "name": "Simone Zimmermann"
@@ -1448,7 +1493,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/ruemelin2014tei/ruemelin2014tei.pdf"],
     "award": false
 }, {
-    "id": "pub_58",
+    "id": "pub_60",
     "year": "2014",
     "authors": [{
         "name": "Doris Hausen",
@@ -1476,7 +1521,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/hausen2014tei/hausen2014tei.pdf"],
     "award": false
 }, {
-    "id": "pub_59",
+    "id": "pub_61",
     "year": "2014",
     "authors": [{
         "name": "Alina Hang",
@@ -1503,7 +1548,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_60",
+    "id": "pub_62",
     "year": "2014",
     "authors": [{
         "name": "Alina Hang",
@@ -1527,7 +1572,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/hang2014chi/hang2014chi.pdf"],
     "award": false
 }, {
-    "id": "pub_62",
+    "id": "pub_64",
     "year": "2013",
     "authors": [{
         "name": "Max Maurer",
@@ -1545,7 +1590,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/maurer2013thesis/maurer2013thesis.pdf"],
     "award": false
 }, {
-    "id": "pub_63",
+    "id": "pub_65",
     "year": "2013",
     "authors": [{
         "name": "Nemanja Memarovic"
@@ -1573,7 +1618,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/memarovic2013tochi/memarovic2013tochi.pdf"],
     "award": false
 }, {
-    "id": "pub_64",
+    "id": "pub_66",
     "year": "2013",
     "authors": [{
         "name": "Florian Alt",
@@ -1600,7 +1645,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/alt2013chi/alt2013chi.pdf"],
     "award": false
 }, {
-    "id": "pub_65",
+    "id": "pub_67",
     "year": "2013",
     "authors": [{
         "name": "Fabian Hennecke",
@@ -1618,7 +1663,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_66",
+    "id": "pub_68",
     "year": "2013",
     "authors": [{
         "name": "Sonja Rümelin",
@@ -1641,7 +1686,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/ruemelin2013autoui3/ruemelin2013autoui3.pdf"],
     "award": false
 }, {
-    "id": "pub_67",
+    "id": "pub_69",
     "year": "2013",
     "authors": [{
         "name": "Sonja Rümelin",
@@ -1662,7 +1707,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/ruemelin2013autoui2/ruemelin2013autoui2.pdf", "/pubdb/publications//pub/ruemelin2013autoui2/ruemelin2013autoui2.video.mp4"],
     "award": false
 }, {
-    "id": "pub_68",
+    "id": "pub_70",
     "year": "2013",
     "authors": [{
         "name": "Sonja Rümelin",
@@ -1685,7 +1730,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/ruemelin2013autoui1/ruemelin2013autoui1.pdf", "/pubdb/publications//pub/ruemelin2013autoui1/ruemelin2013autoui1.video.mp4"],
     "award": false
 }, {
-    "id": "pub_69",
+    "id": "pub_71",
     "year": "2013",
     "authors": [{
         "name": "Sebastian Loehmann",
@@ -1716,7 +1761,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/loehmann2013auiworkshop/loehmann2013auiworkshop.pdf"],
     "award": false
 }, {
-    "id": "pub_70",
+    "id": "pub_72",
     "year": "2013",
     "authors": [{
         "name": "Marc Landau",
@@ -1740,11 +1785,14 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/loehmann2013aui/loehmann2013aui.pdf"],
     "award": false
 }, {
-    "id": "pub_71",
+    "id": "pub_73",
     "year": "2013",
     "authors": [{
         "name": "Aurélien Tabard",
         "url": "http://www.medien.ifi.lmu.de/team/aurelien.tabard/"
+    }, {
+        "name": "HASH(0x8319ddc)",
+        "url": null
     }, {
         "name": "Andreas Butz",
         "url": "http://www.medien.ifi.lmu.de/team/andreas.butz/"
@@ -1764,7 +1812,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/tabard2013its/tabard2013its.pdf"],
     "award": false
 }, {
-    "id": "pub_72",
+    "id": "pub_74",
     "year": "2013",
     "authors": [{
         "name": "Henri Palleis",
@@ -1791,7 +1839,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/palleis2013its/palleis2013its.pdf"],
     "award": false
 }, {
-    "id": "pub_73",
+    "id": "pub_75",
     "year": "2013",
     "authors": [{
         "name": "Florian Alt",
@@ -1811,7 +1859,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/alt2013muc/alt2013muc.pdf"],
     "award": false
 }, {
-    "id": "pub_74",
+    "id": "pub_76",
     "year": "2013",
     "authors": [{
         "name": "Felix Lauber",
@@ -1832,7 +1880,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/lauber2013ismarwip/lauber2013ismarwip.pdf"],
     "award": false
 }, {
-    "id": "pub_75",
+    "id": "pub_77",
     "year": "2013",
     "authors": [{
         "name": "Felix Lauber",
@@ -1853,7 +1901,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/lauber2013ismar/lauber2013ismar.pdf"],
     "award": false
 }, {
-    "id": "pub_76",
+    "id": "pub_78",
     "year": "2013",
     "authors": [{
         "name": "Max Pfeiffer"
@@ -1876,7 +1924,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/pfeiffer2013ubicomp/pfeiffer2013ubicomp.pdf"],
     "award": false
 }, {
-    "id": "pub_77",
+    "id": "pub_79",
     "year": "2013",
     "authors": [{
         "name": "Sonja Rümelin",
@@ -1899,7 +1947,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/ruemelin2013mc/ruemelin2013mc.pdf"],
     "award": false
 }, {
-    "id": "pub_78",
+    "id": "pub_80",
     "year": "2013",
     "authors": [{
         "name": "Emanuel von Zezschwitz",
@@ -1923,7 +1971,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/zezschwitz2013interact/zezschwitz2013interact.pdf"],
     "award": false
 }, {
-    "id": "pub_79",
+    "id": "pub_81",
     "year": "2013",
     "authors": [{
         "name": "Léo Sicard"
@@ -1948,7 +1996,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/tabard2013interact/tabard2013interact.pdf"],
     "award": false
 }, {
-    "id": "pub_80",
+    "id": "pub_82",
     "year": "2013",
     "authors": [{
         "name": "Max Maurer",
@@ -2008,7 +2056,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/maurer2013interact/maurer2013interact.pdf"],
     "award": false
 }, {
-    "id": "pub_81",
+    "id": "pub_83",
     "year": "2013",
     "authors": [{
         "name": "Sebastian Loehmann",
@@ -2026,7 +2074,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/loehmann2013interact02/loehmann2013interact02.pdf"],
     "award": false
 }, {
-    "id": "pub_82",
+    "id": "pub_84",
     "year": "2013",
     "authors": [{
         "name": "Sebastian Loehmann",
@@ -2052,7 +2100,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/loehmann2013interact01/loehmann2013interact01.pdf"],
     "award": false
 }, {
-    "id": "pub_83",
+    "id": "pub_85",
     "year": "2013",
     "authors": [{
         "name": "Fabian Hennecke",
@@ -2081,7 +2129,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/hennecke2013interact2/hennecke2013interact2.pdf"],
     "award": false
 }, {
-    "id": "pub_84",
+    "id": "pub_86",
     "year": "2013",
     "authors": [{
         "name": "Fabian Hennecke",
@@ -2110,7 +2158,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/hennecke2013interact1/hennecke2013interact1.pdf"],
     "award": false
 }, {
-    "id": "pub_85",
+    "id": "pub_87",
     "year": "2013",
     "authors": [{
         "name": "Doris Hausen",
@@ -2137,7 +2185,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/hausen2013interactworkshop2/hausen2013interactworkshop2.pdf"],
     "award": false
 }, {
-    "id": "pub_86",
+    "id": "pub_88",
     "year": "2013",
     "authors": [{
         "name": "Doris Hausen",
@@ -2161,7 +2209,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/hausen2013interact2/hausen2013interact2.pdf"],
     "award": false
 }, {
-    "id": "pub_87",
+    "id": "pub_89",
     "year": "2013",
     "authors": [{
         "name": "Doris Hausen",
@@ -2187,7 +2235,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/hausen2013interact1/hausen2013interact1.pdf"],
     "award": false
 }, {
-    "id": "pub_88",
+    "id": "pub_90",
     "year": "2013",
     "authors": [{
         "name": "Alina Hang",
@@ -2220,7 +2268,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/hang2013interact/hang2013interact.pdf"],
     "award": false
 }, {
-    "id": "pub_89",
+    "id": "pub_91",
     "year": "2013",
     "authors": [{
         "name": "Emanuel von Zezschwitz",
@@ -2244,7 +2292,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/zezschwitz2013mobilehci/zezschwitz2013mobilehci.pdf"],
     "award": false
 }, {
-    "id": "pub_90",
+    "id": "pub_92",
     "year": "2013",
     "authors": [{
         "name": "Alina Hang",
@@ -2270,7 +2318,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/hang2013mobilehci/hang2013mobilehci.pdf"],
     "award": false
 }, {
-    "id": "pub_91",
+    "id": "pub_93",
     "year": "2013",
     "authors": [{
         "name": "Daryl Weir",
@@ -2294,7 +2342,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/buschek2013mobilehci02/buschek2013mobilehci02.pdf"],
     "award": false
 }, {
-    "id": "pub_92",
+    "id": "pub_94",
     "year": "2013",
     "authors": [{
         "name": "Daniel Buschek",
@@ -2318,7 +2366,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/buschek2013mobilehci01/buschek2013mobilehci01.pdf"],
     "award": false
 }, {
-    "id": "pub_93",
+    "id": "pub_95",
     "year": "2013",
     "authors": [{
         "name": "Simon Stusak",
@@ -2342,7 +2390,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/stusak2013visPoster/stusak2013visPoster.pdf"],
     "award": false
 }, {
-    "id": "pub_94",
+    "id": "pub_96",
     "year": "2013",
     "authors": [{
         "name": "Doris Hausen",
@@ -2390,7 +2438,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/hausen2013visualizeHS/hausen2013visualizeHS.pdf"],
     "award": false
 }, {
-    "id": "pub_95",
+    "id": "pub_97",
     "year": "2013",
     "authors": [{
         "name": "Alexander Wiethoff",
@@ -2408,7 +2456,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/wiethoff2013DC8/wiethoff2013DC8.pdf"],
     "award": false
 }, {
-    "id": "pub_96",
+    "id": "pub_98",
     "year": "2013",
     "authors": [{
         "name": "Alexander Wiethoff",
@@ -2440,7 +2488,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/wiethoff2013CC/wiethoff2013CC.pdf"],
     "award": false
 }, {
-    "id": "pub_97",
+    "id": "pub_99",
     "year": "2013",
     "authors": [{
         "name": "Florian Alt",
@@ -2466,7 +2514,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/alt2013perdis/alt2013perdis.pdf"],
     "award": false
 }, {
-    "id": "pub_98",
+    "id": "pub_100",
     "year": "2013",
     "authors": [{
         "name": "Nemanja Memarovic"
@@ -2494,7 +2542,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/memarovic2013perdis/memarovic2013perdis.pdf"],
     "award": false
 }, {
-    "id": "pub_99",
+    "id": "pub_101",
     "year": "2013",
     "authors": [{
         "name": "Rui Jose"
@@ -2520,7 +2568,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/jose2013perdis/jose2013perdis.pdf"],
     "award": false
 }, {
-    "id": "pub_100",
+    "id": "pub_102",
     "year": "2013",
     "authors": [{
         "name": "Nora Broy",
@@ -2549,7 +2597,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/broy2013perdis/broy2013perdis.pdf"],
     "award": false
 }, {
-    "id": "pub_101",
+    "id": "pub_103",
     "year": "2013",
     "authors": [{
         "name": "Florian Alt",
@@ -2570,7 +2618,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/alt2013eips/alt2013eips.pdf"],
     "award": false
 }, {
-    "id": "pub_102",
+    "id": "pub_104",
     "year": "2013",
     "authors": [{
         "name": "Dzmitry Aliakseyeu"
@@ -2600,7 +2648,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/wiethoff2013CHI/wiethoff2013CHI.pdf"],
     "award": false
 }, {
-    "id": "pub_103",
+    "id": "pub_105",
     "year": "2013",
     "authors": [{
         "name": "Martin Knobel",
@@ -2629,7 +2677,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_104",
+    "id": "pub_106",
     "year": "2013",
     "authors": [{
         "name": "Gilbert Beyer"
@@ -2655,7 +2703,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/beyer2013chi/beyer2013chi.pdf", "/pubdb/publications/pub/beyer2013chi/beyer2013chi.slides.pdf"],
     "award": true
 }, {
-    "id": "pub_105",
+    "id": "pub_107",
     "year": "2013",
     "authors": [{
         "name": "Sonja Rümelin",
@@ -2678,7 +2726,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/ruemelin2013chi/ruemelin2013chi.pdf"],
     "award": false
 }, {
-    "id": "pub_106",
+    "id": "pub_108",
     "year": "2013",
     "authors": [{
         "name": "Gilbert Beyer",
@@ -2699,7 +2747,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/beyer2013chi2/beyer2013chi2.pdf", "/pubdb/publications/pub/beyer2013chi2/beyer2013chi2.slides.pdf"],
     "award": false
 }, {
-    "id": "pub_107",
+    "id": "pub_109",
     "year": "2013",
     "authors": [{
         "name": "Sven Gehring"
@@ -2719,7 +2767,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/wiethoff2013CHI2/wiethoff2013CHI2.pdf"],
     "award": false
 }, {
-    "id": "pub_108",
+    "id": "pub_110",
     "year": "2013",
     "authors": [{
         "name": "Julie Wagner",
@@ -2749,7 +2797,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_109",
+    "id": "pub_111",
     "year": "2013",
     "authors": [{
         "name": "Henri Palleis",
@@ -2770,7 +2818,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/palleis2013chi/palleis2013chi.pdf"],
     "award": false
 }, {
-    "id": "pub_110",
+    "id": "pub_112",
     "year": "2013",
     "authors": [{
         "name": "Fabian Hennecke",
@@ -2799,7 +2847,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/hennecke2013chi/hennecke2013chi.pdf"],
     "award": false
 }, {
-    "id": "pub_111",
+    "id": "pub_113",
     "year": "2013",
     "authors": [{
         "name": "Doris Hausen",
@@ -2825,7 +2873,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/hausen2013chiwip/hausen2013chiwip.pdf"],
     "award": false
 }, {
-    "id": "pub_112",
+    "id": "pub_114",
     "year": "2013",
     "authors": [{
         "name": "Alexander De Luca"
@@ -2857,7 +2905,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/deluca2013chi2/deluca2013chi2.pdf"],
     "award": true
 }, {
-    "id": "pub_113",
+    "id": "pub_115",
     "year": "2013",
     "authors": [{
         "name": "Alexander De Luca"
@@ -2882,7 +2930,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/deluca2013chi1/deluca2013chi1.pdf"],
     "award": true
 }, {
-    "id": "pub_114",
+    "id": "pub_116",
     "year": "2013",
     "authors": [{
         "name": "Henri Palleis",
@@ -2930,7 +2978,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/palleis2012BeyondDesktopHS/palleis2012BeyondDesktopHS.pdf"],
     "award": false
 }, {
-    "id": "pub_115",
+    "id": "pub_117",
     "year": "2013",
     "authors": [{
         "name": "Gregor Broll",
@@ -2953,7 +3001,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_116",
+    "id": "pub_118",
     "year": "2013",
     "authors": [{
         "name": "Axel Hoesl",
@@ -2971,7 +3019,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_117",
+    "id": "pub_119",
     "year": "2013",
     "authors": [{
         "name": "Emanuel von Zezschwitz",
@@ -2997,7 +3045,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/zezschwitz2013IUI/zezschwitz2013IUI.pdf"],
     "award": false
 }, {
-    "id": "pub_118",
+    "id": "pub_120",
     "year": "2013",
     "authors": [{
         "name": "Gregor Broll",
@@ -3024,7 +3072,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/broll2013nfc/broll2013nfc.pdf"],
     "award": false
 }, {
-    "id": "pub_119",
+    "id": "pub_121",
     "year": "2013",
     "authors": [{
         "name": "Magdalena Schmid"
@@ -3047,7 +3095,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/schmid2013tei/schmid2013tei.pdf"],
     "award": false
 }, {
-    "id": "pub_120",
+    "id": "pub_122",
     "year": "2013",
     "authors": [{
         "name": "Hendrik Richter",
@@ -3069,7 +3117,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/richter2013tei/richter2013tei.pdf"],
     "award": false
 }, {
-    "id": "pub_121",
+    "id": "pub_123",
     "year": "2013",
     "authors": [{
         "name": "Robert Kowalski"
@@ -3092,7 +3140,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/kowalski2013tei/kowalski2013tei.pdf"],
     "award": false
 }, {
-    "id": "pub_122",
+    "id": "pub_124",
     "year": "2013",
     "authors": [{
         "name": "Sarah Tausch",
@@ -3113,7 +3161,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/tausch2013cscw/tausch2013cscw.pdf"],
     "award": false
 }, {
-    "id": "pub_124",
+    "id": "pub_126",
     "year": "2012",
     "authors": [{
         "name": "Kai Eckoldt"
@@ -3137,7 +3185,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_125",
+    "id": "pub_127",
     "year": "2012",
     "authors": [{
         "name": "Florian Echtler",
@@ -3158,7 +3206,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/echtler2012gispl/echtler2012gispl.pdf"],
     "award": false
 }, {
-    "id": "pub_126",
+    "id": "pub_128",
     "year": "2012",
     "authors": [{
         "name": "Julian Seifert"
@@ -3181,7 +3229,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/seifert2012mum/seifert2012mum.pdf"],
     "award": true
 }, {
-    "id": "pub_127",
+    "id": "pub_129",
     "year": "2012",
     "authors": [{
         "name": "Alexander Wiethoff",
@@ -3199,7 +3247,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/wiethoff2012diss/wiethoff2012diss.pdf"],
     "award": false
 }, {
-    "id": "pub_128",
+    "id": "pub_130",
     "year": "2012",
     "authors": [{
         "name": "Max Maurer",
@@ -3219,7 +3267,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/maurer2012css/maurer2012css.pdf"],
     "award": false
 }, {
-    "id": "pub_129",
+    "id": "pub_131",
     "year": "2012",
     "authors": [{
         "name": "Gregor Broll",
@@ -3252,7 +3300,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/broll2012mumdemo/broll2012mumdemo.pdf"],
     "award": false
 }, {
-    "id": "pub_130",
+    "id": "pub_132",
     "year": "2012",
     "authors": [{
         "name": "Jing Bie"
@@ -3293,7 +3341,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_131",
+    "id": "pub_133",
     "year": "2012",
     "authors": [{
         "name": "Sonja Rümelin",
@@ -3323,7 +3371,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/ruemelin2012its/ruemelin2012its.pdf", "/pubdb/publications/pub/ruemelin2012its/ruemelin2012its.slides.pdf"],
     "award": false
 }, {
-    "id": "pub_132",
+    "id": "pub_134",
     "year": "2012",
     "authors": [{
         "name": "Nemanja Memarovic"
@@ -3352,7 +3400,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/memarovic2012mab/memarovic2012mab.pdf"],
     "award": false
 }, {
-    "id": "pub_133",
+    "id": "pub_135",
     "year": "2012",
     "authors": [{
         "name": "Hendrik Richter",
@@ -3378,7 +3426,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/richter2012icmi/richter2012icmi.pdf"],
     "award": false
 }, {
-    "id": "pub_134",
+    "id": "pub_136",
     "year": "2012",
     "authors": [{
         "name": "Florian Alt",
@@ -3404,7 +3452,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/alt2012nordichi/alt2012nordichi.pdf"],
     "award": false
 }, {
-    "id": "pub_135",
+    "id": "pub_137",
     "year": "2012",
     "authors": [{
         "name": "Florian Alt",
@@ -3431,7 +3479,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/alt2012mobilehci/alt2012mobilehci.pdf"],
     "award": false
 }, {
-    "id": "pub_136",
+    "id": "pub_138",
     "year": "2012",
     "authors": [{
         "name": "Sebastian Osswald",
@@ -3462,7 +3510,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/loehmann2012auiworkshop/loehmann2012auiworkshop.pdf"],
     "award": false
 }, {
-    "id": "pub_137",
+    "id": "pub_139",
     "year": "2012",
     "authors": [{
         "name": "Sebastian Loehmann",
@@ -3480,7 +3528,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/loehmann2012aui/loehmann2012aui.pdf"],
     "award": false
 }, {
-    "id": "pub_138",
+    "id": "pub_140",
     "year": "2012",
     "authors": [{
         "name": "Nora Broy",
@@ -3501,7 +3549,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/broy2012autouiWS/broy2012autouiWS.pdf"],
     "award": false
 }, {
-    "id": "pub_139",
+    "id": "pub_141",
     "year": "2012",
     "authors": [{
         "name": "Julie Wagner",
@@ -3525,7 +3573,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_140",
+    "id": "pub_142",
     "year": "2012",
     "authors": [{
         "name": "Alina Hang",
@@ -3552,7 +3600,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/hang2012nordichi/hang2012nordichi.pdf"],
     "award": false
 }, {
-    "id": "pub_141",
+    "id": "pub_143",
     "year": "2012",
     "authors": [{
         "name": "Michael Sedlmair",
@@ -3578,7 +3626,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/sedlmair2012tvcg/sedlmair2012tvcg.pdf"],
     "award": false
 }, {
-    "id": "pub_142",
+    "id": "pub_144",
     "year": "2012",
     "authors": [{
         "name": "Nora Broy",
@@ -3601,7 +3649,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_143",
+    "id": "pub_145",
     "year": "2012",
     "authors": [{
         "name": "Alina Hang",
@@ -3643,7 +3691,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/hang2012userbehaviorHS/hang2012userbehaviorHS.pdf"],
     "award": false
 }, {
-    "id": "pub_144",
+    "id": "pub_146",
     "year": "2012",
     "authors": [{
         "name": "Kalle Kormann-Philipson"
@@ -3663,7 +3711,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/wiethoff2012weave/wiethoff2012weave.pdf"],
     "award": false
 }, {
-    "id": "pub_145",
+    "id": "pub_147",
     "year": "2012",
     "authors": [{
         "name": "Tobias Stockinger",
@@ -3684,7 +3732,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/stockinger2012muc/stockinger2012muc.pdf"],
     "award": false
 }, {
-    "id": "pub_146",
+    "id": "pub_148",
     "year": "2012",
     "authors": [{
         "name": "Bastian Pfleging"
@@ -3707,7 +3755,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/pfleging2012mobilehci/pfleging2012mobilehci.pdf"],
     "award": false
 }, {
-    "id": "pub_147",
+    "id": "pub_149",
     "year": "2012",
     "authors": [{
         "name": "Stefan Schneegass",
@@ -3731,7 +3779,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/schneegass2012mobisys/schneegass2012mobisys.pdf"],
     "award": false
 }, {
-    "id": "pub_148",
+    "id": "pub_150",
     "year": "2012",
     "authors": [{
         "name": "Emanuel von Zezschwitz",
@@ -3752,7 +3800,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/zezschwitz2012iwssispmu/zezschwitz2012iwssispmu.pdf"],
     "award": false
 }, {
-    "id": "pub_149",
+    "id": "pub_151",
     "year": "2012",
     "authors": [{
         "name": "Sven Kratz",
@@ -3776,7 +3824,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_150",
+    "id": "pub_152",
     "year": "2012",
     "authors": [{
         "name": "Alexander Wiethoff"
@@ -3795,7 +3843,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/wiethoff2012DIS/wiethoff2012DIS.pdf"],
     "award": true
 }, {
-    "id": "pub_151",
+    "id": "pub_153",
     "year": "2012",
     "authors": [{
         "name": "Doris Hausen",
@@ -3821,7 +3869,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/hausen2012dis/hausen2012dis.pdf", "/pubdb/publications//pub/hausen2012dis/hausen2012dis.video.mp4"],
     "award": false
 }, {
-    "id": "pub_152",
+    "id": "pub_154",
     "year": "2012",
     "authors": [{
         "name": "Dzmitry Aliakseyeu"
@@ -3854,7 +3902,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/wiethoff2012DIS_/wiethoff2012DIS_.pdf"],
     "award": false
 }, {
-    "id": "pub_153",
+    "id": "pub_155",
     "year": "2012",
     "authors": [{
         "name": "Martin Knobel",
@@ -3885,7 +3933,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_154",
+    "id": "pub_156",
     "year": "2012",
     "authors": [{
         "name": "Hendrik Richter",
@@ -3911,7 +3959,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/richter2012eurohaptics/richter2012eurohaptics.pdf"],
     "award": false
 }, {
-    "id": "pub_155",
+    "id": "pub_157",
     "year": "2012",
     "authors": [{
         "name": "Henri Palleis",
@@ -3929,7 +3977,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/palleis2012dis/palleis2012dis.pdf"],
     "award": false
 }, {
-    "id": "pub_156",
+    "id": "pub_158",
     "year": "2012",
     "authors": [{
         "name": "Doris Hausen",
@@ -3947,7 +3995,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/hausen2012dis_ws/hausen2012dis_ws.pdf"],
     "award": false
 }, {
-    "id": "pub_157",
+    "id": "pub_159",
     "year": "2012",
     "authors": [{
         "name": "Dominikus Baur",
@@ -3970,7 +4018,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/baur2012eurovis/baur2012eurovis.pdf"],
     "award": false
 }, {
-    "id": "pub_158",
+    "id": "pub_160",
     "year": "2012",
     "authors": [{
         "name": "Nemanja Memarovic"
@@ -3993,7 +4041,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/memarovic2012perdis/memarovic2012perdis.pdf"],
     "award": false
 }, {
-    "id": "pub_159",
+    "id": "pub_161",
     "year": "2012",
     "authors": [{
         "name": "Florian Alt",
@@ -4014,7 +4062,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/alt2012ppd/alt2012ppd.pdf"],
     "award": false
 }, {
-    "id": "pub_160",
+    "id": "pub_162",
     "year": "2012",
     "authors": [{
         "name": "Paul Holleis",
@@ -4051,7 +4099,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/holleis2012smart/holleis2012smart.pdf"],
     "award": false
 }, {
-    "id": "pub_161",
+    "id": "pub_163",
     "year": "2012",
     "authors": [{
         "name": "Max Maurer",
@@ -4074,7 +4122,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/maurer2012avi/maurer2012avi.pdf"],
     "award": false
 }, {
-    "id": "pub_162",
+    "id": "pub_164",
     "year": "2012",
     "authors": [{
         "name": "Sven Kratz",
@@ -4104,7 +4152,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/kratz2012palmspace/kratz2012palmspace.pdf"],
     "award": false
 }, {
-    "id": "pub_163",
+    "id": "pub_165",
     "year": "2012",
     "authors": [{
         "name": "Tobias Schwarz"
@@ -4129,7 +4177,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/hennecke2012avi/hennecke2012avi.pdf"],
     "award": false
 }, {
-    "id": "pub_164",
+    "id": "pub_166",
     "year": "2012",
     "authors": [{
         "name": "Jörg Müller"
@@ -4156,7 +4204,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/mueller2012chi/mueller2012chi.pdf"],
     "award": true
 }, {
-    "id": "pub_165",
+    "id": "pub_167",
     "year": "2012",
     "authors": [{
         "name": "Andreas Bulling"
@@ -4179,7 +4227,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/bulling2012chi/bulling2012chi.pdf"],
     "award": false
 }, {
-    "id": "pub_166",
+    "id": "pub_168",
     "year": "2012",
     "authors": [{
         "name": "Dominikus Baur",
@@ -4202,7 +4250,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/baur2012chi/baur2012chi.pdf"],
     "award": false
 }, {
-    "id": "pub_167",
+    "id": "pub_169",
     "year": "2012",
     "authors": [{
         "name": "Tongyan Ning"
@@ -4234,7 +4282,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/ning2011ldul/ning2011ldul.pdf"],
     "award": false
 }, {
-    "id": "pub_168",
+    "id": "pub_170",
     "year": "2012",
     "authors": [{
         "name": "Max Maurer",
@@ -4255,7 +4303,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/maurer2012chi/maurer2012chi.pdf"],
     "award": false
 }, {
-    "id": "pub_169",
+    "id": "pub_171",
     "year": "2012",
     "authors": [{
         "name": "Fabian Hennecke",
@@ -4278,7 +4326,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/hennecke2012chi/hennecke2012chi.pdf"],
     "award": false
 }, {
-    "id": "pub_170",
+    "id": "pub_172",
     "year": "2012",
     "authors": [{
         "name": "Alexander De Luca",
@@ -4306,7 +4354,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/deluca2012chi/deluca2012chi.pdf"],
     "award": false
 }, {
-    "id": "pub_171",
+    "id": "pub_173",
     "year": "2012",
     "authors": [{
         "name": "Gilles Bailly",
@@ -4335,7 +4383,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_172",
+    "id": "pub_174",
     "year": "2012",
     "authors": [{
         "name": "Florian Alt",
@@ -4358,7 +4406,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/alt2012mediacultures4/alt2012mediacultures4.pdf"],
     "award": false
 }, {
-    "id": "pub_173",
+    "id": "pub_175",
     "year": "2012",
     "authors": [{
         "name": "Florian Alt",
@@ -4381,7 +4429,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/alt2012mediacultures3/alt2012mediacultures3.pdf"],
     "award": false
 }, {
-    "id": "pub_174",
+    "id": "pub_176",
     "year": "2012",
     "authors": [{
         "name": "Florian Alt",
@@ -4399,7 +4447,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/alt2012mediacultures2/alt2012mediacultures2.pdf"],
     "award": false
 }, {
-    "id": "pub_175",
+    "id": "pub_177",
     "year": "2012",
     "authors": [{
         "name": "Florian Alt",
@@ -4417,7 +4465,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/alt2012mediacultures1/alt2012mediacultures1.pdf"],
     "award": false
 }, {
-    "id": "pub_176",
+    "id": "pub_178",
     "year": "2012",
     "authors": [{
         "name": "Florian Alt",
@@ -4441,7 +4489,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/alt2012computer/alt2012computer.pdf"],
     "award": false
 }, {
-    "id": "pub_177",
+    "id": "pub_179",
     "year": "2012",
     "authors": [{
         "name": "Julie Wagner",
@@ -4465,7 +4513,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_178",
+    "id": "pub_180",
     "year": "2012",
     "authors": [{
         "name": "Albrecht Schmidt",
@@ -4493,7 +4541,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/schmidt2012ieeepc/schmidt2012ieeepc.pdf"],
     "award": false
 }, {
-    "id": "pub_179",
+    "id": "pub_181",
     "year": "2012",
     "authors": [{
         "name": "Nemanja Memarovic"
@@ -4516,7 +4564,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/memarovic2012percom/memarovic2012percom.pdf"],
     "award": false
 }, {
-    "id": "pub_180",
+    "id": "pub_182",
     "year": "2012",
     "authors": [{
         "name": "Michel Beaudouin-Lafon"
@@ -4559,7 +4607,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_181",
+    "id": "pub_183",
     "year": "2012",
     "authors": [{
         "name": "Kati Mäkitalo-Siegl",
@@ -4585,7 +4633,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_182",
+    "id": "pub_184",
     "year": "2012",
     "authors": [{
         "name": "Alina Hang",
@@ -4617,7 +4665,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_183",
+    "id": "pub_185",
     "year": "2012",
     "authors": [{
         "name": "Alexander Wiethoff",
@@ -4646,7 +4694,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/wiethoff2012TEI/wiethoff2012TEI.pdf"],
     "award": false
 }, {
-    "id": "pub_184",
+    "id": "pub_186",
     "year": "2012",
     "authors": [{
         "name": "Hendrik Richter",
@@ -4666,7 +4714,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/richter2012tei/richter2012tei.pdf"],
     "award": false
 }, {
-    "id": "pub_185",
+    "id": "pub_187",
     "year": "2012",
     "authors": [{
         "name": "Fabian Hennecke",
@@ -4692,7 +4740,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/hennecke2012tei/hennecke2012tei.pdf", "/pubdb/publications//pub/hennecke2012tei/hennecke2012tei.video.mp4"],
     "award": false
 }, {
-    "id": "pub_186",
+    "id": "pub_188",
     "year": "2012",
     "authors": [{
         "name": "Doris Hausen",
@@ -4710,7 +4758,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/hausen2012tei_gsc/hausen2012tei_gsc.pdf"],
     "award": false
 }, {
-    "id": "pub_187",
+    "id": "pub_189",
     "year": "2012",
     "authors": [{
         "name": "Doris Hausen",
@@ -4738,7 +4786,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/hausen2012tei/hausen2012tei.pdf", "/pubdb/publications//pub/hausen2012tei/hausen2012tei.video.mp4"],
     "award": false
 }, {
-    "id": "pub_188",
+    "id": "pub_190",
     "year": "2012",
     "authors": [{
         "name": "Fabian Hennecke",
@@ -4768,7 +4816,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/hennecke2011ODhs/hennecke2011ODhs.pdf"],
     "award": false
 }, {
-    "id": "pub_190",
+    "id": "pub_192",
     "year": "2011",
     "authors": [{
         "name": "Katrin Wolf",
@@ -4794,7 +4842,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_191",
+    "id": "pub_193",
     "year": "2011",
     "authors": [{
         "name": "Henning Femmer"
@@ -4820,7 +4868,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_192",
+    "id": "pub_194",
     "year": "2011",
     "authors": [{
         "name": "Bastian Pfleging"
@@ -4845,7 +4893,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_193",
+    "id": "pub_195",
     "year": "2011",
     "authors": [{
         "name": "Alexander Wiethoff",
@@ -4866,7 +4914,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/wiethoff2011autoUI/wiethoff2011autoUI.pdf"],
     "award": false
 }, {
-    "id": "pub_194",
+    "id": "pub_196",
     "year": "2011",
     "authors": [{
         "name": "Hendrik Richter",
@@ -4887,7 +4935,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/richter2011autoUI/richter2011autoUI.pdf"],
     "award": false
 }, {
-    "id": "pub_195",
+    "id": "pub_197",
     "year": "2011",
     "authors": [{
         "name": "Florian Alt",
@@ -4914,7 +4962,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/alt2011mum2/alt2011mum2.pdf"],
     "award": false
 }, {
-    "id": "pub_196",
+    "id": "pub_198",
     "year": "2011",
     "authors": [{
         "name": "Florian Alt",
@@ -4951,7 +4999,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/alt2011mum1/alt2011mum1.pdf"],
     "award": false
 }, {
-    "id": "pub_197",
+    "id": "pub_199",
     "year": "2011",
     "authors": [{
         "name": "Sonja Rümelin",
@@ -4971,7 +5019,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/ruemelin2011autoui/ruemelin2011autoui.pdf", "/pubdb/publications/pub/ruemelin2011autoui/ruemelin2011autoui.slides.pdf"],
     "award": false
 }, {
-    "id": "pub_198",
+    "id": "pub_200",
     "year": "2011",
     "authors": [{
         "name": "Nora Broy",
@@ -5005,7 +5053,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/broy2011aui/broy2011aui.pdf"],
     "award": false
 }, {
-    "id": "pub_199",
+    "id": "pub_201",
     "year": "2011",
     "authors": [{
         "name": "Alexander Wiethoff",
@@ -5025,7 +5073,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/wiethoff2011ami/wiethoff2011ami.pdf"],
     "award": false
 }, {
-    "id": "pub_200",
+    "id": "pub_202",
     "year": "2011",
     "authors": [{
         "name": "Hendrik Richter",
@@ -5049,7 +5097,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/richter2011ami/richter2011ami.pdf"],
     "award": false
 }, {
-    "id": "pub_201",
+    "id": "pub_203",
     "year": "2011",
     "authors": [{
         "name": "Fabian Hennecke",
@@ -5072,7 +5120,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/hennecke2011its/hennecke2011its.pdf", "/pubdb/publications//pub/hennecke2011its/hennecke2011its.video.m4v"],
     "award": false
 }, {
-    "id": "pub_202",
+    "id": "pub_204",
     "year": "2011",
     "authors": [{
         "name": "Bettina Conradi",
@@ -5101,7 +5149,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/conradi2011its/conradi2011its.pdf", "/pubdb/publications//pub/conradi2011its/conradi2011its.video.mpeg"],
     "award": false
 }, {
-    "id": "pub_203",
+    "id": "pub_205",
     "year": "2011",
     "authors": [{
         "name": "Qian Qin",
@@ -5124,7 +5172,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_204",
+    "id": "pub_206",
     "year": "2011",
     "authors": [{
         "name": "Raphael Wimmer"
@@ -5144,7 +5192,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/wimmer2011tdrTouch/wimmer2011tdrTouch.pdf"],
     "award": true
 }, {
-    "id": "pub_205",
+    "id": "pub_207",
     "year": "2011",
     "authors": [{
         "name": "Sonja Rümelin",
@@ -5167,7 +5215,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/ruemelin2011uistdemo/ruemelin2011uistdemo.pdf"],
     "award": false
 }, {
-    "id": "pub_206",
+    "id": "pub_208",
     "year": "2011",
     "authors": [{
         "name": "Sonja Rümelin",
@@ -5190,7 +5238,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/ruemelin2011uist/ruemelin2011uist.pdf", "/pubdb/publications//pub/ruemelin2011uist/ruemelin2011uist.video.mp4"],
     "award": false
 }, {
-    "id": "pub_207",
+    "id": "pub_209",
     "year": "2011",
     "authors": [{
         "name": "Christine Kuehnel"
@@ -5219,7 +5267,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_208",
+    "id": "pub_210",
     "year": "2011",
     "authors": [{
         "name": "Hendrik Richter",
@@ -5248,7 +5296,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/richter2011ubicomp/richter2011ubicomp.pdf"],
     "award": false
 }, {
-    "id": "pub_209",
+    "id": "pub_211",
     "year": "2011",
     "authors": [{
         "name": "Max Maurer",
@@ -5272,7 +5320,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/maurer2011interact/maurer2011interact.pdf"],
     "award": false
 }, {
-    "id": "pub_210",
+    "id": "pub_212",
     "year": "2011",
     "authors": [{
         "name": "Bernd Schröer",
@@ -5296,7 +5344,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/loehmann2011interact02/loehmann2011interact02.pdf"],
     "award": false
 }, {
-    "id": "pub_211",
+    "id": "pub_213",
     "year": "2011",
     "authors": [{
         "name": "Sebastian Loehmann",
@@ -5326,7 +5374,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/loehmann2011interact01/loehmann2011interact01.pdf"],
     "award": false
 }, {
-    "id": "pub_212",
+    "id": "pub_214",
     "year": "2011",
     "authors": [{
         "name": "Martin Knobel",
@@ -5351,7 +5399,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/knobel2011interact/knobel2011interact.pdf"],
     "award": false
 }, {
-    "id": "pub_213",
+    "id": "pub_215",
     "year": "2011",
     "authors": [{
         "name": "Paul Holleis",
@@ -5374,7 +5422,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/holleis2011interact/holleis2011interact.pdf"],
     "award": false
 }, {
-    "id": "pub_214",
+    "id": "pub_216",
     "year": "2011",
     "authors": [{
         "name": "Dennis Guse"
@@ -5398,9 +5446,42 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_215",
+    "id": "pub_217",
     "year": "2011",
-    "authors": [],
+    "authors": [{
+        "name": "HASH(0x8319e78)",
+        "url": null
+    }, {
+        "name": "HASH(0x8319e78)",
+        "url": null
+    }, {
+        "name": "HASH(0x8319e78)",
+        "url": null
+    }, {
+        "name": "HASH(0x8319e78)",
+        "url": null
+    }, {
+        "name": "HASH(0x8319e78)",
+        "url": null
+    }, {
+        "name": "HASH(0x8319e78)",
+        "url": null
+    }, {
+        "name": "HASH(0x8319e78)",
+        "url": null
+    }, {
+        "name": "HASH(0x8319e78)",
+        "url": null
+    }, {
+        "name": "HASH(0x8319e78)",
+        "url": null
+    }, {
+        "name": "HASH(0x8319e78)",
+        "url": null
+    }, {
+        "name": "HASH(0x8319e78)",
+        "url": null
+    }],
     "title": {
         "url": "/forschung/publikationen/detail?pub=mueller2011perad",
         "name": "Pervasive Advertising"
@@ -5413,7 +5494,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/mueller2011perad/mueller2011perad.pdf"],
     "award": false
 }, {
-    "id": "pub_216",
+    "id": "pub_218",
     "year": "2011",
     "authors": [{
         "name": "Ronald Ecker",
@@ -5439,7 +5520,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/ecker2011mobilehci/ecker2011mobilehci.pdf"],
     "award": false
 }, {
-    "id": "pub_217",
+    "id": "pub_219",
     "year": "2011",
     "authors": [{
         "name": "Doris Hausen",
@@ -5481,7 +5562,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/hausen2011ubicompHS/hausen2011ubicompHS.pdf"],
     "award": false
 }, {
-    "id": "pub_218",
+    "id": "pub_220",
     "year": "2011",
     "authors": [{
         "name": "Nemanja Memarovic"
@@ -5504,7 +5585,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/memarovic2011ci/memarovic2011ci.pdf"],
     "award": false
 }, {
-    "id": "pub_219",
+    "id": "pub_221",
     "year": "2011",
     "authors": [{
         "name": "Sara Streng",
@@ -5531,7 +5612,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/streng2011ictel/streng2011ictel.pdf"],
     "award": false
 }, {
-    "id": "pub_220",
+    "id": "pub_222",
     "year": "2011",
     "authors": [{
         "name": "Max Maurer",
@@ -5554,7 +5635,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/maurer2011soups/maurer2011soups.pdf"],
     "award": false
 }, {
-    "id": "pub_221",
+    "id": "pub_223",
     "year": "2011",
     "authors": [{
         "name": "Sara Streng",
@@ -5585,7 +5666,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/streng2011cscl/streng2011cscl.pdf"],
     "award": false
 }, {
-    "id": "pub_222",
+    "id": "pub_224",
     "year": "2011",
     "authors": [{
         "name": "Michael Sedlmair",
@@ -5612,7 +5693,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/sedlmair2011ivs/sedlmair2011ivs.pdf"],
     "award": false
 }, {
-    "id": "pub_223",
+    "id": "pub_225",
     "year": "2011",
     "authors": [{
         "name": "Niklas Kirschnick"
@@ -5634,7 +5715,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_224",
+    "id": "pub_226",
     "year": "2011",
     "authors": [{
         "name": "Florian Alt",
@@ -5663,7 +5744,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/alt2012perdis/alt2012perdis.pdf"],
     "award": false
 }, {
-    "id": "pub_225",
+    "id": "pub_227",
     "year": "2011",
     "authors": [{
         "name": "Wolfgang Spiessl",
@@ -5684,7 +5765,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_226",
+    "id": "pub_228",
     "year": "2011",
     "authors": [{
         "name": "Alireza Sahami Shirazi",
@@ -5717,7 +5798,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/sahami2011pervasive/sahami2011pervasive.pdf"],
     "award": false
 }, {
-    "id": "pub_227",
+    "id": "pub_229",
     "year": "2011",
     "authors": [{
         "name": "Florian Alt",
@@ -5753,7 +5834,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/alt2011pervasive2/alt2011pervasive2.pdf"],
     "award": false
 }, {
-    "id": "pub_228",
+    "id": "pub_230",
     "year": "2011",
     "authors": [{
         "name": "Florian Alt",
@@ -5790,7 +5871,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/alt2011pervasive1/alt2011pervasive1.pdf"],
     "award": false
 }, {
-    "id": "pub_229",
+    "id": "pub_231",
     "year": "2011",
     "authors": [{
         "name": "Marc Langheinrich",
@@ -5815,7 +5896,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/langheinrich2011urba/langheinrich2011urba.pdf"],
     "award": false
 }, {
-    "id": "pub_230",
+    "id": "pub_232",
     "year": "2011",
     "authors": [{
         "name": "Gilbert Beyer",
@@ -5835,7 +5916,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/beyer2011nime/beyer2011nime.pdf"],
     "award": false
 }, {
-    "id": "pub_231",
+    "id": "pub_233",
     "year": "2011",
     "authors": [{
         "name": "Alexander Wiethoff",
@@ -5856,7 +5937,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/wiethoff2011chi/wiethoff2011chi.pdf"],
     "award": false
 }, {
-    "id": "pub_232",
+    "id": "pub_234",
     "year": "2011",
     "authors": [{
         "name": "Michael Rohs"
@@ -5878,7 +5959,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_233",
+    "id": "pub_235",
     "year": "2011",
     "authors": [{
         "name": "Michael Sedlmair",
@@ -5909,7 +5990,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/sedlmair2011chi/sedlmair2011chi.pdf"],
     "award": false
 }, {
-    "id": "pub_234",
+    "id": "pub_236",
     "year": "2011",
     "authors": [{
         "name": "Sven Kratz",
@@ -5934,7 +6015,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_235",
+    "id": "pub_237",
     "year": "2011",
     "authors": [{
         "name": "Melanie Lamara"
@@ -5954,7 +6035,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_236",
+    "id": "pub_238",
     "year": "2011",
     "authors": [{
         "name": "Gilbert Beyer",
@@ -5989,7 +6070,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/beyer2011chi/beyer2011chi.pdf", "/pubdb/publications/pub/beyer2011chi/beyer2011chi.slides.pdf"],
     "award": false
 }, {
-    "id": "pub_237",
+    "id": "pub_239",
     "year": "2011",
     "authors": [{
         "name": "Alireza Sahami",
@@ -6020,7 +6101,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_238",
+    "id": "pub_240",
     "year": "2011",
     "authors": [{
         "name": "Sebastian Boring",
@@ -6051,7 +6132,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/boring2011chi/boring2011chi.pdf"],
     "award": false
 }, {
-    "id": "pub_239",
+    "id": "pub_241",
     "year": "2011",
     "authors": [{
         "name": "Doris Hausen",
@@ -6072,7 +6153,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/hausen2011chi/hausen2011chi.pdf"],
     "award": false
 }, {
-    "id": "pub_240",
+    "id": "pub_242",
     "year": "2011",
     "authors": [{
         "name": "Alina Hang",
@@ -6090,7 +6171,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/hang2011chi/hang2011chi.pdf"],
     "award": false
 }, {
-    "id": "pub_241",
+    "id": "pub_243",
     "year": "2011",
     "authors": [{
         "name": "Dominikus Baur",
@@ -6108,7 +6189,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/baur2011chi-dc/baur2011chi-dc.pdf"],
     "award": false
 }, {
-    "id": "pub_242",
+    "id": "pub_244",
     "year": "2011",
     "authors": [{
         "name": "Max Maurer",
@@ -6132,7 +6213,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/maurer2011chi/maurer2011chi.pdf"],
     "award": false
 }, {
-    "id": "pub_243",
+    "id": "pub_245",
     "year": "2011",
     "authors": [{
         "name": "Sven Gehring"
@@ -6155,7 +6236,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/gehring2011chi-ws/gehring2011chi-ws.pdf"],
     "award": false
 }, {
-    "id": "pub_244",
+    "id": "pub_246",
     "year": "2011",
     "authors": [{
         "name": "Alexander De Luca",
@@ -6189,7 +6270,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/deluca2011chi/deluca2011chi.pdf"],
     "award": false
 }, {
-    "id": "pub_245",
+    "id": "pub_247",
     "year": "2011",
     "authors": [{
         "name": "Gilbert Beyer",
@@ -6210,7 +6291,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/beyer2011chi2/beyer2011chi2.pdf", "/pubdb/publications/pub/beyer2011chi2/beyer2011chi2.slides.pdf"],
     "award": false
 }, {
-    "id": "pub_246",
+    "id": "pub_248",
     "year": "2011",
     "authors": [{
         "name": "Raphael Wimmer",
@@ -6228,7 +6309,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/wimmer2011WBIchapter/wimmer2011WBIchapter.pdf"],
     "award": false
 }, {
-    "id": "pub_247",
+    "id": "pub_249",
     "year": "2011",
     "authors": [{
         "name": "Gilbert Beyer",
@@ -6248,7 +6329,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_248",
+    "id": "pub_250",
     "year": "2011",
     "authors": [{
         "name": "Nikola Serbedzija"
@@ -6268,7 +6349,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_249",
+    "id": "pub_251",
     "year": "2011",
     "authors": [{
         "name": "Dominik Bial"
@@ -6294,7 +6375,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/bial2011chi/bial2011chi.pdf"],
     "award": false
 }, {
-    "id": "pub_250",
+    "id": "pub_252",
     "year": "2011",
     "authors": [{
         "name": "Mathieu Nancel",
@@ -6322,7 +6403,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_251",
+    "id": "pub_253",
     "year": "2011",
     "authors": [{
         "name": "Hendrik Richter",
@@ -6345,7 +6426,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/richter2011AugmentedHuman/richter2011AugmentedHuman.pdf"],
     "award": false
 }, {
-    "id": "pub_252",
+    "id": "pub_254",
     "year": "2011",
     "authors": [{
         "name": "Gregor Broll",
@@ -6375,7 +6456,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/broll2011nfc/broll2011nfc.pdf"],
     "award": false
 }, {
-    "id": "pub_253",
+    "id": "pub_255",
     "year": "2011",
     "authors": [{
         "name": "Sven Kratz",
@@ -6395,7 +6476,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/kratzrohs2011protractor3d/kratzrohs2011protractor3d.pdf"],
     "award": false
 }, {
-    "id": "pub_254",
+    "id": "pub_256",
     "year": "2011",
     "authors": [{
         "name": "Sven Kratz",
@@ -6415,7 +6496,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/kratz2011protractor3d/kratz2011protractor3d.pdf"],
     "award": false
 }, {
-    "id": "pub_255",
+    "id": "pub_257",
     "year": "2011",
     "authors": [{
         "name": "Dominikus Baur",
@@ -6441,7 +6522,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/baur2011iui/baur2011iui.pdf"],
     "award": false
 }, {
-    "id": "pub_256",
+    "id": "pub_258",
     "year": "2011",
     "authors": [{
         "name": "Alexander Wiethoff",
@@ -6461,7 +6542,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/wiethoff2011TEI_/wiethoff2011TEI_.pdf"],
     "award": false
 }, {
-    "id": "pub_257",
+    "id": "pub_259",
     "year": "2011",
     "authors": [{
         "name": "Doris Hausen",
@@ -6482,7 +6563,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/hausen2011tei/hausen2011tei.pdf"],
     "award": false
 }, {
-    "id": "pub_258",
+    "id": "pub_260",
     "year": "2011",
     "authors": [{
         "name": "Lorenzo T. D'Angelo",
@@ -6510,7 +6591,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_259",
+    "id": "pub_261",
     "year": "2011",
     "authors": [{
         "name": "Raphael Wimmer",
@@ -6528,7 +6609,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/wimmer2011GRASP/wimmer2011GRASP.pdf"],
     "award": false
 }, {
-    "id": "pub_260",
+    "id": "pub_262",
     "year": "2011",
     "authors": [{
         "name": "Alexander Wiethoff",
@@ -6551,7 +6632,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/wiethoff2011TEI/wiethoff2011TEI.pdf"],
     "award": false
 }, {
-    "id": "pub_261",
+    "id": "pub_263",
     "year": "2011",
     "authors": [{
         "name": "Hendrik Richter",
@@ -6572,7 +6653,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/richter2011tei/richter2011tei.pdf"],
     "award": false
 }, {
-    "id": "pub_262",
+    "id": "pub_264",
     "year": "2011",
     "authors": [{
         "name": "Gregor Broll",
@@ -6597,7 +6678,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/broll2011tei/broll2011tei.pdf"],
     "award": false
 }, {
-    "id": "pub_263",
+    "id": "pub_265",
     "year": "2011",
     "authors": [{
         "name": "Heinrich Hussmann",
@@ -6619,7 +6700,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_264",
+    "id": "pub_266",
     "year": "2011",
     "authors": [{
         "name": "Linshu Duan",
@@ -6644,7 +6725,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/duan2011eics/duan2011eics.pdf"],
     "award": false
 }, {
-    "id": "pub_265",
+    "id": "pub_267",
     "year": "2011",
     "authors": [{
         "name": "Max Meier"
@@ -6664,7 +6745,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_267",
+    "id": "pub_269",
     "year": "2010",
     "authors": [{
         "name": "Florian Echtler",
@@ -6688,7 +6769,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/echtler2010hc/echtler2010hc.pdf"],
     "award": false
 }, {
-    "id": "pub_268",
+    "id": "pub_270",
     "year": "2010",
     "authors": [{
         "name": "Hendrik Richter",
@@ -6714,7 +6795,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/richter2010autoui/richter2010autoui.pdf"],
     "award": false
 }, {
-    "id": "pub_269",
+    "id": "pub_271",
     "year": "2010",
     "authors": [{
         "name": "Ronald Ecker",
@@ -6740,7 +6821,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_270",
+    "id": "pub_272",
     "year": "2010",
     "authors": [{
         "name": "Yaxi Chen",
@@ -6763,7 +6844,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/chen2010icmi-mlmi/chen2010icmi-mlmi.pdf"],
     "award": false
 }, {
-    "id": "pub_271",
+    "id": "pub_273",
     "year": "2010",
     "authors": [{
         "name": "Bettina Conradi",
@@ -6785,7 +6866,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/conradi2010its/conradi2010its.pdf"],
     "award": false
 }, {
-    "id": "pub_272",
+    "id": "pub_274",
     "year": "2010",
     "authors": [{
         "name": "Florian Alt",
@@ -6816,7 +6897,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/alt2010autoui/alt2010autoui.pdf"],
     "award": false
 }, {
-    "id": "pub_273",
+    "id": "pub_275",
     "year": "2010",
     "authors": [{
         "name": "Dominikus Baur",
@@ -6842,7 +6923,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/baur2010infovis/baur2010infovis.pdf"],
     "award": false
 }, {
-    "id": "pub_274",
+    "id": "pub_276",
     "year": "2010",
     "authors": [{
         "name": "Raphael Wimmer",
@@ -6874,7 +6955,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/wimmer2010Curve/wimmer2010Curve.pdf"],
     "award": false
 }, {
-    "id": "pub_275",
+    "id": "pub_277",
     "year": "2010",
     "authors": [{
         "name": "Sara Streng",
@@ -6906,7 +6987,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/streng2010nordichi/streng2010nordichi.pdf"],
     "award": false
 }, {
-    "id": "pub_276",
+    "id": "pub_278",
     "year": "2010",
     "authors": [{
         "name": "Max Maurer",
@@ -6933,7 +7014,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/maurer2010nordichi/maurer2010nordichi.pdf"],
     "award": false
 }, {
-    "id": "pub_277",
+    "id": "pub_279",
     "year": "2010",
     "authors": [{
         "name": "Florian Alt",
@@ -6961,7 +7042,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/alt2010nordichi/alt2010nordichi.pdf"],
     "award": false
 }, {
-    "id": "pub_278",
+    "id": "pub_280",
     "year": "2010",
     "authors": [{
         "name": "Sonja Rümelin",
@@ -6979,7 +7060,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/ruemelin2010dipl/ruemelin2010dipl.pdf"],
     "award": false
 }, {
-    "id": "pub_279",
+    "id": "pub_281",
     "year": "2010",
     "authors": [{
         "name": "Robert Hardy"
@@ -7007,7 +7088,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_280",
+    "id": "pub_282",
     "year": "2010",
     "authors": [{
         "name": "Michael Rohs"
@@ -7036,7 +7117,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/rohs2010worldcupinion/rohs2010worldcupinion.pdf"],
     "award": false
 }, {
-    "id": "pub_281",
+    "id": "pub_283",
     "year": "2010",
     "authors": [{
         "name": "Gregor Broll",
@@ -7063,7 +7144,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/broll2010ucw/broll2010ucw.pdf"],
     "award": false
 }, {
-    "id": "pub_282",
+    "id": "pub_284",
     "year": "2010",
     "authors": [{
         "name": "Benjamin Bähr"
@@ -7085,7 +7166,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/baehr2010prototyping/baehr2010prototyping.pdf"],
     "award": false
 }, {
-    "id": "pub_283",
+    "id": "pub_285",
     "year": "2010",
     "authors": [{
         "name": "Chris Kray",
@@ -7109,7 +7190,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/kray2010gestures/kray2010gestures.pdf"],
     "award": false
 }, {
-    "id": "pub_284",
+    "id": "pub_286",
     "year": "2010",
     "authors": [{
         "name": "Sven Kratz",
@@ -7131,7 +7212,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/kratz2010saz/kratz2010saz.pdf"],
     "award": false
 }, {
-    "id": "pub_285",
+    "id": "pub_287",
     "year": "2010",
     "authors": [{
         "name": "Gregor Broll",
@@ -7156,7 +7237,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/broll2010mobilehcidesign/broll2010mobilehcidesign.pdf"],
     "award": false
 }, {
-    "id": "pub_286",
+    "id": "pub_288",
     "year": "2010",
     "authors": [{
         "name": "Gregor Broll",
@@ -7177,7 +7258,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/broll2010mobilehci/broll2010mobilehci.pdf"],
     "award": false
 }, {
-    "id": "pub_287",
+    "id": "pub_289",
     "year": "2010",
     "authors": [{
         "name": "Kadri Januzaj"
@@ -7197,7 +7278,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_288",
+    "id": "pub_290",
     "year": "2010",
     "authors": [{
         "name": "Jörg Müller",
@@ -7223,7 +7304,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/mueller2010mm/mueller2010mm.pdf"],
     "award": false
 }, {
-    "id": "pub_289",
+    "id": "pub_291",
     "year": "2010",
     "authors": [{
         "name": "Linshu Duan",
@@ -7246,7 +7327,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/duan2010valid/duan2010valid.pdf"],
     "award": false
 }, {
-    "id": "pub_290",
+    "id": "pub_292",
     "year": "2010",
     "authors": [{
         "name": "Alexander Wiethoff",
@@ -7267,7 +7348,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/wiethoff2010dis/wiethoff2010dis.pdf"],
     "award": false
 }, {
-    "id": "pub_291",
+    "id": "pub_293",
     "year": "2010",
     "authors": [{
         "name": "Bettina Conradi",
@@ -7292,7 +7373,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/conradi2010dis/conradi2010dis.pdf"],
     "award": false
 }, {
-    "id": "pub_292",
+    "id": "pub_294",
     "year": "2010",
     "authors": [{
         "name": "Alina Hang",
@@ -7316,7 +7397,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/hang2010dis/hang2010dis.pdf"],
     "award": false
 }, {
-    "id": "pub_293",
+    "id": "pub_295",
     "year": "2010",
     "authors": [{
         "name": "Alexander De Luca",
@@ -7342,7 +7423,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/deluca2010dis/deluca2010dis.pdf"],
     "award": false
 }, {
-    "id": "pub_294",
+    "id": "pub_296",
     "year": "2010",
     "authors": [{
         "name": "Yaxi Chen",
@@ -7362,7 +7443,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/chen2010ISMIR/chen2010ISMIR.pdf"],
     "award": false
 }, {
-    "id": "pub_295",
+    "id": "pub_297",
     "year": "2010",
     "authors": [{
         "name": "Dominikus Baur",
@@ -7385,7 +7466,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/baur2010ismir/baur2010ismir.pdf"],
     "award": false
 }, {
-    "id": "pub_296",
+    "id": "pub_298",
     "year": "2010",
     "authors": [{
         "name": "Hendrik Richter",
@@ -7403,7 +7484,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/richter2010eurohaptics/richter2010eurohaptics.pdf"],
     "award": false
 }, {
-    "id": "pub_297",
+    "id": "pub_299",
     "year": "2010",
     "authors": [{
         "name": "Sebastian Boring",
@@ -7421,7 +7502,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/boring2010thesis/boring2010thesis.pdf"],
     "award": false
 }, {
-    "id": "pub_298",
+    "id": "pub_300",
     "year": "2010",
     "authors": [{
         "name": "Max Maurer",
@@ -7439,7 +7520,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/maurer2010soups/maurer2010soups.pdf"],
     "award": false
 }, {
-    "id": "pub_299",
+    "id": "pub_301",
     "year": "2010",
     "authors": [{
         "name": "Alexander De Luca",
@@ -7463,7 +7544,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/deluca2010soups/deluca2010soups.pdf"],
     "award": false
 }, {
-    "id": "pub_300",
+    "id": "pub_302",
     "year": "2010",
     "authors": [{
         "name": "Hendrik Richter",
@@ -7483,7 +7564,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/richter2010icchp/richter2010icchp.pdf"],
     "award": false
 }, {
-    "id": "pub_301",
+    "id": "pub_303",
     "year": "2010",
     "authors": [{
         "name": "Alexander Wiethoff",
@@ -7510,7 +7591,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/wiethoff2010t4e/wiethoff2010t4e.pdf"],
     "award": false
 }, {
-    "id": "pub_302",
+    "id": "pub_304",
     "year": "2010",
     "authors": [{
         "name": "Alexander Wiethoff",
@@ -7531,7 +7612,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/wiethoff2010sg/wiethoff2010sg.pdf", "/pubdb/publications//pub/wiethoff2010sg/wiethoff2010sg.video.mp4"],
     "award": false
 }, {
-    "id": "pub_303",
+    "id": "pub_305",
     "year": "2010",
     "authors": [{
         "name": "Florian Echtler",
@@ -7555,7 +7636,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/echtler2010gestures/echtler2010gestures.pdf"],
     "award": false
 }, {
-    "id": "pub_304",
+    "id": "pub_306",
     "year": "2010",
     "authors": [{
         "name": "Raphael Wimmer",
@@ -7576,7 +7657,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/wimmer2010Window/wimmer2010Window.pdf"],
     "award": false
 }, {
-    "id": "pub_305",
+    "id": "pub_307",
     "year": "2010",
     "authors": [{
         "name": "Georg Essl",
@@ -7599,7 +7680,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/essl2010pressuremusic/essl2010pressuremusic.pdf"],
     "award": false
 }, {
-    "id": "pub_306",
+    "id": "pub_308",
     "year": "2010",
     "authors": [{
         "name": "Emanuel von Zezschwitz",
@@ -7617,7 +7698,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/zezschwitz2010dipl/zezschwitz2010dipl.pdf"],
     "award": false
 }, {
-    "id": "pub_307",
+    "id": "pub_309",
     "year": "2010",
     "authors": [{
         "name": "Ronald Ecker",
@@ -7641,7 +7722,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/ecker2010persuasive/ecker2010persuasive.pdf"],
     "award": false
 }, {
-    "id": "pub_308",
+    "id": "pub_310",
     "year": "2010",
     "authors": [{
         "name": "Alexander Müller"
@@ -7667,7 +7748,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/mueller2011pervasive/mueller2011pervasive.pdf"],
     "award": false
 }, {
-    "id": "pub_309",
+    "id": "pub_311",
     "year": "2010",
     "authors": [{
         "name": "Florian Alt",
@@ -7695,7 +7776,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/alt2010nime/alt2010nime.pdf"],
     "award": false
 }, {
-    "id": "pub_310",
+    "id": "pub_312",
     "year": "2010",
     "authors": [{
         "name": "Julian Seifert",
@@ -7722,7 +7803,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/seifert2010pervasive/seifert2010pervasive.pdf"],
     "award": false
 }, {
-    "id": "pub_311",
+    "id": "pub_313",
     "year": "2010",
     "authors": [{
         "name": "Max Maurer",
@@ -7740,7 +7821,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/maurer2010iwssispmu/maurer2010iwssispmu.pdf"],
     "award": false
 }, {
-    "id": "pub_312",
+    "id": "pub_314",
     "year": "2010",
     "authors": [{
         "name": "Martin Hommer"
@@ -7771,7 +7852,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/hommer2010crowds/hommer2010crowds.pdf"],
     "award": false
 }, {
-    "id": "pub_313",
+    "id": "pub_315",
     "year": "2010",
     "authors": [{
         "name": "Paul Holleis",
@@ -7794,7 +7875,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/holleis2010pervasiveadvertising/holleis2010pervasiveadvertising.pdf"],
     "award": false
 }, {
-    "id": "pub_314",
+    "id": "pub_316",
     "year": "2010",
     "authors": [{
         "name": "Sebastian Boring",
@@ -7815,7 +7896,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/boring2010iwssispmu/boring2010iwssispmu.pdf"],
     "award": false
 }, {
-    "id": "pub_315",
+    "id": "pub_317",
     "year": "2010",
     "authors": [{
         "name": "Gilbert Beyer",
@@ -7846,7 +7927,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/beyer2010pervasive/beyer2010pervasive.pdf", "/pubdb/publications/pub/beyer2010pervasive/beyer2010pervasive.slides.pdf"],
     "award": false
 }, {
-    "id": "pub_316",
+    "id": "pub_318",
     "year": "2010",
     "authors": [{
         "name": "Inbal Reif"
@@ -7872,7 +7953,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/reif2010chi/reif2010chi.pdf"],
     "award": false
 }, {
-    "id": "pub_317",
+    "id": "pub_319",
     "year": "2010",
     "authors": [{
         "name": "Juan David Hincapie Ramos"
@@ -7895,7 +7976,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/ramos2010chi/ramos2010chi.pdf"],
     "award": false
 }, {
-    "id": "pub_318",
+    "id": "pub_320",
     "year": "2010",
     "authors": [{
         "name": "Julian Mennenöh"
@@ -7925,7 +8006,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/mennenoeh2010mrsg/mennenoeh2010mrsg.pdf"],
     "award": false
 }, {
-    "id": "pub_319",
+    "id": "pub_321",
     "year": "2010",
     "authors": [{
         "name": "Gilbert Beyer",
@@ -7945,7 +8026,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_320",
+    "id": "pub_322",
     "year": "2010",
     "authors": [{
         "name": "Julie Wagner",
@@ -7966,7 +8047,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_321",
+    "id": "pub_323",
     "year": "2010",
     "authors": [{
         "name": "Wolfgang Spiessl",
@@ -7986,7 +8067,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_322",
+    "id": "pub_324",
     "year": "2010",
     "authors": [{
         "name": "Petra Isenberg",
@@ -8016,7 +8097,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/isenberg2010covis/isenberg2010covis.pdf"],
     "award": false
 }, {
-    "id": "pub_323",
+    "id": "pub_325",
     "year": "2010",
     "authors": [{
         "name": "Dominikus Baur",
@@ -8055,7 +8136,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/baur2010infovisHS/baur2010infovisHS.pdf"],
     "award": false
 }, {
-    "id": "pub_324",
+    "id": "pub_326",
     "year": "2010",
     "authors": [{
         "name": "Sebastian Boring",
@@ -8085,7 +8166,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/boring2010chi/boring2010chi.pdf", "/pubdb/publications//pub/boring2010chi/boring2010chi.video.wmv"],
     "award": false
 }, {
-    "id": "pub_325",
+    "id": "pub_327",
     "year": "2010",
     "authors": [{
         "name": "Heiko Drewes",
@@ -8103,7 +8184,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/drewes2010chi/drewes2010chi.pdf"],
     "award": false
 }, {
-    "id": "pub_326",
+    "id": "pub_328",
     "year": "2010",
     "authors": [{
         "name": "Alexander Wiethoff",
@@ -8127,7 +8208,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/wiethoff2010chi/wiethoff2010chi.pdf"],
     "award": false
 }, {
-    "id": "pub_327",
+    "id": "pub_329",
     "year": "2010",
     "authors": [{
         "name": "Craig Stewart"
@@ -8152,7 +8233,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/stewart2010pressure/stewart2010pressure.pdf"],
     "award": false
 }, {
-    "id": "pub_328",
+    "id": "pub_330",
     "year": "2010",
     "authors": [{
         "name": "Albrecht Schmidt",
@@ -8179,7 +8260,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_329",
+    "id": "pub_331",
     "year": "2010",
     "authors": [{
         "name": "Michael Sedlmair"
@@ -8205,7 +8286,7 @@ var pubdb = [{
     "downloads": [],
     "award": true
 }, {
-    "id": "pub_330",
+    "id": "pub_332",
     "year": "2010",
     "authors": [{
         "name": "Sven Kratz",
@@ -8228,7 +8309,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/kratz2010naturaluiphone/kratz2010naturaluiphone.pdf"],
     "award": false
 }, {
-    "id": "pub_331",
+    "id": "pub_333",
     "year": "2010",
     "authors": [{
         "name": "Alexander De Luca",
@@ -8251,7 +8332,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/deluca2010chi/deluca2010chi.pdf"],
     "award": false
 }, {
-    "id": "pub_332",
+    "id": "pub_334",
     "year": "2010",
     "authors": [{
         "name": "Dominikus Baur",
@@ -8269,7 +8350,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/baur2010knowthyself/baur2010knowthyself.pdf"],
     "award": false
 }, {
-    "id": "pub_333",
+    "id": "pub_335",
     "year": "2010",
     "authors": [{
         "name": "Florian Alt",
@@ -8304,7 +8385,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/alt2010percom/alt2010percom.pdf"],
     "award": false
 }, {
-    "id": "pub_334",
+    "id": "pub_336",
     "year": "2010",
     "authors": [{
         "name": "Lorenzo T. D'Angelo",
@@ -8332,7 +8413,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_335",
+    "id": "pub_337",
     "year": "2010",
     "authors": [{
         "name": "Sven Kratz",
@@ -8352,7 +8433,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/kratz2010trackballrear/kratz2010trackballrear.pdf"],
     "award": false
 }, {
-    "id": "pub_336",
+    "id": "pub_338",
     "year": "2010",
     "authors": [{
         "name": "Alireza Sahami Shirazi",
@@ -8381,7 +8462,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/sahami2010ubicomp/sahami2010ubicomp.pdf"],
     "award": false
 }, {
-    "id": "pub_337",
+    "id": "pub_339",
     "year": "2010",
     "authors": [{
         "name": "David Kirk"
@@ -8410,7 +8491,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/kirk2009cscw/kirk2009cscw.pdf"],
     "award": false
 }, {
-    "id": "pub_338",
+    "id": "pub_340",
     "year": "2010",
     "authors": [{
         "name": "Bettina Conradi",
@@ -8446,7 +8527,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/conradi2010prototypingHS/conradi2010prototypingHS.pdf"],
     "award": false
 }, {
-    "id": "pub_339",
+    "id": "pub_341",
     "year": "2010",
     "authors": [{
         "name": "Yaxi Chen",
@@ -8470,7 +8551,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/chen2010VISSW2/chen2010VISSW2.pdf"],
     "award": false
 }, {
-    "id": "pub_340",
+    "id": "pub_342",
     "year": "2010",
     "authors": [{
         "name": "Yaxi Chen",
@@ -8494,7 +8575,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/chen2010VISSW/chen2010VISSW.pdf"],
     "award": false
 }, {
-    "id": "pub_341",
+    "id": "pub_343",
     "year": "2010",
     "authors": [{
         "name": "Dominikus Baur",
@@ -8518,7 +8599,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/baur2010iui/baur2010iui.pdf", "/pubdb/publications//pub/baur2010iui/baur2010iui.video.wmv"],
     "award": false
 }, {
-    "id": "pub_342",
+    "id": "pub_344",
     "year": "2010",
     "authors": [{
         "name": "Sven Kratz",
@@ -8538,7 +8619,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/kratz2010threedollar/kratz2010threedollar.pdf"],
     "award": false
 }, {
-    "id": "pub_343",
+    "id": "pub_345",
     "year": "2010",
     "authors": [{
         "name": "Dominikus Baur",
@@ -8562,7 +8643,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/baur2010miaa/baur2010miaa.pdf"],
     "award": false
 }, {
-    "id": "pub_344",
+    "id": "pub_346",
     "year": "2010",
     "authors": [{
         "name": "Florence Balagtas-Fernandez",
@@ -8585,7 +8666,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/balagtasfernandez2010iui/balagtasfernandez2010iui.pdf", "/pubdb/publications/pub/balagtasfernandez2010iui/balagtasfernandez2010iui.slides.pdf"],
     "award": false
 }, {
-    "id": "pub_345",
+    "id": "pub_347",
     "year": "2010",
     "authors": [{
         "name": "Raphael Wimmer",
@@ -8603,7 +8684,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/wimmer2010FlyEye/wimmer2010FlyEye.pdf"],
     "award": false
 }, {
-    "id": "pub_346",
+    "id": "pub_348",
     "year": "2010",
     "authors": [{
         "name": "Paul Holleis",
@@ -8632,7 +8713,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_347",
+    "id": "pub_349",
     "year": "2010",
     "authors": [{
         "name": "Alireza Sahami Shirazi",
@@ -8660,7 +8741,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/sahami2010chi/sahami2010chi.pdf"],
     "award": false
 }, {
-    "id": "pub_348",
+    "id": "pub_350",
     "year": "2010",
     "authors": [{
         "name": "Albrecht Schmidt",
@@ -8684,7 +8765,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_349",
+    "id": "pub_351",
     "year": "2010",
     "authors": [{
         "name": "Linshu Duan",
@@ -8707,7 +8788,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/duan2010pv/duan2010pv.pdf"],
     "award": false
 }, {
-    "id": "pub_350",
+    "id": "pub_352",
     "year": "2010",
     "authors": [{
         "name": "Linshu Duan",
@@ -8730,7 +8811,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/duan2010gi/duan2010gi.pdf"],
     "award": false
 }, {
-    "id": "pub_351",
+    "id": "pub_353",
     "year": "2010",
     "authors": [{
         "name": "Yaxi Chen",
@@ -8757,7 +8838,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_352",
+    "id": "pub_354",
     "year": "2010",
     "authors": [{
         "name": "Gilbert Beyer",
@@ -8781,7 +8862,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_354",
+    "id": "pub_356",
     "year": "2009",
     "authors": [{
         "name": "Alexander Wiethoff",
@@ -8801,7 +8882,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/wiethoff2009marktundtechnik/wiethoff2009marktundtechnik.pdf"],
     "award": false
 }, {
-    "id": "pub_355",
+    "id": "pub_357",
     "year": "2009",
     "authors": [{
         "name": "Gregor Broll",
@@ -8832,7 +8913,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/broll2009ieeeic/broll2009ieeeic.pdf"],
     "award": false
 }, {
-    "id": "pub_356",
+    "id": "pub_358",
     "year": "2009",
     "authors": [{
         "name": "Sara Streng",
@@ -8859,7 +8940,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_357",
+    "id": "pub_359",
     "year": "2009",
     "authors": [{
         "name": "Sara Streng",
@@ -8886,7 +8967,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_358",
+    "id": "pub_360",
     "year": "2009",
     "authors": [{
         "name": "Alexander De Luca",
@@ -8912,7 +8993,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/deluca2009ozchi/deluca2009ozchi.pdf"],
     "award": false
 }, {
-    "id": "pub_359",
+    "id": "pub_361",
     "year": "2009",
     "authors": [{
         "name": "Sebastian Boring",
@@ -8935,7 +9016,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/boring2009ozchi/boring2009ozchi.pdf", "/pubdb/publications/pub/boring2009ozchi/boring2009ozchi.slides.pdf"],
     "award": false
 }, {
-    "id": "pub_360",
+    "id": "pub_362",
     "year": "2009",
     "authors": [{
         "name": "Raphael Wimmer",
@@ -8964,7 +9045,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/wimmer2009CurvePoster/wimmer2009CurvePoster.pdf"],
     "award": false
 }, {
-    "id": "pub_361",
+    "id": "pub_363",
     "year": "2009",
     "authors": [{
         "name": "Mark Hancock"
@@ -8991,7 +9072,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/hancock2009its/hancock2009its.pdf"],
     "award": false
 }, {
-    "id": "pub_362",
+    "id": "pub_364",
     "year": "2009",
     "authors": [{
         "name": "Yaxi Chen",
@@ -9009,7 +9090,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/chen2009ICWI/chen2009ICWI.pdf"],
     "award": false
 }, {
-    "id": "pub_363",
+    "id": "pub_365",
     "year": "2009",
     "authors": [{
         "name": "Florence Balagtas-Fernandez",
@@ -9030,7 +9111,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/balagtasfernandez2009ase/balagtasfernandez2009ase.pdf", "/pubdb/publications/pub/balagtasfernandez2009ase/balagtasfernandez2009ase.slides.pdf"],
     "award": false
 }, {
-    "id": "pub_364",
+    "id": "pub_366",
     "year": "2009",
     "authors": [{
         "name": "Florian Alt"
@@ -9063,7 +9144,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/alt2009ami/alt2009ami.pdf"],
     "award": true
 }, {
-    "id": "pub_365",
+    "id": "pub_367",
     "year": "2009",
     "authors": [{
         "name": "Otmar Hilliges",
@@ -9094,7 +9175,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/hilliges2009uist/hilliges2009uist.pdf", "/pubdb/publications//pub/hilliges2009uist/hilliges2009uist.video.wmv"],
     "award": false
 }, {
-    "id": "pub_366",
+    "id": "pub_368",
     "year": "2009",
     "authors": [{
         "name": "Dominikus Baur",
@@ -9117,7 +9198,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/baur2009ismir/baur2009ismir.pdf"],
     "award": false
 }, {
-    "id": "pub_367",
+    "id": "pub_369",
     "year": "2009",
     "authors": [{
         "name": "Michael Sedlmair",
@@ -9138,7 +9219,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/sedlmair2009visWeekPoster/sedlmair2009visWeekPoster.pdf"],
     "award": false
 }, {
-    "id": "pub_368",
+    "id": "pub_370",
     "year": "2009",
     "authors": [{
         "name": "Michael Sedlmair",
@@ -9156,7 +9237,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/sedlmair2009visWeekDC/sedlmair2009visWeekDC.pdf"],
     "award": false
 }, {
-    "id": "pub_369",
+    "id": "pub_371",
     "year": "2009",
     "authors": [{
         "name": "Georg Essl",
@@ -9179,7 +9260,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/essl2009sandwichdemo/essl2009sandwichdemo.pdf"],
     "award": false
 }, {
-    "id": "pub_370",
+    "id": "pub_372",
     "year": "2009",
     "authors": [{
         "name": "Florian Alt",
@@ -9208,7 +9289,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/alt2009perad2/alt2009perad2.pdf"],
     "award": false
 }, {
-    "id": "pub_371",
+    "id": "pub_373",
     "year": "2009",
     "authors": [{
         "name": "Kati Mäkitalo-Siegl",
@@ -9234,7 +9315,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_372",
+    "id": "pub_374",
     "year": "2009",
     "authors": [{
         "name": "Ronald Ecker",
@@ -9257,7 +9338,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_373",
+    "id": "pub_375",
     "year": "2009",
     "authors": [{
         "name": "Alex Messner"
@@ -9284,7 +9365,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/messner2009mobilehci/messner2009mobilehci.pdf"],
     "award": false
 }, {
-    "id": "pub_374",
+    "id": "pub_376",
     "year": "2009",
     "authors": [{
         "name": "Gregor Broll",
@@ -9310,7 +9391,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/broll2009mobilehci/broll2009mobilehci.pdf"],
     "award": false
 }, {
-    "id": "pub_375",
+    "id": "pub_377",
     "year": "2009",
     "authors": [{
         "name": "Magdalena Blöckner"
@@ -9337,7 +9418,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/bloeckner2009mobilehci/bloeckner2009mobilehci.pdf"],
     "award": false
 }, {
-    "id": "pub_376",
+    "id": "pub_378",
     "year": "2009",
     "authors": [{
         "name": "Julian Seifert",
@@ -9361,7 +9442,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/seifert2009mobilehci/seifert2009mobilehci.pdf"],
     "award": false
 }, {
-    "id": "pub_377",
+    "id": "pub_379",
     "year": "2009",
     "authors": [{
         "name": "Johannes Schöning",
@@ -9392,7 +9473,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/schoening2009photomap/schoening2009photomap.pdf"],
     "award": false
 }, {
-    "id": "pub_378",
+    "id": "pub_380",
     "year": "2009",
     "authors": [{
         "name": "Michael Rohs"
@@ -9424,7 +9505,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/rohs2009ItemDensity/rohs2009ItemDensity.pdf"],
     "award": false
 }, {
-    "id": "pub_379",
+    "id": "pub_381",
     "year": "2009",
     "authors": [{
         "name": "Max Maurer",
@@ -9445,7 +9526,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/maurer2009mobilehci/maurer2009mobilehci.pdf"],
     "award": false
 }, {
-    "id": "pub_380",
+    "id": "pub_382",
     "year": "2009",
     "authors": [{
         "name": "Markus Löchtefeld",
@@ -9471,7 +9552,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/loechtefeld2009LittleProjectedPlanet/loechtefeld2009LittleProjectedPlanet.pdf"],
     "award": false
 }, {
-    "id": "pub_381",
+    "id": "pub_383",
     "year": "2009",
     "authors": [{
         "name": "Sven Kratz",
@@ -9491,7 +9572,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/kratz2009hoverflow/kratz2009hoverflow.pdf"],
     "award": false
 }, {
-    "id": "pub_382",
+    "id": "pub_384",
     "year": "2009",
     "authors": [{
         "name": "Ronald Ecker",
@@ -9518,7 +9599,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/ecker2009mobilehci/ecker2009mobilehci.pdf"],
     "award": false
 }, {
-    "id": "pub_383",
+    "id": "pub_385",
     "year": "2009",
     "authors": [{
         "name": "Gilbert Beyer",
@@ -9540,7 +9621,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/beyer2009muc/beyer2009muc.pdf", "/pubdb/publications/pub/beyer2009muc/beyer2009muc.slides.pdf"],
     "award": false
 }, {
-    "id": "pub_384",
+    "id": "pub_386",
     "year": "2009",
     "authors": [{
         "name": "Alireza Sahami Shirazi",
@@ -9573,7 +9654,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/sahami2009mobilehci/sahami2009mobilehci.pdf"],
     "award": false
 }, {
-    "id": "pub_385",
+    "id": "pub_387",
     "year": "2009",
     "authors": [{
         "name": "Chris Kray",
@@ -9599,7 +9680,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_386",
+    "id": "pub_388",
     "year": "2009",
     "authors": [{
         "name": "Bettina Conradi",
@@ -9620,7 +9701,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/conradi2009hci/conradi2009hci.pdf"],
     "award": false
 }, {
-    "id": "pub_387",
+    "id": "pub_389",
     "year": "2009",
     "authors": [{
         "name": "Heiko Drewes",
@@ -9641,7 +9722,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/drewes2009interact/drewes2009interact.pdf"],
     "award": false
 }, {
-    "id": "pub_388",
+    "id": "pub_390",
     "year": "2009",
     "authors": [{
         "name": "Yaxi Chen",
@@ -9664,7 +9745,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/chen2009interact/chen2009interact.pdf"],
     "award": false
 }, {
-    "id": "pub_389",
+    "id": "pub_391",
     "year": "2009",
     "authors": [{
         "name": "Florian Alt",
@@ -9691,7 +9772,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/alt2009interact/alt2009interact.pdf"],
     "award": false
 }, {
-    "id": "pub_390",
+    "id": "pub_392",
     "year": "2009",
     "authors": [{
         "name": "Florence Balagtas-Fernandez",
@@ -9714,7 +9795,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/balagtasfernandez2009interact/balagtasfernandez2009interact.pdf"],
     "award": false
 }, {
-    "id": "pub_391",
+    "id": "pub_393",
     "year": "2009",
     "authors": [{
         "name": "Fabian Hennecke",
@@ -9750,7 +9831,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/hennecke2009IShs/hennecke2009IShs.pdf"],
     "award": false
 }, {
-    "id": "pub_392",
+    "id": "pub_394",
     "year": "2009",
     "authors": [{
         "name": "Wolfgang Spiessl",
@@ -9773,7 +9854,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_393",
+    "id": "pub_395",
     "year": "2009",
     "authors": [{
         "name": "Florence Balagtas-Fernandez",
@@ -9794,7 +9875,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/balagtasfernandez2009hcii/balagtasfernandez2009hcii.pdf"],
     "award": false
 }, {
-    "id": "pub_394",
+    "id": "pub_396",
     "year": "2009",
     "authors": [{
         "name": "Michael Sedlmair",
@@ -9822,7 +9903,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/sedlmair2009iv/sedlmair2009iv.pdf", "/pubdb/publications//pub/sedlmair2009iv/sedlmair2009iv.video.mov"],
     "award": false
 }, {
-    "id": "pub_395",
+    "id": "pub_397",
     "year": "2009",
     "authors": [{
         "name": "Katrin Sauerwein"
@@ -9842,7 +9923,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_396",
+    "id": "pub_398",
     "year": "2009",
     "authors": [{
         "name": "Daniel Filonik"
@@ -9862,7 +9943,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/filonik2009iv/filonik2009iv.pdf"],
     "award": false
 }, {
-    "id": "pub_397",
+    "id": "pub_399",
     "year": "2009",
     "authors": [{
         "name": "Hendrik Richter",
@@ -9880,7 +9961,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_398",
+    "id": "pub_400",
     "year": "2009",
     "authors": [{
         "name": "Alexander De Luca",
@@ -9903,7 +9984,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/deluca2009soups/deluca2009soups.pdf"],
     "award": false
 }, {
-    "id": "pub_399",
+    "id": "pub_401",
     "year": "2009",
     "authors": [{
         "name": "Michael Rohs"
@@ -9935,7 +10016,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_400",
+    "id": "pub_402",
     "year": "2009",
     "authors": [{
         "name": "Max Maurer",
@@ -9953,7 +10034,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/maurer2009dipl/maurer2009dipl.pdf"],
     "award": false
 }, {
-    "id": "pub_401",
+    "id": "pub_403",
     "year": "2009",
     "authors": [{
         "name": "Doris Hausen",
@@ -9971,7 +10052,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/hausen2009dipl/hausen2009dipl.pdf"],
     "award": false
 }, {
-    "id": "pub_402",
+    "id": "pub_404",
     "year": "2009",
     "authors": [{
         "name": "Georg Essl",
@@ -9991,7 +10072,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_403",
+    "id": "pub_405",
     "year": "2009",
     "authors": [{
         "name": "Karsten Stegmann",
@@ -10022,7 +10103,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_404",
+    "id": "pub_406",
     "year": "2009",
     "authors": [{
         "name": "Florian Alt",
@@ -10046,7 +10127,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/alt2009pervasive/alt2009pervasive.pdf"],
     "award": false
 }, {
-    "id": "pub_405",
+    "id": "pub_407",
     "year": "2009",
     "authors": [{
         "name": "Florian Alt",
@@ -10070,7 +10151,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/alt2009perad1/alt2009perad1.pdf"],
     "award": false
 }, {
-    "id": "pub_406",
+    "id": "pub_408",
     "year": "2009",
     "authors": [{
         "name": "Florian Alt",
@@ -10094,7 +10175,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/alt2009hotmobile/alt2009hotmobile.pdf"],
     "award": false
 }, {
-    "id": "pub_407",
+    "id": "pub_409",
     "year": "2009",
     "authors": [{
         "name": "Michael Sedlmair",
@@ -10119,7 +10200,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/sedlmair2009sg1/sedlmair2009sg1.pdf", "/pubdb/publications//pub/sedlmair2009sg1/sedlmair2009sg1.video.wmv"],
     "award": false
 }, {
-    "id": "pub_408",
+    "id": "pub_410",
     "year": "2009",
     "authors": [{
         "name": "Michael Sedlmair",
@@ -10150,7 +10231,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/sedlmair2009sg2/sedlmair2009sg2.pdf", "/pubdb/publications//pub/sedlmair2009sg2/sedlmair2009sg2.video.wmv"],
     "award": false
 }, {
-    "id": "pub_409",
+    "id": "pub_411",
     "year": "2009",
     "authors": [{
         "name": "Yaxi Chen",
@@ -10177,7 +10258,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/chen2009sg/chen2009sg.pdf"],
     "award": false
 }, {
-    "id": "pub_410",
+    "id": "pub_412",
     "year": "2009",
     "authors": [{
         "name": "Gilbert Beyer",
@@ -10201,7 +10282,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/beyer2009pervasive/beyer2009pervasive.pdf"],
     "award": false
 }, {
-    "id": "pub_411",
+    "id": "pub_413",
     "year": "2009",
     "authors": [{
         "name": "Florence Balagtas-Fernandez",
@@ -10222,7 +10303,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/balagtasfernandez2009itng/balagtasfernandez2009itng.pdf"],
     "award": false
 }, {
-    "id": "pub_412",
+    "id": "pub_414",
     "year": "2009",
     "authors": [{
         "name": "Sara Streng",
@@ -10251,7 +10332,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_413",
+    "id": "pub_415",
     "year": "2009",
     "authors": [{
         "name": "Otmar Hilliges",
@@ -10271,7 +10352,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/hilliges2009chi/hilliges2009chi.pdf", "/pubdb/publications//pub/hilliges2009chi/hilliges2009chi.video.wmv"],
     "award": false
 }, {
-    "id": "pub_414",
+    "id": "pub_416",
     "year": "2009",
     "authors": [{
         "name": "Johannes Schöning",
@@ -10296,7 +10377,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/schoening2009handsfeet/schoening2009handsfeet.pdf"],
     "award": false
 }, {
-    "id": "pub_415",
+    "id": "pub_417",
     "year": "2009",
     "authors": [{
         "name": "Johannes Schöning",
@@ -10325,7 +10406,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_416",
+    "id": "pub_418",
     "year": "2009",
     "authors": [{
         "name": "Sven Kratz",
@@ -10345,7 +10426,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/kratz2009unobtrusive/kratz2009unobtrusive.pdf"],
     "award": false
 }, {
-    "id": "pub_417",
+    "id": "pub_419",
     "year": "2009",
     "authors": [{
         "name": "Alexander De Luca",
@@ -10369,7 +10450,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/deluca2009chi/deluca2009chi.pdf"],
     "award": false
 }, {
-    "id": "pub_418",
+    "id": "pub_420",
     "year": "2009",
     "authors": [{
         "name": "Gerrit Meixner"
@@ -10400,7 +10481,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_419",
+    "id": "pub_421",
     "year": "2009",
     "authors": [{
         "name": "Gerrit Meixner"
@@ -10431,7 +10512,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_420",
+    "id": "pub_422",
     "year": "2009",
     "authors": [{
         "name": "Florence Balagtas-Fernandez",
@@ -10452,7 +10533,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/balagtasfernandez2009mddaui/balagtasfernandez2009mddaui.pdf", "/pubdb/publications/pub/balagtasfernandez2009mddaui/balagtasfernandez2009mddaui.slides.pdf"],
     "award": false
 }, {
-    "id": "pub_421",
+    "id": "pub_423",
     "year": "2009",
     "authors": [{
         "name": "Raphael Wimmer",
@@ -10473,7 +10554,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/wimmer2009handSense/wimmer2009handSense.pdf"],
     "award": false
 }, {
-    "id": "pub_422",
+    "id": "pub_424",
     "year": "2009",
     "authors": [{
         "name": "Yaxi Chen",
@@ -10494,7 +10575,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/chen2009iui/chen2009iui.pdf"],
     "award": false
 }, {
-    "id": "pub_423",
+    "id": "pub_425",
     "year": "2009",
     "authors": [{
         "name": "Dominikus Baur",
@@ -10515,7 +10596,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/baur2009iui/baur2009iui.pdf"],
     "award": false
 }, {
-    "id": "pub_424",
+    "id": "pub_426",
     "year": "2009",
     "authors": [{
         "name": "Fabian Hennecke",
@@ -10533,7 +10614,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/hennecke2009dipl/hennecke2009dipl.pdf"],
     "award": false
 }, {
-    "id": "pub_425",
+    "id": "pub_427",
     "year": "2009",
     "authors": [{
         "name": "Kerstin Ruhland"
@@ -10558,7 +10639,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/ruhland2009ijac/ruhland2009ijac.pdf", "/pubdb/publications//pub/ruhland2009ijac/ruhland2009ijac.video.avi"],
     "award": false
 }, {
-    "id": "pub_426",
+    "id": "pub_428",
     "year": "2009",
     "authors": [{
         "name": "Malte Weiss"
@@ -10589,7 +10670,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_427",
+    "id": "pub_429",
     "year": "2009",
     "authors": [{
         "name": "Malte Weiss"
@@ -10620,7 +10701,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_429",
+    "id": "pub_431",
     "year": "2008",
     "authors": [{
         "name": "Andreas Pleuß",
@@ -10647,7 +10728,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_430",
+    "id": "pub_432",
     "year": "2008",
     "authors": [{
         "name": "Susanne Boll"
@@ -10676,7 +10757,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_431",
+    "id": "pub_433",
     "year": "2008",
     "authors": [{
         "name": "Sara Streng",
@@ -10697,7 +10778,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_432",
+    "id": "pub_434",
     "year": "2008",
     "authors": [{
         "name": "Enrico Rukzio",
@@ -10720,7 +10801,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/rukzio2008pmifTR/rukzio2008pmifTR.pdf"],
     "award": false
 }, {
-    "id": "pub_433",
+    "id": "pub_435",
     "year": "2008",
     "authors": [{
         "name": "Gregor Broll",
@@ -10750,7 +10831,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/broll2008ami/broll2008ami.pdf"],
     "award": false
 }, {
-    "id": "pub_434",
+    "id": "pub_436",
     "year": "2008",
     "authors": [{
         "name": "Michael Sedlmair",
@@ -10782,7 +10863,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/sedlmair2008cscw/sedlmair2008cscw.pdf"],
     "award": false
 }, {
-    "id": "pub_435",
+    "id": "pub_437",
     "year": "2008",
     "authors": [{
         "name": "Richard Atterer",
@@ -10802,7 +10883,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/atterer2008nordichishorttree/atterer2008nordichishorttree.pdf"],
     "award": false
 }, {
-    "id": "pub_436",
+    "id": "pub_438",
     "year": "2008",
     "authors": [{
         "name": "Richard Atterer",
@@ -10822,7 +10903,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/atterer2008nordichishortheat/atterer2008nordichishortheat.pdf", "/pubdb/publications//pub/atterer2008nordichishortheat/atterer2008nordichishortheat.video.avi"],
     "award": false
 }, {
-    "id": "pub_437",
+    "id": "pub_439",
     "year": "2008",
     "authors": [{
         "name": "Richard Atterer",
@@ -10840,7 +10921,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/atterer2008nordichi/atterer2008nordichi.pdf"],
     "award": false
 }, {
-    "id": "pub_438",
+    "id": "pub_440",
     "year": "2008",
     "authors": [{
         "name": "Roman Weiss"
@@ -10860,7 +10941,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/weiss2008nordichi/weiss2008nordichi.pdf"],
     "award": false
 }, {
-    "id": "pub_439",
+    "id": "pub_441",
     "year": "2008",
     "authors": [{
         "name": "Kerstin Ruhland"
@@ -10885,7 +10966,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/ruhland2008vsmm/ruhland2008vsmm.pdf"],
     "award": true
 }, {
-    "id": "pub_440",
+    "id": "pub_442",
     "year": "2008",
     "authors": [{
         "name": "Andrew D. Wilson"
@@ -10912,7 +10993,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/hilliges2008uist/hilliges2008uist.pdf", "/pubdb/publications//pub/hilliges2008uist/hilliges2008uist.video.wmv"],
     "award": true
 }, {
-    "id": "pub_441",
+    "id": "pub_443",
     "year": "2008",
     "authors": [{
         "name": "Alexander De Luca",
@@ -10932,7 +11013,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/deluca2008nordichi/deluca2008nordichi.pdf"],
     "award": false
 }, {
-    "id": "pub_442",
+    "id": "pub_444",
     "year": "2008",
     "authors": [{
         "name": "Mark Bilandzic"
@@ -10961,7 +11042,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/bilandzic2008nordichi/bilandzic2008nordichi.pdf"],
     "award": false
 }, {
-    "id": "pub_443",
+    "id": "pub_445",
     "year": "2008",
     "authors": [{
         "name": "Nikola Serbedzija"
@@ -10985,7 +11066,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/beyer2008saso/beyer2008saso.pdf"],
     "award": false
 }, {
-    "id": "pub_444",
+    "id": "pub_446",
     "year": "2008",
     "authors": [{
         "name": "Richard Atterer",
@@ -11003,7 +11084,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/atterer2008thesis/atterer2008thesis.pdf"],
     "award": false
 }, {
-    "id": "pub_445",
+    "id": "pub_447",
     "year": "2008",
     "authors": [{
         "name": "Otmar Hilliges",
@@ -11027,7 +11108,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/hilliges2008tabletop/hilliges2008tabletop.pdf", "/pubdb/publications/pub/hilliges2008tabletop/hilliges2008tabletop.slides.pdf", "/pubdb/publications//pub/hilliges2008tabletop/hilliges2008tabletop.video.wmv"],
     "award": false
 }, {
-    "id": "pub_446",
+    "id": "pub_448",
     "year": "2008",
     "authors": [{
         "name": "Johannes Schöning",
@@ -11050,7 +11131,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/schoening2008SpatialAuthentication/schoening2008SpatialAuthentication.pdf"],
     "award": false
 }, {
-    "id": "pub_447",
+    "id": "pub_449",
     "year": "2008",
     "authors": [{
         "name": "Albrecht Schmidt",
@@ -11080,7 +11161,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/schmidt2008ubicomp/schmidt2008ubicomp.pdf"],
     "award": false
 }, {
-    "id": "pub_448",
+    "id": "pub_450",
     "year": "2008",
     "authors": [{
         "name": "Chris Kray",
@@ -11106,7 +11187,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/kray2008tabletop/kray2008tabletop.pdf"],
     "award": false
 }, {
-    "id": "pub_449",
+    "id": "pub_451",
     "year": "2008",
     "authors": [{
         "name": "Sara Streng",
@@ -11130,7 +11211,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_450",
+    "id": "pub_452",
     "year": "2008",
     "authors": [{
         "name": "Gregor Broll",
@@ -11148,7 +11229,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_451",
+    "id": "pub_453",
     "year": "2008",
     "authors": [{
         "name": "Michael Sedlmair",
@@ -11166,7 +11247,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/sedlmair2008led/sedlmair2008led.pdf"],
     "award": false
 }, {
-    "id": "pub_452",
+    "id": "pub_454",
     "year": "2008",
     "authors": [{
         "name": "Florence Balagtas-Fernandez",
@@ -11187,7 +11268,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/balagtasfernandez2008asedocsym/balagtasfernandez2008asedocsym.pdf", "/pubdb/publications/pub/balagtasfernandez2008asedocsym/balagtasfernandez2008asedocsym.slides.pdf"],
     "award": false
 }, {
-    "id": "pub_453",
+    "id": "pub_455",
     "year": "2008",
     "authors": [{
         "name": "Raphael Wimmer",
@@ -11210,7 +11291,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/wimmer2008wiiTracking/wimmer2008wiiTracking.pdf"],
     "award": false
 }, {
-    "id": "pub_454",
+    "id": "pub_456",
     "year": "2008",
     "authors": [{
         "name": "Michael Mock"
@@ -11229,7 +11310,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/mock2008meis/mock2008meis.pdf"],
     "award": false
 }, {
-    "id": "pub_455",
+    "id": "pub_457",
     "year": "2008",
     "authors": [{
         "name": "Sven Kratz",
@@ -11249,7 +11330,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/kratz2008meis/kratz2008meis.pdf"],
     "award": false
 }, {
-    "id": "pub_456",
+    "id": "pub_458",
     "year": "2008",
     "authors": [{
         "name": "Katrin Sauerwein"
@@ -11271,7 +11352,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/deluca2008meis/deluca2008meis.pdf"],
     "award": false
 }, {
-    "id": "pub_457",
+    "id": "pub_459",
     "year": "2008",
     "authors": [{
         "name": "Wolfgang Spiessl",
@@ -11291,7 +11372,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_458",
+    "id": "pub_460",
     "year": "2008",
     "authors": [{
         "name": "Johannes Schöning",
@@ -11314,7 +11395,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/schoening2008PaperGlobe/schoening2008PaperGlobe.pdf"],
     "award": false
 }, {
-    "id": "pub_459",
+    "id": "pub_461",
     "year": "2008",
     "authors": [{
         "name": "Tanja Herting"
@@ -11334,7 +11415,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/herting2008mirw/herting2008mirw.pdf"],
     "award": false
 }, {
-    "id": "pub_460",
+    "id": "pub_462",
     "year": "2008",
     "authors": [{
         "name": "Niels Henze"
@@ -11363,7 +11444,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_461",
+    "id": "pub_463",
     "year": "2008",
     "authors": [{
         "name": "Sarah Heldt"
@@ -11385,7 +11466,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/heldt2008miux/heldt2008miux.pdf"],
     "award": false
 }, {
-    "id": "pub_462",
+    "id": "pub_464",
     "year": "2008",
     "authors": [{
         "name": "Alina Hang",
@@ -11408,7 +11489,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/hang2008mobilehci/hang2008mobilehci.pdf"],
     "award": false
 }, {
-    "id": "pub_463",
+    "id": "pub_465",
     "year": "2008",
     "authors": [{
         "name": "Andrew Greaves"
@@ -11431,7 +11512,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/greaves2008mobilehcidemo/greaves2008mobilehcidemo.pdf"],
     "award": false
 }, {
-    "id": "pub_464",
+    "id": "pub_466",
     "year": "2008",
     "authors": [{
         "name": "Johannes Kiemer"
@@ -11457,7 +11538,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/deluca2008mobilehci/deluca2008mobilehci.pdf"],
     "award": false
 }, {
-    "id": "pub_465",
+    "id": "pub_467",
     "year": "2008",
     "authors": [{
         "name": "Keith Cheverst",
@@ -11483,7 +11564,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/cheverst2008PhotoMap/cheverst2008PhotoMap.pdf"],
     "award": false
 }, {
-    "id": "pub_466",
+    "id": "pub_468",
     "year": "2008",
     "authors": [{
         "name": "Lucia Terrenghi",
@@ -11515,7 +11596,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/terrenghi2008avi/terrenghi2008avi.pdf"],
     "award": false
 }, {
-    "id": "pub_467",
+    "id": "pub_469",
     "year": "2008",
     "authors": [{
         "name": "Sara Streng",
@@ -11548,7 +11629,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/streng2008elearningHS/streng2008elearningHS.pdf"],
     "award": false
 }, {
-    "id": "pub_468",
+    "id": "pub_470",
     "year": "2008",
     "authors": [{
         "name": "Till Schäfers"
@@ -11573,7 +11654,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/schaefers2008aes/schaefers2008aes.pdf"],
     "award": false
 }, {
-    "id": "pub_469",
+    "id": "pub_471",
     "year": "2008",
     "authors": [{
         "name": "Yaxi Chen",
@@ -11594,7 +11675,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/chen2008sg/chen2008sg.pdf"],
     "award": false
 }, {
-    "id": "pub_470",
+    "id": "pub_472",
     "year": "2008",
     "authors": [{
         "name": "Dominikus Baur",
@@ -11618,7 +11699,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/baur2008sg/baur2008sg.pdf"],
     "award": false
 }, {
-    "id": "pub_471",
+    "id": "pub_473",
     "year": "2008",
     "authors": [{
         "name": "Marko Jurmu"
@@ -11640,7 +11721,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/jurmu2008mobiquitousDemo/jurmu2008mobiquitousDemo.pdf"],
     "award": false
 }, {
-    "id": "pub_472",
+    "id": "pub_474",
     "year": "2008",
     "authors": [{
         "name": "Marko Jurmu"
@@ -11662,7 +11743,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/jurmu2008mobiquitous/jurmu2008mobiquitous.pdf"],
     "award": false
 }, {
-    "id": "pub_473",
+    "id": "pub_475",
     "year": "2008",
     "authors": [{
         "name": "Michael Rohs"
@@ -11682,7 +11763,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/rohs2008sensinginteraction/rohs2008sensinginteraction.pdf"],
     "award": false
 }, {
-    "id": "pub_474",
+    "id": "pub_476",
     "year": "2008",
     "authors": [{
         "name": "Michael Sedlmair",
@@ -11709,7 +11790,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/sedlmair2008iv/sedlmair2008iv.pdf", "/pubdb/publications//pub/sedlmair2008iv/sedlmair2008iv.video.wmv"],
     "award": false
 }, {
-    "id": "pub_475",
+    "id": "pub_477",
     "year": "2008",
     "authors": [{
         "name": "Michael Sedlmair",
@@ -11727,7 +11808,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/sedlmair2008IVDC/sedlmair2008IVDC.pdf"],
     "award": false
 }, {
-    "id": "pub_476",
+    "id": "pub_478",
     "year": "2008",
     "authors": [{
         "name": "Oliver Quiring",
@@ -11750,7 +11831,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_477",
+    "id": "pub_479",
     "year": "2008",
     "authors": [{
         "name": "Ananya Misra"
@@ -11772,7 +11853,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/misra2008nime/misra2008nime.pdf"],
     "award": false
 }, {
-    "id": "pub_478",
+    "id": "pub_480",
     "year": "2008",
     "authors": [{
         "name": "Johannes Schöning",
@@ -11795,7 +11876,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/schoening2008PhoneFlash/schoening2008PhoneFlash.pdf"],
     "award": false
 }, {
-    "id": "pub_479",
+    "id": "pub_481",
     "year": "2008",
     "authors": [{
         "name": "Johannes Schöning",
@@ -11820,7 +11901,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/schoening2008MobileResponse/schoening2008MobileResponse.pdf"],
     "award": false
 }, {
-    "id": "pub_480",
+    "id": "pub_482",
     "year": "2008",
     "authors": [{
         "name": "Gregor Broll",
@@ -11843,7 +11924,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/broll2008pervasivevideo/broll2008pervasivevideo.pdf"],
     "award": false
 }, {
-    "id": "pub_481",
+    "id": "pub_483",
     "year": "2008",
     "authors": [{
         "name": "Gregor Broll",
@@ -11873,7 +11954,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/broll2008pervasivedemo/broll2008pervasivedemo.pdf"],
     "award": false
 }, {
-    "id": "pub_482",
+    "id": "pub_484",
     "year": "2008",
     "authors": [{
         "name": "Oliver Quiring",
@@ -11899,7 +11980,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_483",
+    "id": "pub_485",
     "year": "2008",
     "authors": [{
         "name": "Gilbert Beyer",
@@ -11917,7 +11998,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/beyer2008dipl/beyer2008dipl.pdf"],
     "award": false
 }, {
-    "id": "pub_484",
+    "id": "pub_486",
     "year": "2008",
     "authors": [{
         "name": "Michael Rohs"
@@ -11937,7 +12018,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/rohs2008TargetAcquisition/rohs2008TargetAcquisition.pdf"],
     "award": false
 }, {
-    "id": "pub_485",
+    "id": "pub_487",
     "year": "2008",
     "authors": [{
         "name": "Raphael Wimmer",
@@ -11955,7 +12036,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/wimmer2008capExertion/wimmer2008capExertion.pdf"],
     "award": false
 }, {
-    "id": "pub_486",
+    "id": "pub_488",
     "year": "2008",
     "authors": [{
         "name": "Chris Kray",
@@ -11977,7 +12058,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/kray2008AmbientDisplays/kray2008AmbientDisplays.pdf"],
     "award": false
 }, {
-    "id": "pub_487",
+    "id": "pub_489",
     "year": "2008",
     "authors": [{
         "name": "Otmar Hilliges",
@@ -11995,7 +12076,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/hilliges2008chiws/hilliges2008chiws.pdf"],
     "award": false
 }, {
-    "id": "pub_488",
+    "id": "pub_490",
     "year": "2008",
     "authors": [{
         "name": "Stefan Graf"
@@ -12022,7 +12103,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/graf2008chi/graf2008chi.pdf"],
     "award": false
 }, {
-    "id": "pub_489",
+    "id": "pub_491",
     "year": "2008",
     "authors": [{
         "name": "Alexander De Luca",
@@ -12047,7 +12128,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/deluca2008chi/deluca2008chi.pdf"],
     "award": false
 }, {
-    "id": "pub_490",
+    "id": "pub_492",
     "year": "2008",
     "authors": [{
         "name": "Sara Streng",
@@ -12073,7 +12154,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_491",
+    "id": "pub_493",
     "year": "2008",
     "authors": [{
         "name": "Sara Streng",
@@ -12099,7 +12180,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_492",
+    "id": "pub_494",
     "year": "2008",
     "authors": [{
         "name": "Mark Bilandzic"
@@ -12121,7 +12202,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/bilandzic2008dis/bilandzic2008dis.pdf"],
     "award": false
 }, {
-    "id": "pub_493",
+    "id": "pub_495",
     "year": "2008",
     "authors": [{
         "name": "Markus Bischof"
@@ -12151,7 +12232,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/conradi2008tei/conradi2008tei.pdf"],
     "award": false
 }, {
-    "id": "pub_494",
+    "id": "pub_496",
     "year": "2008",
     "authors": [{
         "name": "Johannes Schöning",
@@ -12180,7 +12261,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/schoening2008VirtualGlobes/schoening2008VirtualGlobes.pdf"],
     "award": false
 }, {
-    "id": "pub_495",
+    "id": "pub_497",
     "year": "2008",
     "authors": [{
         "name": "Oliver Rath"
@@ -12205,7 +12286,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_496",
+    "id": "pub_498",
     "year": "2008",
     "authors": [{
         "name": "Rafael \"Tico\" Ballagas",
@@ -12230,7 +12311,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_497",
+    "id": "pub_499",
     "year": "2008",
     "authors": [{
         "name": "Massimo Paolucci"
@@ -12260,7 +12341,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/paolucci2008ijswis/paolucci2008ijswis.pdf"],
     "award": false
 }, {
-    "id": "pub_498",
+    "id": "pub_500",
     "year": "2008",
     "authors": [{
         "name": "Hans Gellersen"
@@ -12295,7 +12376,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_500",
+    "id": "pub_502",
     "year": "2007",
     "authors": [{
         "name": "Ingrid Mulder"
@@ -12315,7 +12396,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_501",
+    "id": "pub_503",
     "year": "2007",
     "authors": [{
         "name": "Alexander De Luca",
@@ -12338,7 +12419,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/deluca2007ozchi2/deluca2007ozchi2.pdf"],
     "award": false
 }, {
-    "id": "pub_502",
+    "id": "pub_504",
     "year": "2007",
     "authors": [{
         "name": "Alexander De Luca",
@@ -12361,7 +12442,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/deluca2007ozchi/deluca2007ozchi.pdf"],
     "award": false
 }, {
-    "id": "pub_503",
+    "id": "pub_505",
     "year": "2007",
     "authors": [{
         "name": "Andreas Pleuß",
@@ -12388,7 +12469,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_504",
+    "id": "pub_506",
     "year": "2007",
     "authors": [{
         "name": "Enrico Rukzio",
@@ -12414,7 +12495,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/rukzio2007ami/rukzio2007ami.pdf"],
     "award": false
 }, {
-    "id": "pub_505",
+    "id": "pub_507",
     "year": "2007",
     "authors": [{
         "name": "Otmar Hilliges",
@@ -12438,7 +12519,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/hilliges2007tabletop/hilliges2007tabletop.pdf", "/pubdb/publications//pub/hilliges2007tabletop/hilliges2007tabletop.video.avi"],
     "award": false
 }, {
-    "id": "pub_506",
+    "id": "pub_508",
     "year": "2007",
     "authors": [{
         "name": "Otmar Hilliges",
@@ -12456,7 +12537,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/hilliges2007uist/hilliges2007uist.pdf"],
     "award": false
 }, {
-    "id": "pub_507",
+    "id": "pub_509",
     "year": "2007",
     "authors": [{
         "name": "Andreas Pleuß",
@@ -12480,7 +12561,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/pleuss2007models/pleuss2007models.slides.pdf"],
     "award": false
 }, {
-    "id": "pub_508",
+    "id": "pub_510",
     "year": "2007",
     "authors": [{
         "name": "Dominikus Baur",
@@ -12498,7 +12579,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/baur2007dipl/baur2007dipl.pdf"],
     "award": false
 }, {
-    "id": "pub_509",
+    "id": "pub_511",
     "year": "2007",
     "authors": [{
         "name": "Raphael Wimmer",
@@ -12516,7 +12597,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_510",
+    "id": "pub_512",
     "year": "2007",
     "authors": [{
         "name": "Otmar Hilliges",
@@ -12542,7 +12623,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/hilliges2007ie/hilliges2007ie.pdf"],
     "award": false
 }, {
-    "id": "pub_511",
+    "id": "pub_513",
     "year": "2007",
     "authors": [{
         "name": "Sebastian Boring",
@@ -12572,7 +12653,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/boring2007ubicompdemo/boring2007ubicompdemo.pdf"],
     "award": false
 }, {
-    "id": "pub_512",
+    "id": "pub_514",
     "year": "2007",
     "authors": [{
         "name": "Carl Fischer"
@@ -12599,7 +12680,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/fischer2007ubidemo/fischer2007ubidemo.pdf"],
     "award": false
 }, {
-    "id": "pub_513",
+    "id": "pub_515",
     "year": "2007",
     "authors": [{
         "name": "Sebastian Boring",
@@ -12617,7 +12698,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/boring2007ubicompDC/boring2007ubicompDC.pdf"],
     "award": false
 }, {
-    "id": "pub_514",
+    "id": "pub_516",
     "year": "2007",
     "authors": [{
         "name": "Heiko Drewes",
@@ -12641,7 +12722,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/drewes2007muk/drewes2007muk.pdf"],
     "award": false
 }, {
-    "id": "pub_515",
+    "id": "pub_517",
     "year": "2007",
     "authors": [{
         "name": "Johannes Vetter"
@@ -12668,7 +12749,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_516",
+    "id": "pub_518",
     "year": "2007",
     "authors": [{
         "name": "Heiko Drewes",
@@ -12689,7 +12770,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/drewes2007interact/drewes2007interact.pdf"],
     "award": false
 }, {
-    "id": "pub_517",
+    "id": "pub_519",
     "year": "2007",
     "authors": [{
         "name": "Martin Gisch"
@@ -12711,7 +12792,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/deluca2007mobility2/deluca2007mobility2.pdf"],
     "award": false
 }, {
-    "id": "pub_518",
+    "id": "pub_520",
     "year": "2007",
     "authors": [{
         "name": "Heiko Drewes",
@@ -12735,7 +12816,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/deluca2007mobility1/deluca2007mobility1.pdf"],
     "award": false
 }, {
-    "id": "pub_519",
+    "id": "pub_521",
     "year": "2007",
     "authors": [{
         "name": "Gregor Broll"
@@ -12770,7 +12851,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/broll2007mobilehcidemo/broll2007mobilehcidemo.pdf", "/pubdb/publications/pub/broll2007mobilehcidemo/broll2007mobilehcidemo.slides.pdf"],
     "award": true
 }, {
-    "id": "pub_520",
+    "id": "pub_522",
     "year": "2007",
     "authors": [{
         "name": "Sebastian Boring",
@@ -12800,7 +12881,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/boring2007mobility/boring2007mobility.pdf"],
     "award": false
 }, {
-    "id": "pub_521",
+    "id": "pub_523",
     "year": "2007",
     "authors": [{
         "name": "Richard Atterer",
@@ -12823,7 +12904,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/atterer2007interact/atterer2007interact.pdf", "/pubdb/publications/pub/atterer2007interact/atterer2007interact.slides.pdf"],
     "award": false
 }, {
-    "id": "pub_522",
+    "id": "pub_524",
     "year": "2007",
     "authors": [{
         "name": "Gregor Broll",
@@ -12848,7 +12929,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/broll2007mobileinternetux/broll2007mobileinternetux.pdf", "/pubdb/publications/pub/broll2007mobileinternetux/broll2007mobileinternetux.slides.pdf"],
     "award": false
 }, {
-    "id": "pub_523",
+    "id": "pub_525",
     "year": "2007",
     "authors": [{
         "name": "Gregor Broll",
@@ -12881,7 +12962,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/broll2007mirwmguidesTR/broll2007mirwmguidesTR.pdf"],
     "award": false
 }, {
-    "id": "pub_524",
+    "id": "pub_526",
     "year": "2007",
     "authors": [{
         "name": "Gregor Broll",
@@ -12909,7 +12990,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/broll2007mirw/broll2007mirw.pdf", "/pubdb/publications/pub/broll2007mirw/broll2007mirw.slides.pdf"],
     "award": false
 }, {
-    "id": "pub_525",
+    "id": "pub_527",
     "year": "2007",
     "authors": [{
         "name": "Heiko Drewes",
@@ -12933,7 +13014,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/drewes2007hcii/drewes2007hcii.pdf"],
     "award": false
 }, {
-    "id": "pub_526",
+    "id": "pub_528",
     "year": "2007",
     "authors": [{
         "name": "Andreas Pleuß",
@@ -12954,7 +13035,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/pleuss2007hcii/pleuss2007hcii.pdf"],
     "award": false
 }, {
-    "id": "pub_527",
+    "id": "pub_529",
     "year": "2007",
     "authors": [{
         "name": "Otmar Hilliges",
@@ -12984,7 +13065,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/hilliges2007hcii/hilliges2007hcii.pdf"],
     "award": false
 }, {
-    "id": "pub_528",
+    "id": "pub_530",
     "year": "2007",
     "authors": [{
         "name": "Lucia Terrenghi",
@@ -13005,7 +13086,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_529",
+    "id": "pub_531",
     "year": "2007",
     "authors": [{
         "name": "Gregor Broll",
@@ -13033,7 +13114,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/broll2007mobilesummit/broll2007mobilesummit.pdf"],
     "award": false
 }, {
-    "id": "pub_530",
+    "id": "pub_532",
     "year": "2007",
     "authors": [{
         "name": "Alexander De Luca",
@@ -13066,7 +13147,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/deluca2007mobilesummit/deluca2007mobilesummit.pdf"],
     "award": false
 }, {
-    "id": "pub_531",
+    "id": "pub_533",
     "year": "2007",
     "authors": [{
         "name": "Otmar Hilliges",
@@ -13099,7 +13180,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/hilliges2007cc/hilliges2007cc.pdf", "/pubdb/publications//pub/hilliges2007cc/hilliges2007cc.video.mov"],
     "award": false
 }, {
-    "id": "pub_532",
+    "id": "pub_534",
     "year": "2007",
     "authors": [{
         "name": "Alexander De Luca",
@@ -13120,7 +13201,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_533",
+    "id": "pub_535",
     "year": "2007",
     "authors": [{
         "name": "Raphael Wimmer",
@@ -13147,7 +13228,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/wimmer2007captable/wimmer2007captable.pdf"],
     "award": false
 }, {
-    "id": "pub_534",
+    "id": "pub_536",
     "year": "2007",
     "authors": [{
         "name": "Oliver Quiring",
@@ -13170,7 +13251,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/quiring2007muk/quiring2007muk.pdf"],
     "award": false
 }, {
-    "id": "pub_535",
+    "id": "pub_537",
     "year": "2007",
     "authors": [{
         "name": "Oliver Quiring",
@@ -13193,7 +13274,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_536",
+    "id": "pub_538",
     "year": "2007",
     "authors": [{
         "name": "Gregor Broll",
@@ -13216,7 +13297,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/broll2007pervasivelbr/broll2007pervasivelbr.pdf"],
     "award": false
 }, {
-    "id": "pub_537",
+    "id": "pub_539",
     "year": "2007",
     "authors": [{
         "name": "Dominique Guinard",
@@ -13239,7 +13320,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/guinard2007permid/guinard2007permid.pdf"],
     "award": false
 }, {
-    "id": "pub_538",
+    "id": "pub_540",
     "year": "2007",
     "authors": [{
         "name": "Gregor Broll",
@@ -13271,7 +13352,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/broll2007permid/broll2007permid.pdf", "/pubdb/publications/pub/broll2007permid/broll2007permid.slides.pdf"],
     "award": false
 }, {
-    "id": "pub_539",
+    "id": "pub_541",
     "year": "2007",
     "authors": [{
         "name": "Richard Atterer",
@@ -13292,7 +13373,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/atterer2007chinote/atterer2007chinote.pdf", "/pubdb/publications/pub/atterer2007chinote/atterer2007chinote.slides.pdf"],
     "award": false
 }, {
-    "id": "pub_540",
+    "id": "pub_542",
     "year": "2007",
     "authors": [{
         "name": "Paul Holleis",
@@ -13318,7 +13399,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/holleis2007chiklm/holleis2007chiklm.pdf"],
     "award": false
 }, {
-    "id": "pub_541",
+    "id": "pub_543",
     "year": "2007",
     "authors": [{
         "name": "Lucia Terrenghi",
@@ -13343,7 +13424,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_542",
+    "id": "pub_544",
     "year": "2007",
     "authors": [{
         "name": "Dominique Guinard",
@@ -13366,7 +13447,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/guinard2007msichi/guinard2007msichi.pdf"],
     "award": false
 }, {
-    "id": "pub_543",
+    "id": "pub_545",
     "year": "2007",
     "authors": [{
         "name": "Gregor Broll",
@@ -13393,7 +13474,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/broll2007mere/broll2007mere.pdf"],
     "award": false
 }, {
-    "id": "pub_544",
+    "id": "pub_546",
     "year": "2007",
     "authors": [{
         "name": "Massimo Paolucci"
@@ -13423,7 +13504,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_545",
+    "id": "pub_547",
     "year": "2007",
     "authors": [{
         "name": "Raphael Wimmer",
@@ -13450,7 +13531,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/wimmer2007percomCS/wimmer2007percomCS.pdf"],
     "award": false
 }, {
-    "id": "pub_546",
+    "id": "pub_548",
     "year": "2007",
     "authors": [{
         "name": "Gregor Broll",
@@ -13482,7 +13563,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/broll2007percom/broll2007percom.pdf", "/pubdb/publications/pub/broll2007percom/broll2007percom.slides.pdf"],
     "award": false
 }, {
-    "id": "pub_547",
+    "id": "pub_549",
     "year": "2007",
     "authors": [{
         "name": "Albrecht Schmidt",
@@ -13503,7 +13584,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/schmidt2007percom/schmidt2007percom.pdf"],
     "award": false
 }, {
-    "id": "pub_548",
+    "id": "pub_550",
     "year": "2007",
     "authors": [{
         "name": "Gregor Broll"
@@ -13534,7 +13615,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/broll2007percomdemo/broll2007percomdemo.pdf"],
     "award": true
 }, {
-    "id": "pub_549",
+    "id": "pub_551",
     "year": "2007",
     "authors": [{
         "name": "Sebastian Boring",
@@ -13558,7 +13639,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/boring2007percomDW/boring2007percomDW.pdf", "/pubdb/publications/pub/boring2007percomDW/boring2007percomDW.slides.pdf"],
     "award": false
 }, {
-    "id": "pub_550",
+    "id": "pub_552",
     "year": "2007",
     "authors": [{
         "name": "Oliver Falke"
@@ -13586,7 +13667,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/falke2007mobileServicesTR/falke2007mobileServicesTR.pdf"],
     "award": false
 }, {
-    "id": "pub_551",
+    "id": "pub_553",
     "year": "2007",
     "authors": [{
         "name": "Arnd Vitzthum",
@@ -13604,7 +13685,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_552",
+    "id": "pub_554",
     "year": "2007",
     "authors": [{
         "name": "Florian Alt",
@@ -13628,7 +13709,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/alt2008ubicomp/alt2008ubicomp.pdf"],
     "award": false
 }, {
-    "id": "pub_553",
+    "id": "pub_555",
     "year": "2007",
     "authors": [{
         "name": "Wolfgang Spiessl",
@@ -13653,7 +13734,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/spiessl2007tei/spiessl2007tei.pdf"],
     "award": false
 }, {
-    "id": "pub_554",
+    "id": "pub_556",
     "year": "2007",
     "authors": [{
         "name": "Andreas Pleuß",
@@ -13680,7 +13761,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_555",
+    "id": "pub_557",
     "year": "2007",
     "authors": [{
         "name": "Enrico Rukzio",
@@ -13707,7 +13788,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/deluca2007pmc/deluca2007pmc.pdf"],
     "award": false
 }, {
-    "id": "pub_556",
+    "id": "pub_558",
     "year": "2007",
     "authors": [{
         "name": "Gregor Broll",
@@ -13725,7 +13806,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_558",
+    "id": "pub_560",
     "year": "2006",
     "authors": [{
         "name": "Matthias Kranz",
@@ -13754,7 +13835,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_559",
+    "id": "pub_561",
     "year": "2006",
     "authors": [{
         "name": "Florence Balagtas-Fernandez",
@@ -13775,7 +13856,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/balagtasfernandez2006hipc/balagtasfernandez2006hipc.pdf"],
     "award": false
 }, {
-    "id": "pub_560",
+    "id": "pub_562",
     "year": "2006",
     "authors": [{
         "name": "Lucia Terrenghi",
@@ -13799,7 +13880,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/terrenghi2006kitchen/terrenghi2006kitchen.pdf"],
     "award": false
 }, {
-    "id": "pub_561",
+    "id": "pub_563",
     "year": "2006",
     "authors": [{
         "name": "Matthias Kranz",
@@ -13823,7 +13904,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_562",
+    "id": "pub_564",
     "year": "2006",
     "authors": [{
         "name": "Dominikus Baur",
@@ -13841,7 +13922,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/baur2006proj/baur2006proj.pdf"],
     "award": false
 }, {
-    "id": "pub_563",
+    "id": "pub_565",
     "year": "2006",
     "authors": [{
         "name": "Andreas Pleuß",
@@ -13868,7 +13949,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_564",
+    "id": "pub_566",
     "year": "2006",
     "authors": [{
         "name": "Gregor Broll",
@@ -13900,7 +13981,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/broll2006semdesk/broll2006semdesk.pdf"],
     "award": false
 }, {
-    "id": "pub_565",
+    "id": "pub_567",
     "year": "2006",
     "authors": [{
         "name": "Albrecht Schmidt",
@@ -13929,7 +14010,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/schmidt2006ieemobility/schmidt2006ieemobility.pdf"],
     "award": false
 }, {
-    "id": "pub_566",
+    "id": "pub_568",
     "year": "2006",
     "authors": [{
         "name": "Albrecht Schmidt",
@@ -13956,7 +14037,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/schmidt2006productive/schmidt2006productive.pdf"],
     "award": false
 }, {
-    "id": "pub_567",
+    "id": "pub_569",
     "year": "2006",
     "authors": [{
         "name": "Leif Oppermann",
@@ -13983,7 +14064,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/oppermann2006ubicomp/oppermann2006ubicomp.pdf"],
     "award": false
 }, {
-    "id": "pub_568",
+    "id": "pub_570",
     "year": "2006",
     "authors": [{
         "name": "Enrico Rukzio",
@@ -14013,7 +14094,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/rukzio2006ubicomp/rukzio2006ubicomp.pdf"],
     "award": false
 }, {
-    "id": "pub_569",
+    "id": "pub_571",
     "year": "2006",
     "authors": [{
         "name": "Matthias Kranz",
@@ -14040,7 +14121,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/kranz2006ubicompvidsport/kranz2006ubicompvidsport.pdf"],
     "award": false
 }, {
-    "id": "pub_570",
+    "id": "pub_572",
     "year": "2006",
     "authors": [{
         "name": "Anab Jain"
@@ -14069,7 +14150,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/kranz2006ubicompvidsketch/kranz2006ubicompvidsketch.pdf"],
     "award": false
 }, {
-    "id": "pub_571",
+    "id": "pub_573",
     "year": "2006",
     "authors": [{
         "name": "Enrico Rukzio",
@@ -14094,7 +14175,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/rukzio2006mobilehci/rukzio2006mobilehci.pdf"],
     "award": false
 }, {
-    "id": "pub_572",
+    "id": "pub_574",
     "year": "2006",
     "authors": [{
         "name": "Heiko Drewes",
@@ -14115,7 +14196,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/drewes2006muc/drewes2006muc.pdf"],
     "award": false
 }, {
-    "id": "pub_573",
+    "id": "pub_575",
     "year": "2006",
     "authors": [{
         "name": "Otmar Hilliges",
@@ -14140,7 +14221,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/hilliges2006audio/hilliges2006audio.pdf", "/pubdb/publications/pub/hilliges2006audio/hilliges2006audio.slides.pdf"],
     "award": false
 }, {
-    "id": "pub_574",
+    "id": "pub_576",
     "year": "2006",
     "authors": [{
         "name": "Lucia Terrenghi",
@@ -14163,7 +14244,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/terrenghi2006enlightable/terrenghi2006enlightable.pdf"],
     "award": false
 }, {
-    "id": "pub_575",
+    "id": "pub_577",
     "year": "2006",
     "authors": [{
         "name": "Raphael Wimmer",
@@ -14190,7 +14271,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/wimmer2006thracker/wimmer2006thracker.pdf"],
     "award": false
 }, {
-    "id": "pub_576",
+    "id": "pub_578",
     "year": "2006",
     "authors": [{
         "name": "Albrecht Schmidt",
@@ -14217,7 +14298,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/schmidt2006kollaboration/schmidt2006kollaboration.pdf"],
     "award": false
 }, {
-    "id": "pub_577",
+    "id": "pub_579",
     "year": "2006",
     "authors": [{
         "name": "Michael Schmitz",
@@ -14238,7 +14319,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/butz2006saphir/butz2006saphir.pdf"],
     "award": false
 }, {
-    "id": "pub_578",
+    "id": "pub_580",
     "year": "2006",
     "authors": [{
         "name": "Gregor Broll",
@@ -14256,7 +14337,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/broll2006diplomathesis/broll2006diplomathesis.pdf", "/pubdb/publications/pub/broll2006diplomathesis/broll2006diplomathesis.slides.pdf"],
     "award": false
 }, {
-    "id": "pub_579",
+    "id": "pub_581",
     "year": "2006",
     "authors": [{
         "name": "Matthias Rehm"
@@ -14288,7 +14369,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/conradi2006pit/conradi2006pit.pdf"],
     "award": false
 }, {
-    "id": "pub_580",
+    "id": "pub_582",
     "year": "2006",
     "authors": [{
         "name": "Arnd Vitzthum",
@@ -14309,7 +14390,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_581",
+    "id": "pub_583",
     "year": "2006",
     "authors": [{
         "name": "Florence Balagtas-Fernandez",
@@ -14327,7 +14408,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_582",
+    "id": "pub_584",
     "year": "2006",
     "authors": [{
         "name": "Richard Atterer",
@@ -14350,7 +14431,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/atterer2006www/atterer2006www.pdf", "/pubdb/publications/pub/atterer2006www/atterer2006www.slides.pdf"],
     "award": false
 }, {
-    "id": "pub_583",
+    "id": "pub_585",
     "year": "2006",
     "authors": [{
         "name": "Richard Atterer",
@@ -14368,7 +14449,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/atterer2006wwwlog/atterer2006wwwlog.pdf", "/pubdb/publications/pub/atterer2006wwwlog/atterer2006wwwlog.slides.pdf"],
     "award": false
 }, {
-    "id": "pub_584",
+    "id": "pub_586",
     "year": "2006",
     "authors": [{
         "name": "Lucia Terrenghi",
@@ -14386,7 +14467,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/terrenghi2006aviWS/terrenghi2006aviWS.pdf"],
     "award": false
 }, {
-    "id": "pub_585",
+    "id": "pub_587",
     "year": "2006",
     "authors": [{
         "name": "Enrico Rukzio",
@@ -14415,7 +14496,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/rukzio2006mobileserviceinteraction/rukzio2006mobileserviceinteraction.pdf"],
     "award": false
 }, {
-    "id": "pub_586",
+    "id": "pub_588",
     "year": "2006",
     "authors": [{
         "name": "Paul Holleis",
@@ -14441,7 +14522,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/holleis2006jvrb/holleis2006jvrb.pdf"],
     "award": false
 }, {
-    "id": "pub_587",
+    "id": "pub_589",
     "year": "2006",
     "authors": [{
         "name": "Sven Siorpaes"
@@ -14473,7 +14554,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/siorpaes2006pervasivelbr/siorpaes2006pervasivelbr.pdf"],
     "award": false
 }, {
-    "id": "pub_588",
+    "id": "pub_590",
     "year": "2006",
     "authors": [{
         "name": "Matthias Kranz",
@@ -14503,7 +14584,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/kranz2006pervasivevidcube/kranz2006pervasivevidcube.pdf"],
     "award": false
 }, {
-    "id": "pub_589",
+    "id": "pub_591",
     "year": "2006",
     "authors": [{
         "name": "Paul Holleis",
@@ -14529,7 +14610,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/holleis2006pervasivemessaging/holleis2006pervasivemessaging.pdf"],
     "award": false
 }, {
-    "id": "pub_590",
+    "id": "pub_592",
     "year": "2006",
     "authors": [{
         "name": "Paul Holleis",
@@ -14555,7 +14636,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/holleis2006pervasivedisplays/holleis2006pervasivedisplays.pdf"],
     "award": false
 }, {
-    "id": "pub_591",
+    "id": "pub_593",
     "year": "2006",
     "authors": [{
         "name": "Anind K. Dey",
@@ -14580,7 +14661,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/dey2006icap/dey2006icap.pdf"],
     "award": false
 }, {
-    "id": "pub_592",
+    "id": "pub_594",
     "year": "2006",
     "authors": [{
         "name": "Gregor Broll",
@@ -14612,7 +14693,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/broll2006permid/broll2006permid.pdf", "/pubdb/publications/pub/broll2006permid/broll2006permid.slides.pdf"],
     "award": false
 }, {
-    "id": "pub_593",
+    "id": "pub_595",
     "year": "2006",
     "authors": [{
         "name": "Gregor Broll",
@@ -14636,7 +14717,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/broll2006pergames/broll2006pergames.pdf", "/pubdb/publications/pub/broll2006pergames/broll2006pergames.slides.pdf"],
     "award": false
 }, {
-    "id": "pub_594",
+    "id": "pub_596",
     "year": "2006",
     "authors": [{
         "name": "Giovanni Bartolomeo"
@@ -14669,7 +14750,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/bartolomeo2006permid/bartolomeo2006permid.pdf"],
     "award": false
 }, {
-    "id": "pub_595",
+    "id": "pub_597",
     "year": "2006",
     "authors": [{
         "name": "Albrecht Schmidt",
@@ -14690,7 +14771,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/schmidt2006SAC/schmidt2006SAC.pdf"],
     "award": false
 }, {
-    "id": "pub_596",
+    "id": "pub_598",
     "year": "2006",
     "authors": [{
         "name": "Albrecht Schmidt",
@@ -14719,7 +14800,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/schmidt2006chiwip/schmidt2006chiwip.pdf"],
     "award": false
 }, {
-    "id": "pub_597",
+    "id": "pub_599",
     "year": "2006",
     "authors": [{
         "name": "Arnd Vitzthum",
@@ -14737,7 +14818,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_598",
+    "id": "pub_600",
     "year": "2006",
     "authors": [{
         "name": "Lucia Terrenghi",
@@ -14755,7 +14836,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/terrenghi2006MSsymposium/terrenghi2006MSsymposium.pdf"],
     "award": false
 }, {
-    "id": "pub_599",
+    "id": "pub_601",
     "year": "2006",
     "authors": [{
         "name": "Sebastian Boring",
@@ -14773,7 +14854,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/boring2006dipl/boring2006dipl.pdf", "/pubdb/publications/pub/boring2006dipl/boring2006dipl.slides.pdf"],
     "award": false
 }, {
-    "id": "pub_600",
+    "id": "pub_602",
     "year": "2006",
     "authors": [{
         "name": "Otmar Hilliges",
@@ -14791,7 +14872,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/hilliges2006dockolloq/hilliges2006dockolloq.pdf", "/pubdb/publications/pub/hilliges2006dockolloq/hilliges2006dockolloq.slides.pdf"],
     "award": false
 }, {
-    "id": "pub_601",
+    "id": "pub_603",
     "year": "2006",
     "authors": [{
         "name": "Arnd Vitzthum",
@@ -14809,7 +14890,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_602",
+    "id": "pub_604",
     "year": "2006",
     "authors": [{
         "name": "Arnd Vitzthum",
@@ -14827,7 +14908,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/vitzthum2006mrui/vitzthum2006mrui.pdf"],
     "award": false
 }, {
-    "id": "pub_603",
+    "id": "pub_605",
     "year": "2006",
     "authors": [{
         "name": "Richard Atterer",
@@ -14851,7 +14932,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/atterer2006jwe/atterer2006jwe.pdf"],
     "award": false
 }, {
-    "id": "pub_604",
+    "id": "pub_606",
     "year": "2006",
     "authors": [{
         "name": "Otmar Hilliges",
@@ -14872,7 +14953,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/hilliges2006mu3i/hilliges2006mu3i.pdf", "/pubdb/publications/pub/hilliges2006mu3i/hilliges2006mu3i.slides.pdf"],
     "award": false
 }, {
-    "id": "pub_605",
+    "id": "pub_607",
     "year": "2006",
     "authors": [{
         "name": "Lucia Terrenghi",
@@ -14893,7 +14974,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/terrenghi2006mu3i/terrenghi2006mu3i.pdf"],
     "award": false
 }, {
-    "id": "pub_606",
+    "id": "pub_608",
     "year": "2006",
     "authors": [{
         "name": "Otmar Hilliges",
@@ -14917,7 +14998,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/hilliges2006iui/hilliges2006iui.pdf"],
     "award": false
 }, {
-    "id": "pub_607",
+    "id": "pub_609",
     "year": "2006",
     "authors": [{
         "name": "Andreas Pleuß",
@@ -14942,7 +15023,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_608",
+    "id": "pub_610",
     "year": "2006",
     "authors": [{
         "name": "Andreas Butz",
@@ -14969,7 +15050,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_609",
+    "id": "pub_611",
     "year": "2006",
     "authors": [{
         "name": "Andreas Butz",
@@ -14990,7 +15071,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/butz2006peephole/butz2006peephole.pdf"],
     "award": false
 }, {
-    "id": "pub_610",
+    "id": "pub_612",
     "year": "2006",
     "authors": [{
         "name": "Andreas Butz",
@@ -15011,7 +15092,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/butz2006health/butz2006health.pdf"],
     "award": false
 }, {
-    "id": "pub_612",
+    "id": "pub_614",
     "year": "2005",
     "authors": [{
         "name": "Andreas Butz",
@@ -15031,7 +15112,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/butz2005procams/butz2005procams.pdf"],
     "award": false
 }, {
-    "id": "pub_613",
+    "id": "pub_615",
     "year": "2005",
     "authors": [{
         "name": "Ralf Jung",
@@ -15052,7 +15133,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/butz2005soundscapes/butz2005soundscapes.pdf"],
     "award": false
 }, {
-    "id": "pub_614",
+    "id": "pub_616",
     "year": "2005",
     "authors": [{
         "name": "Arnd Vitzthum",
@@ -15070,7 +15151,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_615",
+    "id": "pub_617",
     "year": "2005",
     "authors": [{
         "name": "Andreas Pleuß",
@@ -15088,7 +15169,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/pleuss2005ism/pleuss2005ism.pdf"],
     "award": false
 }, {
-    "id": "pub_616",
+    "id": "pub_618",
     "year": "2005",
     "authors": [{
         "name": "Heiko Drewes",
@@ -15109,7 +15190,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/drewes2005isvc/drewes2005isvc.pdf"],
     "award": false
 }, {
-    "id": "pub_617",
+    "id": "pub_619",
     "year": "2005",
     "authors": [{
         "name": "Albrecht Schmidt",
@@ -15135,7 +15216,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/schmidt2005ubicomp/schmidt2005ubicomp.pdf"],
     "award": false
 }, {
-    "id": "pub_618",
+    "id": "pub_620",
     "year": "2005",
     "authors": [{
         "name": "Andreas Pleuß",
@@ -15160,7 +15241,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_619",
+    "id": "pub_621",
     "year": "2005",
     "authors": [{
         "name": "Albrecht Schmidt",
@@ -15187,7 +15268,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/schmidt2005mobilegeraete/schmidt2005mobilegeraete.pdf"],
     "award": false
 }, {
-    "id": "pub_620",
+    "id": "pub_622",
     "year": "2005",
     "authors": [{
         "name": "Enrico Rukzio",
@@ -15211,7 +15292,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/rukzio2005tamodia/rukzio2005tamodia.pdf"],
     "award": false
 }, {
-    "id": "pub_621",
+    "id": "pub_623",
     "year": "2005",
     "authors": [{
         "name": "Albrecht Schmidt",
@@ -15235,7 +15316,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/schmidt2005soceusai/schmidt2005soceusai.pdf", "/pubdb/publications/pub/schmidt2005soceusai/schmidt2005soceusai.slides.pdf"],
     "award": false
 }, {
-    "id": "pub_622",
+    "id": "pub_624",
     "year": "2005",
     "authors": [{
         "name": "Andreas Pleuß",
@@ -15253,7 +15334,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/pleuss2005models/pleuss2005models.pdf"],
     "award": false
 }, {
-    "id": "pub_623",
+    "id": "pub_625",
     "year": "2005",
     "authors": [{
         "name": "Gregor Broll",
@@ -15274,7 +15355,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/broll2005icec/broll2005icec.pdf", "/pubdb/publications/pub/broll2005icec/broll2005icec.slides.pdf"],
     "award": false
 }, {
-    "id": "pub_624",
+    "id": "pub_626",
     "year": "2005",
     "authors": [{
         "name": "Andreas Butz",
@@ -15295,7 +15376,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/butz2005ubicomp/butz2005ubicomp.pdf"],
     "award": false
 }, {
-    "id": "pub_625",
+    "id": "pub_627",
     "year": "2005",
     "authors": [{
         "name": "Sebastian Boring",
@@ -15322,7 +15403,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/boring2005ubicompdemo/boring2005ubicompdemo.pdf"],
     "award": false
 }, {
-    "id": "pub_626",
+    "id": "pub_628",
     "year": "2005",
     "authors": [{
         "name": "Julie A. Kientz",
@@ -15349,7 +15430,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/boring2005ubicomp/boring2005ubicomp.pdf"],
     "award": false
 }, {
-    "id": "pub_627",
+    "id": "pub_629",
     "year": "2005",
     "authors": [{
         "name": "Lucia Terrenghi",
@@ -15367,7 +15448,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/terrenghi2005interact/terrenghi2005interact.pdf"],
     "award": false
 }, {
-    "id": "pub_628",
+    "id": "pub_630",
     "year": "2005",
     "authors": [{
         "name": "Paul Holleis",
@@ -15388,7 +15469,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/holleis2005ubicompobject/holleis2005ubicompobject.pdf", "/pubdb/publications/pub/holleis2005ubicompobject/holleis2005ubicompobject.slides.pdf"],
     "award": false
 }, {
-    "id": "pub_629",
+    "id": "pub_631",
     "year": "2005",
     "authors": [{
         "name": "Paul Holleis",
@@ -15412,7 +15493,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/holleis2005ubicompdisplayed/holleis2005ubicompdisplayed.pdf", "/pubdb/publications/pub/holleis2005ubicompdisplayed/holleis2005ubicompdisplayed.slides.pdf"],
     "award": false
 }, {
-    "id": "pub_630",
+    "id": "pub_632",
     "year": "2005",
     "authors": [{
         "name": "Matthias Kranz",
@@ -15438,7 +15519,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/holleis2005ubicompcube/holleis2005ubicompcube.pdf"],
     "award": false
 }, {
-    "id": "pub_631",
+    "id": "pub_633",
     "year": "2005",
     "authors": [{
         "name": "Lucia Terrenghi",
@@ -15456,7 +15537,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/terrenghi2005smartgr/terrenghi2005smartgr.pdf"],
     "award": false
 }, {
-    "id": "pub_632",
+    "id": "pub_634",
     "year": "2005",
     "authors": [{
         "name": "Richard Atterer",
@@ -15477,7 +15558,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/atterer2005icwe/atterer2005icwe.pdf", "/pubdb/publications/pub/atterer2005icwe/atterer2005icwe.slides.pdf"],
     "award": false
 }, {
-    "id": "pub_633",
+    "id": "pub_635",
     "year": "2005",
     "authors": [{
         "name": "Paul Holleis",
@@ -15499,7 +15580,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/holleis2005jgaa/holleis2005jgaa.pdf"],
     "award": false
 }, {
-    "id": "pub_634",
+    "id": "pub_636",
     "year": "2005",
     "authors": [{
         "name": "Albrecht Schmidt",
@@ -15525,7 +15606,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/schmidt2005iwsawcphoto/schmidt2005iwsawcphoto.pdf"],
     "award": false
 }, {
-    "id": "pub_635",
+    "id": "pub_637",
     "year": "2005",
     "authors": [{
         "name": "Albrecht Schmidt",
@@ -15549,7 +15630,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/schmidt2005iwsawcdistscroll/schmidt2005iwsawcdistscroll.pdf"],
     "award": false
 }, {
-    "id": "pub_636",
+    "id": "pub_638",
     "year": "2005",
     "authors": [{
         "name": "Lucia Terrenghi",
@@ -15567,7 +15648,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/terrenghi2005pervdoc/terrenghi2005pervdoc.pdf"],
     "award": false
 }, {
-    "id": "pub_637",
+    "id": "pub_639",
     "year": "2005",
     "authors": [{
         "name": "Karin Leichtenstern"
@@ -15590,7 +15671,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/leichtenstern2005pervasive/leichtenstern2005pervasive.pdf"],
     "award": false
 }, {
-    "id": "pub_638",
+    "id": "pub_640",
     "year": "2005",
     "authors": [{
         "name": "Andreas Butz",
@@ -15617,7 +15698,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/butz2005chi/butz2005chi.pdf"],
     "award": false
 }, {
-    "id": "pub_639",
+    "id": "pub_641",
     "year": "2005",
     "authors": [{
         "name": "Lucia Terrenghi",
@@ -15644,7 +15725,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/terrenghi2005puc/terrenghi2005puc.pdf"],
     "award": false
 }, {
-    "id": "pub_640",
+    "id": "pub_642",
     "year": "2005",
     "authors": [{
         "name": "Sebastian Boring",
@@ -15662,7 +15743,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/boring2005proj/boring2005proj.pdf"],
     "award": false
 }, {
-    "id": "pub_641",
+    "id": "pub_643",
     "year": "2005",
     "authors": [{
         "name": "Arnd Vitzthum",
@@ -15683,7 +15764,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_642",
+    "id": "pub_644",
     "year": "2005",
     "authors": [{
         "name": "Richard Atterer",
@@ -15701,7 +15782,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/atterer2005sac/atterer2005sac.pdf", "/pubdb/publications/pub/atterer2005sac/atterer2005sac.slides.pdf"],
     "award": false
 }, {
-    "id": "pub_643",
+    "id": "pub_645",
     "year": "2005",
     "authors": [{
         "name": "Albrecht Schmidt",
@@ -15728,7 +15809,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/schmidt2005neueformen/schmidt2005neueformen.pdf"],
     "award": false
 }, {
-    "id": "pub_644",
+    "id": "pub_646",
     "year": "2005",
     "authors": [{
         "name": "Christoph Endres",
@@ -15752,7 +15833,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/butz2005ubicompsurvey/butz2005ubicompsurvey.pdf"],
     "award": false
 }, {
-    "id": "pub_645",
+    "id": "pub_647",
     "year": "2005",
     "authors": [{
         "name": "Andreas Butz",
@@ -15773,7 +15854,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/butz2005soundscapesiui/butz2005soundscapesiui.pdf"],
     "award": false
 }, {
-    "id": "pub_646",
+    "id": "pub_648",
     "year": "2005",
     "authors": [{
         "name": "Heinrich Hussmann",
@@ -15791,7 +15872,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_647",
+    "id": "pub_649",
     "year": "2005",
     "authors": [{
         "name": "Jean Bézivin"
@@ -15828,7 +15909,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_648",
+    "id": "pub_650",
     "year": "2005",
     "authors": [{
         "name": "Jean-Michel Bruel"
@@ -15859,7 +15940,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_649",
+    "id": "pub_651",
     "year": "2005",
     "authors": [{
         "name": "Michael Schneider",
@@ -15880,7 +15961,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/butz2005wipe/butz2005wipe.pdf"],
     "award": false
 }, {
-    "id": "pub_650",
+    "id": "pub_652",
     "year": "2005",
     "authors": [{
         "name": "Andreas Butz",
@@ -15904,7 +15985,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_651",
+    "id": "pub_653",
     "year": "2005",
     "authors": [{
         "name": "Alois Ferscha"
@@ -15938,7 +16019,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_652",
+    "id": "pub_654",
     "year": "2005",
     "authors": [{
         "name": "Andreas Butz",
@@ -15968,7 +16049,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/butz2005mu3iproc/butz2005mu3iproc.pdf"],
     "award": false
 }, {
-    "id": "pub_653",
+    "id": "pub_655",
     "year": "2005",
     "authors": [{
         "name": "Michael Schneider",
@@ -15992,7 +16073,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/butz2005flashpeep/butz2005flashpeep.pdf"],
     "award": false
 }, {
-    "id": "pub_655",
+    "id": "pub_657",
     "year": "2004",
     "authors": [{
         "name": "Enrico Rukzio",
@@ -16016,7 +16097,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/rukzio2004wmcsa/rukzio2004wmcsa.pdf"],
     "award": false
 }, {
-    "id": "pub_656",
+    "id": "pub_658",
     "year": "2004",
     "authors": [{
         "name": "Heinrich Hussmann",
@@ -16037,7 +16118,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/hussmann2004monterey/hussmann2004monterey.pdf"],
     "award": false
 }, {
-    "id": "pub_657",
+    "id": "pub_659",
     "year": "2004",
     "authors": [{
         "name": "Christian Bachmaier"
@@ -16064,7 +16145,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/holleis2004gdgravisto/holleis2004gdgravisto.pdf"],
     "award": false
 }, {
-    "id": "pub_658",
+    "id": "pub_660",
     "year": "2004",
     "authors": [{
         "name": "Paul Holleis",
@@ -16085,7 +16166,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/holleis2004gd/holleis2004gd.pdf"],
     "award": false
 }, {
-    "id": "pub_659",
+    "id": "pub_661",
     "year": "2004",
     "authors": [{
         "name": "Albrecht Schmidt",
@@ -16109,7 +16190,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/schmidt2004ubicompvirrig/schmidt2004ubicompvirrig.pdf"],
     "award": false
 }, {
-    "id": "pub_660",
+    "id": "pub_662",
     "year": "2004",
     "authors": [{
         "name": "Albrecht Schmidt",
@@ -16133,7 +16214,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/schmidt2004ubicompembedding/schmidt2004ubicompembedding.pdf"],
     "award": false
 }, {
-    "id": "pub_661",
+    "id": "pub_663",
     "year": "2004",
     "authors": [{
         "name": "Enrico Rukzio",
@@ -16157,7 +16238,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/rukzio2004ubidisplay/rukzio2004ubidisplay.pdf"],
     "award": false
 }, {
-    "id": "pub_662",
+    "id": "pub_664",
     "year": "2004",
     "authors": [{
         "name": "Enrico Rukzio",
@@ -16181,7 +16262,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/rukzio2004ubicomp/rukzio2004ubicomp.pdf"],
     "award": false
 }, {
-    "id": "pub_663",
+    "id": "pub_665",
     "year": "2004",
     "authors": [{
         "name": "Andreas Butz",
@@ -16199,7 +16280,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/butz2004awareness/butz2004awareness.pdf"],
     "award": false
 }, {
-    "id": "pub_664",
+    "id": "pub_666",
     "year": "2004",
     "authors": [{
         "name": "Otmar Hilliges",
@@ -16217,7 +16298,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/hilliges2004dipl/hilliges2004dipl.pdf", "/pubdb/publications/pub/hilliges2004dipl/hilliges2004dipl.slides.pdf"],
     "award": false
 }, {
-    "id": "pub_665",
+    "id": "pub_667",
     "year": "2004",
     "authors": [{
         "name": "Nico Beyer"
@@ -16241,7 +16322,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_666",
+    "id": "pub_668",
     "year": "2004",
     "authors": [{
         "name": "Ramon Schalleck"
@@ -16263,7 +16344,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/schalleck2004chiea/schalleck2004chiea.pdf"],
     "award": false
 }, {
-    "id": "pub_667",
+    "id": "pub_669",
     "year": "2004",
     "authors": [{
         "name": "Heinrich Hussmann",
@@ -16283,7 +16364,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_668",
+    "id": "pub_670",
     "year": "2004",
     "authors": [{
         "name": "Antonio Krüger",
@@ -16317,7 +16398,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/butz2004userinterface/butz2004userinterface.pdf"],
     "award": false
 }, {
-    "id": "pub_669",
+    "id": "pub_671",
     "year": "2004",
     "authors": [{
         "name": "Andreas Butz",
@@ -16340,7 +16421,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/butz2004tuister/butz2004tuister.pdf"],
     "award": false
 }, {
-    "id": "pub_670",
+    "id": "pub_672",
     "year": "2004",
     "authors": [{
         "name": "Otmar Hilliges",
@@ -16364,7 +16445,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/hilliges2004uic/hilliges2004uic.pdf"],
     "award": false
 }, {
-    "id": "pub_671",
+    "id": "pub_673",
     "year": "2004",
     "authors": [{
         "name": "Jean-Michel Bruel"
@@ -16395,7 +16476,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_672",
+    "id": "pub_674",
     "year": "2004",
     "authors": [{
         "name": "Andreas Butz",
@@ -16419,7 +16500,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_673",
+    "id": "pub_675",
     "year": "2004",
     "authors": [{
         "name": "Andreas Butz",
@@ -16443,7 +16524,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/butz2004searchlight/butz2004searchlight.pdf"],
     "award": false
 }, {
-    "id": "pub_674",
+    "id": "pub_676",
     "year": "2004",
     "authors": [{
         "name": "Andreas Butz",
@@ -16470,7 +16551,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/butz2004mu3iproc/butz2004mu3iproc.pdf"],
     "award": false
 }, {
-    "id": "pub_676",
+    "id": "pub_678",
     "year": "2003",
     "authors": [{
         "name": "Anne Thomas"
@@ -16490,7 +16571,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_677",
+    "id": "pub_679",
     "year": "2003",
     "authors": [{
         "name": "Martin Bauer",
@@ -16537,7 +16618,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/dwarf2003integrating/dwarf2003integrating.pdf", "/pubdb/publications/pub/dwarf2003integrating/dwarf2003integrating.slides.pdf"],
     "award": false
 }, {
-    "id": "pub_678",
+    "id": "pub_680",
     "year": "2003",
     "authors": [{
         "name": "Andreas Butz",
@@ -16558,7 +16639,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/butz2003peephole/butz2003peephole.pdf"],
     "award": false
 }, {
-    "id": "pub_679",
+    "id": "pub_681",
     "year": "2003",
     "authors": [{
         "name": "Bert F. Koch",
@@ -16579,7 +16660,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_680",
+    "id": "pub_682",
     "year": "2003",
     "authors": [{
         "name": "Timo Engel"
@@ -16614,7 +16695,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_681",
+    "id": "pub_683",
     "year": "2003",
     "authors": [{
         "name": "Andreas Butz",
@@ -16637,7 +16718,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/butz2003tuister/butz2003tuister.pdf"],
     "award": false
 }, {
-    "id": "pub_682",
+    "id": "pub_684",
     "year": "2003",
     "authors": [{
         "name": "Andreas Butz",
@@ -16661,7 +16742,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_684",
+    "id": "pub_686",
     "year": "2002",
     "authors": [{
         "name": "Richard Atterer",
@@ -16679,7 +16760,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/atterer2002diploma/atterer2002diploma.pdf"],
     "award": false
 }, {
-    "id": "pub_685",
+    "id": "pub_687",
     "year": "2002",
     "authors": [{
         "name": "Andreas Pleuß",
@@ -16697,7 +16778,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_686",
+    "id": "pub_688",
     "year": "2002",
     "authors": [{
         "name": "Ronald Aigner"
@@ -16741,7 +16822,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/hussmann2002comquad/hussmann2002comquad.pdf"],
     "award": false
 }, {
-    "id": "pub_687",
+    "id": "pub_689",
     "year": "2002",
     "authors": [{
         "name": "Arnd Vitzthum",
@@ -16759,7 +16840,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_688",
+    "id": "pub_690",
     "year": "2002",
     "authors": [{
         "name": "Thorsten Bohnenberger",
@@ -16786,7 +16867,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/butz2002shoppingassist/butz2002shoppingassist.pdf"],
     "award": false
 }, {
-    "id": "pub_689",
+    "id": "pub_691",
     "year": "2002",
     "authors": [{
         "name": "Heinrich Hussmann",
@@ -16804,7 +16885,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/hussmann2002semantics/hussmann2002semantics.pdf"],
     "award": false
 }, {
-    "id": "pub_690",
+    "id": "pub_692",
     "year": "2002",
     "authors": [{
         "name": "Birgit Demuth"
@@ -16826,7 +16907,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/hussmann2002engineering/hussmann2002engineering.pdf"],
     "award": false
 }, {
-    "id": "pub_691",
+    "id": "pub_693",
     "year": "2002",
     "authors": [{
         "name": "Heinrich Hussmann",
@@ -16848,7 +16929,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_692",
+    "id": "pub_694",
     "year": "2002",
     "authors": [{
         "name": "Dieter Orlamünder"
@@ -16870,7 +16951,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_693",
+    "id": "pub_695",
     "year": "2002",
     "authors": [{
         "name": "Thorsten Bohnenberger",
@@ -16897,7 +16978,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/butz2002shoppingguide/butz2002shoppingguide.pdf"],
     "award": false
 }, {
-    "id": "pub_694",
+    "id": "pub_696",
     "year": "2002",
     "authors": [{
         "name": "Andreas Butz",
@@ -16927,7 +17008,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_695",
+    "id": "pub_697",
     "year": "2002",
     "authors": [{
         "name": "Andreas Butz",
@@ -16945,7 +17026,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/butz2002museum/butz2002museum.pdf"],
     "award": false
 }, {
-    "id": "pub_697",
+    "id": "pub_699",
     "year": "2001",
     "authors": [{
         "name": "Birgit Demuth"
@@ -16967,7 +17048,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_698",
+    "id": "pub_700",
     "year": "2001",
     "authors": [{
         "name": "Gerald Eichler"
@@ -16998,7 +17079,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_699",
+    "id": "pub_701",
     "year": "2001",
     "authors": [{
         "name": "Birgit Demuth"
@@ -17022,7 +17103,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/hussmann2001oot/hussmann2001oot.pdf"],
     "award": false
 }, {
-    "id": "pub_700",
+    "id": "pub_702",
     "year": "2001",
     "authors": [{
         "name": "Birgit Demuth"
@@ -17045,7 +17126,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_701",
+    "id": "pub_703",
     "year": "2001",
     "authors": [{
         "name": "Heinrich Hussmann",
@@ -17063,7 +17144,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_702",
+    "id": "pub_704",
     "year": "2001",
     "authors": [{
         "name": "R. Hennicker",
@@ -17086,7 +17167,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_703",
+    "id": "pub_705",
     "year": "2001",
     "authors": [{
         "name": "Andreas Butz",
@@ -17112,7 +17193,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/butz2001smartgraphics/butz2001smartgraphics.pdf"],
     "award": false
 }, {
-    "id": "pub_704",
+    "id": "pub_706",
     "year": "2001",
     "authors": [{
         "name": "Andreas Butz",
@@ -17139,7 +17220,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_705",
+    "id": "pub_707",
     "year": "2001",
     "authors": [{
         "name": "Andreas Butz",
@@ -17165,7 +17246,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/butz2001navigation/butz2001navigation.pdf"],
     "award": false
 }, {
-    "id": "pub_706",
+    "id": "pub_708",
     "year": "2001",
     "authors": [{
         "name": "Andreas Butz",
@@ -17186,7 +17267,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_708",
+    "id": "pub_710",
     "year": "2000",
     "authors": [{
         "name": "Antonio Krüger",
@@ -17210,7 +17291,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/butz2000avi/butz2000avi.pdf"],
     "award": false
 }, {
-    "id": "pub_709",
+    "id": "pub_711",
     "year": "2000",
     "authors": [{
         "name": "Heinrich Hussmann",
@@ -17232,7 +17313,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/hussmann2000ocltoolset/hussmann2000ocltoolset.pdf"],
     "award": false
 }, {
-    "id": "pub_710",
+    "id": "pub_712",
     "year": "2000",
     "authors": [{
         "name": "Falk Fünfstück"
@@ -17254,7 +17335,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/hussmann2000aquila/hussmann2000aquila.pdf"],
     "award": false
 }, {
-    "id": "pub_711",
+    "id": "pub_713",
     "year": "2000",
     "authors": [{
         "name": "Heinrich Hussmann",
@@ -17276,7 +17357,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_712",
+    "id": "pub_714",
     "year": "2000",
     "authors": [{
         "name": "Thorsten Bohnenberger",
@@ -17297,7 +17378,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/butz2000navinstr/butz2000navinstr.pdf"],
     "award": false
 }, {
-    "id": "pub_713",
+    "id": "pub_715",
     "year": "2000",
     "authors": [{
         "name": "Andreas Butz",
@@ -17321,7 +17402,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/butz2000awareness/butz2000awareness.pdf"],
     "award": false
 }, {
-    "id": "pub_714",
+    "id": "pub_716",
     "year": "2000",
     "authors": [{
         "name": "Heinrich Hussmann",
@@ -17339,7 +17420,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_715",
+    "id": "pub_717",
     "year": "2000",
     "authors": [{
         "name": "Jörg Baus",
@@ -17363,7 +17444,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/butz2000presenter/butz2000presenter.pdf"],
     "award": false
 }, {
-    "id": "pub_716",
+    "id": "pub_718",
     "year": "2000",
     "authors": [{
         "name": "Richard Atterer",
@@ -17381,7 +17462,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/atterer2000sep/atterer2000sep.pdf"],
     "award": false
 }, {
-    "id": "pub_717",
+    "id": "pub_719",
     "year": "2000",
     "authors": [{
         "name": "Birgit Demuth"
@@ -17405,7 +17486,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/hussmann2000teachingoot/hussmann2000teachingoot.pdf"],
     "award": false
 }, {
-    "id": "pub_718",
+    "id": "pub_720",
     "year": "2000",
     "authors": [{
         "name": "Gerald Eichler"
@@ -17433,7 +17514,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_719",
+    "id": "pub_721",
     "year": "2000",
     "authors": [{
         "name": "Gianna Reggio"
@@ -17457,7 +17538,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/hussmann2000umlclasses/hussmann2000umlclasses.pdf"],
     "award": false
 }, {
-    "id": "pub_720",
+    "id": "pub_722",
     "year": "2000",
     "authors": [{
         "name": "Heinrich Hussmann",
@@ -17475,7 +17556,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_721",
+    "id": "pub_723",
     "year": "2000",
     "authors": [{
         "name": "Andreas Butz",
@@ -17499,7 +17580,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_722",
+    "id": "pub_724",
     "year": "2000",
     "authors": [{
         "name": "Jörg Baus",
@@ -17523,7 +17604,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/butz2000scouting/butz2000scouting.pdf"],
     "award": false
 }, {
-    "id": "pub_723",
+    "id": "pub_725",
     "year": "2000",
     "authors": [{
         "name": "Andreas Butz",
@@ -17547,7 +17628,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/butz2000buildings/butz2000buildings.pdf"],
     "award": false
 }, {
-    "id": "pub_725",
+    "id": "pub_727",
     "year": "1999",
     "authors": [{
         "name": "T. V. Do",
@@ -17589,7 +17670,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/hussmann1999elisa/hussmann1999elisa.pdf"],
     "award": false
 }, {
-    "id": "pub_726",
+    "id": "pub_728",
     "year": "1999",
     "authors": [{
         "name": "Jörg Baus",
@@ -17613,7 +17694,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/butz1999interaction/butz1999interaction.pdf"],
     "award": false
 }, {
-    "id": "pub_727",
+    "id": "pub_729",
     "year": "1999",
     "authors": [{
         "name": "Birgit Demuth"
@@ -17637,7 +17718,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_728",
+    "id": "pub_730",
     "year": "1999",
     "authors": [{
         "name": "Birgit Demuth"
@@ -17657,7 +17738,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_729",
+    "id": "pub_731",
     "year": "1999",
     "authors": [{
         "name": "Heinrich Hussmann",
@@ -17675,7 +17756,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/hussmann1999fbt/hussmann1999fbt.pdf"],
     "award": false
 }, {
-    "id": "pub_730",
+    "id": "pub_732",
     "year": "1999",
     "authors": [{
         "name": "Andreas Butz",
@@ -17704,7 +17785,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/butz1999techreport/butz1999techreport.pdf"],
     "award": false
 }, {
-    "id": "pub_731",
+    "id": "pub_733",
     "year": "1999",
     "authors": [{
         "name": "Andreas Butz",
@@ -17733,7 +17814,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/butz1999iwar/butz1999iwar.pdf"],
     "award": false
 }, {
-    "id": "pub_733",
+    "id": "pub_735",
     "year": "1998",
     "authors": [{
         "name": "Birgit Demuth"
@@ -17757,7 +17838,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_734",
+    "id": "pub_736",
     "year": "1998",
     "authors": [{
         "name": "Heinrich Hussmann",
@@ -17782,7 +17863,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/hussmann1998interworking/hussmann1998interworking.pdf"],
     "award": false
 }, {
-    "id": "pub_735",
+    "id": "pub_737",
     "year": "1998",
     "authors": [{
         "name": "Iakovos Venieris"
@@ -17802,7 +17883,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_736",
+    "id": "pub_738",
     "year": "1998",
     "authors": [{
         "name": "Andreas Butz",
@@ -17825,7 +17906,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/butz1998vampire/butz1998vampire.pdf"],
     "award": false
 }, {
-    "id": "pub_738",
+    "id": "pub_740",
     "year": "1997",
     "authors": [{
         "name": "Giovanna De Zen"
@@ -17861,7 +17942,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/hussmann1997tina/hussmann1997tina.pdf"],
     "award": false
 }, {
-    "id": "pub_739",
+    "id": "pub_741",
     "year": "1997",
     "authors": [{
         "name": "Andreas Butz",
@@ -17879,7 +17960,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/butz1997dissertation/butz1997dissertation.pdf"],
     "award": false
 }, {
-    "id": "pub_740",
+    "id": "pub_742",
     "year": "1997",
     "authors": [{
         "name": "Heinrich Hussmann",
@@ -17897,7 +17978,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_741",
+    "id": "pub_743",
     "year": "1997",
     "authors": [{
         "name": "Heinrich Hussmann",
@@ -17915,7 +17996,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_742",
+    "id": "pub_744",
     "year": "1997",
     "authors": [{
         "name": "Andreas Butz",
@@ -17933,7 +18014,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/butz1997cathi/butz1997cathi.pdf"],
     "award": false
 }, {
-    "id": "pub_743",
+    "id": "pub_745",
     "year": "1997",
     "authors": [{
         "name": "Andreas Butz",
@@ -17951,7 +18032,7 @@ var pubdb = [{
     "downloads": ["/pubdb/publications/pub/butz1997abstraktion/butz1997abstraktion.pdf"],
     "award": false
 }, {
-    "id": "pub_745",
+    "id": "pub_747",
     "year": "1996",
     "authors": [{
         "name": "Andreas Butz",
@@ -17972,7 +18053,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_747",
+    "id": "pub_749",
     "year": "1995",
     "authors": [{
         "name": "Elisabeth Andre"
@@ -18015,7 +18096,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_748",
+    "id": "pub_750",
     "year": "1995",
     "authors": [{
         "name": "Andreas Butz",
@@ -18033,7 +18114,7 @@ var pubdb = [{
     "downloads": [],
     "award": false
 }, {
-    "id": "pub_750",
+    "id": "pub_752",
     "year": "1994",
     "authors": [{
         "name": "Andreas Butz",
@@ -18050,4 +18131,4 @@ var pubdb = [{
     "bibfile": null,
     "downloads": [],
     "award": false
-}];
+}]
