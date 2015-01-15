@@ -38,7 +38,6 @@ function drawDiagram(matrix, namesArray, cb)  {
 
     //set the svg width and height and the chord radius
     var vizWidth = $('.jumbotron').width();
-    console.log(vizWidth);
 
     var width = vizWidth,
         height = vizWidth,
@@ -195,12 +194,16 @@ function drawDiagram(matrix, namesArray, cb)  {
         .attr('opacity', 0)
         .attr('stroke', '#000');
 
-
     cb();
 }
 
 //redraw if sliders are used
-function redrawDiagramWithFilter() {
+function redrawDiagramWithFilter(isResized) {
+
+    if(isResized === undefined){
+        //prevent viz from being 0
+        $('#viz').height(viz);
+    }
 
     d3.select('#viz svg').remove();
     $('#fa-spinner').show();
@@ -208,20 +211,16 @@ function redrawDiagramWithFilter() {
     var dataByYear = groupDataByYear();
 
     //get filter values
-    var //minCollabs = collabSlider.slider('getValue')[0],
-    //maxCollabs = collabSlider.slider('getValue')[1],
-    //minPub = pubSlider.slider('getValue')[0],
-    //maxPub = pubSlider.slider('getValue')[1],
-    //matrix = createMatrix(statistics, minCollabs, maxCollabs, minPub, maxPub);
-        matrix = getStatisticsForYear(dataByYear[yearslider.slider('getValue')]);
+    var matrix = getStatisticsForYear(dataByYear[yearslider.slider('getValue')]);
 
     //draw new diagram
     drawDiagram(matrix, names, function() {
         $('#fa-spinner').hide();
+        viz = $('#viz').height();
     });
 }
 
-var names, dataByYear;
+var names, dataByYear, viz;
 
 function getStatisticsForYear(dataOfYear) {
 
@@ -265,28 +264,24 @@ function getStatisticsForYear(dataOfYear) {
     return matrix;
 }
 
-
 $(document).ready(function() {
-
     //TODO: SAVE TO FILE!
     dataByYear = groupDataByYear();
-
-    //filter
-    //matrix = filterMatrix(matrix, 20);
-    //names = filterNames(names);
     redrawDiagramWithFilter();
-    console.log($('.jumbotron').width());
-
 });
 
 $(function() {
     $('[data-toggle="popover"]').popover();
 });
+
 // Slider init
 var yearslider = $('#yearFilter').slider({});
 
-yearslider.on('slide', function() {
+yearslider.on('slide', function(event) {
+
+    event.preventDefault();
     redrawDiagramWithFilter();
+    return false;
 });
 
 
@@ -296,6 +291,5 @@ $('#redraw').on('click', function() {
 
 
 $(window).resize(function() {
-    redrawDiagramWithFilter();
+    redrawDiagramWithFilter(true);
 });
-
