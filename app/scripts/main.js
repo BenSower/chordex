@@ -37,8 +37,11 @@ function groupDataByYear() {
 function drawDiagram(matrix, namesArray, cb)  {
 
     //set the svg width and height and the chord radius
-    var width = 860,
-        height = 860,
+    var vizWidth = $('.jumbotron').width();
+    console.log(vizWidth);
+
+    var width = vizWidth,
+        height = vizWidth,
         innerRadius = height * 0.31,
         outerRadius = innerRadius * 1.1;
 
@@ -127,14 +130,14 @@ function drawDiagram(matrix, namesArray, cb)  {
                 .style('opacity', opacity);
         };
     }
-    
-    function splitFunc(g,i){
-        
-        var fadeF = fade(0.1);
-        fadeF(g,i);
-        
-    }
-    //call fade function on mouseover 
+
+    function splitFunc(g, i) {
+
+            var fadeF = fade(0.1);
+            fadeF(g, i);
+
+        }
+        //call fade function on mouseover 
     g.on('mouseover', splitFunc)
         .on('mouseout', fade(1));
 
@@ -210,7 +213,7 @@ function redrawDiagramWithFilter() {
     //minPub = pubSlider.slider('getValue')[0],
     //maxPub = pubSlider.slider('getValue')[1],
     //matrix = createMatrix(statistics, minCollabs, maxCollabs, minPub, maxPub);
-    matrix = getStatisticsForYear(dataByYear[yearslider.slider('getValue')]);
+        matrix = getStatisticsForYear(dataByYear[yearslider.slider('getValue')]);
 
     //draw new diagram
     drawDiagram(matrix, names, function() {
@@ -218,7 +221,7 @@ function redrawDiagramWithFilter() {
     });
 }
 
-var statistics, names, dataByYear;
+var names, dataByYear;
 
 function getStatisticsForYear(dataOfYear) {
 
@@ -249,10 +252,10 @@ function getStatisticsForYear(dataOfYear) {
                 matrix[authorIndex][collaboratorIndex] ++;
                 matrix[collaboratorIndex][authorIndex] ++;
                 //set names
-                if (names[authorIndex] === undefined){
+                if (names[authorIndex] === undefined) {
                     names[authorIndex] = author.name;
                 }
-                if (names[collaboratorIndex] === undefined){
+                if (names[collaboratorIndex] === undefined) {
                     names[collaboratorIndex] = publication.authors[i].name;
                 }
             }
@@ -263,7 +266,7 @@ function getStatisticsForYear(dataOfYear) {
 }
 
 
-function main() {
+$(document).ready(function() {
 
     //TODO: SAVE TO FILE!
     dataByYear = groupDataByYear();
@@ -272,10 +275,12 @@ function main() {
     //matrix = filterMatrix(matrix, 20);
     //names = filterNames(names);
     redrawDiagramWithFilter();
-}
+    console.log($('.jumbotron').width());
 
-$(function () {
-  $('[data-toggle="popover"]').popover();
+});
+
+$(function() {
+    $('[data-toggle="popover"]').popover();
 });
 // Slider init
 var yearslider = $('#yearFilter').slider({});
@@ -289,4 +294,8 @@ $('#redraw').on('click', function() {
     redrawDiagramWithFilter();
 });
 
-main();
+
+$(window).resize(function() {
+    redrawDiagramWithFilter();
+});
+
