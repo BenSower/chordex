@@ -1,0 +1,235 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'libpng-dev',
+1 verbose cli   'gifsicle',
+1 verbose cli   'pngquant' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.35
+4 verbose readDependencies using package.json deps
+5 verbose cache add [ 'libpng-dev', null ]
+6 verbose cache add name=undefined spec="libpng-dev" args=["libpng-dev",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'libpng-dev',
+7 verbose parsed url   path: 'libpng-dev',
+7 verbose parsed url   href: 'libpng-dev' }
+8 verbose cache add [ 'gifsicle', null ]
+9 verbose cache add name=undefined spec="gifsicle" args=["gifsicle",null]
+10 verbose parsed url { protocol: null,
+10 verbose parsed url   slashes: null,
+10 verbose parsed url   auth: null,
+10 verbose parsed url   host: null,
+10 verbose parsed url   port: null,
+10 verbose parsed url   hostname: null,
+10 verbose parsed url   hash: null,
+10 verbose parsed url   search: null,
+10 verbose parsed url   query: null,
+10 verbose parsed url   pathname: 'gifsicle',
+10 verbose parsed url   path: 'gifsicle',
+10 verbose parsed url   href: 'gifsicle' }
+11 verbose cache add [ 'pngquant', null ]
+12 verbose cache add name=undefined spec="pngquant" args=["pngquant",null]
+13 verbose parsed url { protocol: null,
+13 verbose parsed url   slashes: null,
+13 verbose parsed url   auth: null,
+13 verbose parsed url   host: null,
+13 verbose parsed url   port: null,
+13 verbose parsed url   hostname: null,
+13 verbose parsed url   hash: null,
+13 verbose parsed url   search: null,
+13 verbose parsed url   query: null,
+13 verbose parsed url   pathname: 'pngquant',
+13 verbose parsed url   path: 'pngquant',
+13 verbose parsed url   href: 'pngquant' }
+14 silly lockFile c94b32ed-libpng-dev libpng-dev
+15 verbose lock libpng-dev /home/ben/.npm/c94b32ed-libpng-dev.lock
+16 silly lockFile d6bd688a-gifsicle gifsicle
+17 verbose lock gifsicle /home/ben/.npm/d6bd688a-gifsicle.lock
+18 silly lockFile 53961091-pngquant pngquant
+19 verbose lock pngquant /home/ben/.npm/53961091-pngquant.lock
+20 silly lockFile c94b32ed-libpng-dev libpng-dev
+21 silly lockFile c94b32ed-libpng-dev libpng-dev
+22 silly lockFile d6bd688a-gifsicle gifsicle
+23 silly lockFile d6bd688a-gifsicle gifsicle
+24 silly lockFile 53961091-pngquant pngquant
+25 silly lockFile 53961091-pngquant pngquant
+26 verbose addNamed [ 'libpng-dev', '' ]
+27 verbose addNamed [ null, '*' ]
+28 silly lockFile 3936fd13-libpng-dev libpng-dev@
+29 verbose lock libpng-dev@ /home/ben/.npm/3936fd13-libpng-dev.lock
+30 verbose addNamed [ 'gifsicle', '' ]
+31 verbose addNamed [ null, '*' ]
+32 silly lockFile 193ca6ff-gifsicle gifsicle@
+33 verbose lock gifsicle@ /home/ben/.npm/193ca6ff-gifsicle.lock
+34 verbose addNamed [ 'pngquant', '' ]
+35 verbose addNamed [ null, '*' ]
+36 silly lockFile 82990f0c-pngquant pngquant@
+37 verbose lock pngquant@ /home/ben/.npm/82990f0c-pngquant.lock
+38 silly addNameRange { name: 'libpng-dev', range: '*', hasData: false }
+39 silly addNameRange { name: 'gifsicle', range: '*', hasData: false }
+40 silly addNameRange { name: 'pngquant', range: '*', hasData: false }
+41 verbose request where is /libpng-dev
+42 verbose request registry https://registry.npmjs.org/
+43 verbose request id 78a325456e3d24a7
+44 verbose url raw /libpng-dev
+45 verbose url resolving [ 'https://registry.npmjs.org/', './libpng-dev' ]
+46 verbose url resolved https://registry.npmjs.org/libpng-dev
+47 verbose request where is https://registry.npmjs.org/libpng-dev
+48 info trying registry request attempt 1 at 19:44:21
+49 http GET https://registry.npmjs.org/libpng-dev
+50 verbose request where is /gifsicle
+51 verbose request registry https://registry.npmjs.org/
+52 verbose url raw /gifsicle
+53 verbose url resolving [ 'https://registry.npmjs.org/', './gifsicle' ]
+54 verbose url resolved https://registry.npmjs.org/gifsicle
+55 verbose request where is https://registry.npmjs.org/gifsicle
+56 info trying registry request attempt 1 at 19:44:21
+57 verbose etag "BPT6LK5IRBSTT78N1QUIYBCK1"
+58 http GET https://registry.npmjs.org/gifsicle
+59 verbose request where is /pngquant
+60 verbose request registry https://registry.npmjs.org/
+61 verbose url raw /pngquant
+62 verbose url resolving [ 'https://registry.npmjs.org/', './pngquant' ]
+63 verbose url resolved https://registry.npmjs.org/pngquant
+64 verbose request where is https://registry.npmjs.org/pngquant
+65 info trying registry request attempt 1 at 19:44:21
+66 verbose etag "36ILS7MNGLN0YF1UFXIJ60HNH"
+67 http GET https://registry.npmjs.org/pngquant
+68 http 304 https://registry.npmjs.org/gifsicle
+69 silly registry.get cb [ 304,
+69 silly registry.get   { date: 'Thu, 15 Jan 2015 18:44:21 GMT',
+69 silly registry.get     server: 'Apache',
+69 silly registry.get     via: '1.1 varnish',
+69 silly registry.get     'last-modified': 'Thu, 15 Jan 2015 18:44:21 GMT',
+69 silly registry.get     'cache-control': 'max-age=60',
+69 silly registry.get     etag: '"BPT6LK5IRBSTT78N1QUIYBCK1"',
+69 silly registry.get     age: '32',
+69 silly registry.get     'x-served-by': 'cache-fra1233-FRA',
+69 silly registry.get     'x-cache': 'HIT',
+69 silly registry.get     'x-cache-hits': '1',
+69 silly registry.get     'x-timer': 'S1421347461.870106,VS0,VE0',
+69 silly registry.get     vary: 'Accept',
+69 silly registry.get     'content-length': '0',
+69 silly registry.get     'keep-alive': 'timeout=10, max=50',
+69 silly registry.get     connection: 'Keep-Alive' } ]
+70 verbose etag https://registry.npmjs.org/gifsicle from cache
+71 silly addNameRange number 2 { name: 'gifsicle', range: '*', hasData: true }
+72 silly addNameRange versions [ 'gifsicle',
+72 silly addNameRange   [ '0.1.0',
+72 silly addNameRange     '0.1.1',
+72 silly addNameRange     '0.1.2',
+72 silly addNameRange     '0.1.3',
+72 silly addNameRange     '0.1.4',
+72 silly addNameRange     '0.1.5',
+72 silly addNameRange     '0.1.6',
+72 silly addNameRange     '0.1.7',
+72 silly addNameRange     '1.0.0',
+72 silly addNameRange     '1.0.1',
+72 silly addNameRange     '1.0.2',
+72 silly addNameRange     '1.0.3',
+72 silly addNameRange     '2.0.0',
+72 silly addNameRange     '2.0.1' ] ]
+73 verbose addNamed [ 'gifsicle', '2.0.1' ]
+74 verbose addNamed [ '2.0.1', '2.0.1' ]
+75 silly lockFile d4c544cc-gifsicle-2-0-1 gifsicle@2.0.1
+76 verbose lock gifsicle@2.0.1 /home/ben/.npm/d4c544cc-gifsicle-2-0-1.lock
+77 silly lockFile d4c544cc-gifsicle-2-0-1 gifsicle@2.0.1
+78 silly lockFile d4c544cc-gifsicle-2-0-1 gifsicle@2.0.1
+79 silly lockFile 193ca6ff-gifsicle gifsicle@
+80 silly lockFile 193ca6ff-gifsicle gifsicle@
+81 http 404 https://registry.npmjs.org/libpng-dev
+82 verbose headers { date: 'Thu, 15 Jan 2015 18:44:22 GMT',
+82 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+82 verbose headers   'content-type': 'application/json',
+82 verbose headers   'cache-control': 'max-age=0',
+82 verbose headers   'content-length': '52',
+82 verbose headers   'accept-ranges': 'bytes',
+82 verbose headers   via: '1.1 varnish',
+82 verbose headers   age: '0',
+82 verbose headers   'x-served-by': 'cache-fra1226-FRA',
+82 verbose headers   'x-cache': 'MISS',
+82 verbose headers   'x-cache-hits': '0',
+82 verbose headers   'x-timer': 'S1421347461.859966,VS0,VE177',
+82 verbose headers   'keep-alive': 'timeout=10, max=50',
+82 verbose headers   connection: 'Keep-Alive' }
+83 silly registry.get cb [ 404,
+83 silly registry.get   { date: 'Thu, 15 Jan 2015 18:44:22 GMT',
+83 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+83 silly registry.get     'content-type': 'application/json',
+83 silly registry.get     'cache-control': 'max-age=0',
+83 silly registry.get     'content-length': '52',
+83 silly registry.get     'accept-ranges': 'bytes',
+83 silly registry.get     via: '1.1 varnish',
+83 silly registry.get     age: '0',
+83 silly registry.get     'x-served-by': 'cache-fra1226-FRA',
+83 silly registry.get     'x-cache': 'MISS',
+83 silly registry.get     'x-cache-hits': '0',
+83 silly registry.get     'x-timer': 'S1421347461.859966,VS0,VE177',
+83 silly registry.get     'keep-alive': 'timeout=10, max=50',
+83 silly registry.get     connection: 'Keep-Alive' } ]
+84 silly lockFile 3936fd13-libpng-dev libpng-dev@
+85 silly lockFile 3936fd13-libpng-dev libpng-dev@
+86 http 304 https://registry.npmjs.org/pngquant
+87 silly registry.get cb [ 304,
+87 silly registry.get   { date: 'Thu, 15 Jan 2015 18:44:21 GMT',
+87 silly registry.get     server: 'Apache',
+87 silly registry.get     via: '1.1 varnish',
+87 silly registry.get     'last-modified': 'Thu, 15 Jan 2015 18:44:22 GMT',
+87 silly registry.get     'cache-control': 'max-age=60',
+87 silly registry.get     etag: '"36ILS7MNGLN0YF1UFXIJ60HNH"',
+87 silly registry.get     age: '0',
+87 silly registry.get     'x-served-by': 'cache-fra1232-FRA',
+87 silly registry.get     'x-cache': 'MISS',
+87 silly registry.get     'x-cache-hits': '0',
+87 silly registry.get     'x-timer': 'S1421347461.870362,VS0,VE914',
+87 silly registry.get     vary: 'Accept',
+87 silly registry.get     'content-length': '0',
+87 silly registry.get     'keep-alive': 'timeout=10, max=50',
+87 silly registry.get     connection: 'Keep-Alive' } ]
+88 verbose etag https://registry.npmjs.org/pngquant from cache
+89 silly addNameRange number 2 { name: 'pngquant', range: '*', hasData: true }
+90 silly addNameRange versions [ 'pngquant',
+90 silly addNameRange   [ '0.0.1',
+90 silly addNameRange     '0.0.2',
+90 silly addNameRange     '0.0.3',
+90 silly addNameRange     '0.1.0',
+90 silly addNameRange     '0.1.1',
+90 silly addNameRange     '0.1.2',
+90 silly addNameRange     '0.1.3',
+90 silly addNameRange     '0.1.4',
+90 silly addNameRange     '0.1.5',
+90 silly addNameRange     '0.2.0',
+90 silly addNameRange     '0.3.0',
+90 silly addNameRange     '0.4.0' ] ]
+91 verbose addNamed [ 'pngquant', '0.4.0' ]
+92 verbose addNamed [ '0.4.0', '0.4.0' ]
+93 silly lockFile 0ab9fe1b-pngquant-0-4-0 pngquant@0.4.0
+94 verbose lock pngquant@0.4.0 /home/ben/.npm/0ab9fe1b-pngquant-0-4-0.lock
+95 silly lockFile 0ab9fe1b-pngquant-0-4-0 pngquant@0.4.0
+96 silly lockFile 0ab9fe1b-pngquant-0-4-0 pngquant@0.4.0
+97 silly lockFile 82990f0c-pngquant pngquant@
+98 silly lockFile 82990f0c-pngquant pngquant@
+99 error 404 404 Not Found: libpng-dev
+99 error 404
+99 error 404 'libpng-dev' is not in the npm registry.
+99 error 404 You should bug the author to publish it
+99 error 404 It was specified as a dependency of 'chordex'
+99 error 404
+99 error 404 Note that you can also install from a
+99 error 404 tarball, folder, or http url, or git url.
+100 error System Linux 3.18.0-9-generic
+101 error command "/usr/local/bin/node" "/usr/local/bin/npm" "install" "libpng-dev" "gifsicle" "pngquant"
+102 error cwd /media/ben/Abyss/DEV/Workspace/chordex
+103 error node -v v0.10.35
+104 error npm -v 1.4.28
+105 error code E404
+106 verbose exit [ 1, true ]
