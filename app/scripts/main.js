@@ -41,6 +41,9 @@ function groupDataByYear() {
         dataByYear[year].peoplePerYear = uniqueNamesPerYear;
         dataByYear[year].stats = stats;
     });
+
+    //DEBUG/DEV: print json to page to allow static file creation
+    //console.log(JSON.stringify(dataByYear['1995'])); 
     return dataByYear;
 }
 
@@ -291,13 +294,14 @@ function getStatisticsForYear(dataOfYear, numPubs, numCollabs) {
         });
 
     });
-    console.log(matrix);
     return matrix;
 }
+
 
 $(document).ready(function() {
     //TODO: SAVE TO FILE!
     dataByYear = groupDataByYear();
+
     redrawDiagramWithFilter();
 });
 
@@ -305,24 +309,20 @@ $(function() {
     $('[data-toggle="popover"]').popover();
 });
 
-// Slider init
-var yearSlider = $('#yearFilter').slider({}),
-    pubSlider = $('#pubFilter').slider({}),
-    collabSlider = $('#collabFilter').slider({});
-
 //ignored @param "event"
 function redraw() {
     redrawDiagramWithFilter();
 }
 
+// Slider init
+var yearSlider = $('#yearFilter').slider({}),
+    pubSlider = $('#pubFilter').slider({}),
+    collabSlider = $('#collabFilter').slider({});
+
 yearSlider.on('slide', redraw);
 pubSlider.on('slide', redraw);
 collabSlider.on('slide', redraw);
-
-
-$('#redraw').on('click', function() {
-    redrawDiagramWithFilter();
-});
+$('#redraw').on('click', redraw);
 
 
 $(window).resize(function() {
