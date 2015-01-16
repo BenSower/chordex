@@ -248,7 +248,7 @@ var names, dataByYear, viz;
 //Returns the relationship-matrix filtered by 
 //the number of publications numPubs and number
 //of collaborations collabs
-function getStatisticsForYear(dataOfYear, numPubs, collabs) {
+function getStatisticsForYear(dataOfYear, numPubs, numCollabs) {
 
     var matrix = [];
     //pre-fill array with zeros
@@ -267,9 +267,13 @@ function getStatisticsForYear(dataOfYear, numPubs, collabs) {
                     authorName = author.name,
                     collabName = publication.authors[i].name,
                     authorPubs = dataOfYear.stats[authorName].publications,
-                    collabPubs = dataOfYear.stats[collabName].publications;
+                    collabPubs = dataOfYear.stats[collabName].publications,
+                    authorCollabs = dataOfYear.stats[authorName].collaborations,
+                    collabCollabs = dataOfYear.stats[collabName].collaborations;
 
-                if ( authorPubs >= numPubs && collabPubs >= collabPubs) {
+                //filter publications and collaborations    
+                if (authorPubs >= numPubs && collabPubs >= collabPubs &&
+                    authorCollabs >= numCollabs && collabCollabs >= numCollabs) {
                     //increment relation counter with each paper
                     matrix[authorIndex][collaboratorIndex] ++;
                     matrix[collaboratorIndex][authorIndex] ++;
@@ -287,6 +291,7 @@ function getStatisticsForYear(dataOfYear, numPubs, collabs) {
         });
 
     });
+    console.log(matrix);
     return matrix;
 }
 
