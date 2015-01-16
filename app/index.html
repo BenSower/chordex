@@ -57,25 +57,50 @@
             </div>
         </div>
 
-        <div class="row marketing">
-            <div class="col-lg-6">
+        <div class="row marketing well">
+            <div class="col-lg-6 ">
                 <h4>The chord diagram</h4>
-                <p>Chord diagrams show relationships among a group of entities. In this example visualizing the PubDb, a database containing the paper-releases of the mmi-faculty of the lmu </p>
+                <p>Chord diagrams show relationships among a group of entities. In this example visualizing the PubDb, a database containing the paper-releases of the mmi-faculty of the lmu. Use the filters on the right to only display people who (co-)wrote a certain amount of publications and/or worked with at least a specified number of people in a certain year. Publications with only a single author will be ignored.</p>
             </div>
 
-            <div class="col-lg-6">
-                <div class="well">
-                    <h4> Filters: </h4>
-                    <p>Year: <b>1994 </b>
-                        <input id="yearFilter" data-slider-id='ex1Slider' type="text" class="span2" value="" data-slider-min="1994" data-slider-max="2015" data-slider-step="1" data-slider-value="2008" />
-                        <b>2015</b>
-                    </p>
-                    <p>
-                        <button type="send" id="redraw" class="btn btn-primary">Redraw Graph</span>
-                        </button>
-                    </p>
+            <div class="col-lg-6 ">
+                <h4>Filters</h4>
+
+                <div class="input-group">
+                    <p>Year</p>
+                    <span class="input-group-btn">
+                            <b>1994&nbsp;&nbsp;&nbsp;</b>
+                            <input id="yearFilter" data-slider-id='ex1Slider' type="text" class="span2" value="" data-slider-min="1994" data-slider-max="2015" data-slider-step="1" data-slider-value="2008" />
+                            <b>2015</b>
+                    </span>
+
                 </div>
+
+                <div class="input-group">
+                    <p>Publications</p>
+                    <span class="input-group-btn">
+                        <b>1&nbsp;&nbsp;&nbsp;</b>
+                        <input id="pubFilter" data-slider-id='ex1Slider' type="text" class="span2" value="" data-slider-min="1" data-slider-max="20" data-slider-step="1" data-slider-value="1" />
+                        <b>200</b>
+                    </span>
+                </div>
+
+                <div class="input-group">
+                    <p>Number of collaborations</p>
+                    <span class="input-group-btn">
+                        <b>1&nbsp;</b>
+                        <input id="collabFilter" data-slider-id='ex1Slider' type="text" class="span2" value="" data-slider-min="1" data-slider-max="50" data-slider-step="1" data-slider-value="1" />
+                        <b>50</b>
+                    </span>
+                </div>
+
+                <p>
+                    <button type="send" id="redraw" class="btn btn-primary">Redraw Graph</span>
+                    </button>
+                </p>
+
             </div>
+
 
         </div>
 
