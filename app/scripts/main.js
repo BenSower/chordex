@@ -50,24 +50,22 @@ function groupDataByYear() {
 
 //generate chord diagram
 function drawDiagram(matrix, namesArray, cb)  {
-    
+
     //create a tooltip
     var tip = d3.tip()
         .attr('class', 'd3-tip')
-        .attr('id', 999)
-        .offset([0,0])
+        .attr('id', 'tooltip')
         .html(function(d) {
-            document.getElementById(999).style.backgroundColor = fill(d.index);
-            console.log(namesArray[d.index]);
-            console.log(d.index);
-            return  "<strong>Author: </strong><span style='color:red'>" + namesArray[d.index] + "</span></br>"
-            + "<strong>Publications: </strong><span style='color:red'>" + namesArray[d.index] + "</span></br>"
-            + "<strong>Collaborations: </strong><span style='color:red'>" + namesArray[d.index] + "</span></br>"
-            + "<strong>Website: </strong><span style='color:red'>" + namesArray[d.index] + "</span>";
-
+            document.getElementById('tooltip').style.backgroundColor = fill(d.index);
+            //console.log(namesArray[d.index]);
+            //console.log(d.index);
+            var textColor = '"color:black"',
+                tip = '<strong>Author: </strong><span style=' + textColor + '>' + namesArray[d.index] + '</span></br>' + '<strong>Publications: </strong><span style=' + textColor + '>' + namesArray[d.index] + '</span></br>' + '<strong>Collaborations: </strong><span style=' + textColor + '>' + namesArray[d.index] + '</span></br>' + '<strong>Website: </strong><span style=' + textColor + '>' + namesArray[d.index] + '</span>';
+            return tip;
         })
-        
-        
+        .offset([0, 0]);
+
+
     //set the svg width and height and the chord radius
     var vizWidth = $('.jumbotron').width();
 
@@ -77,7 +75,7 @@ function drawDiagram(matrix, namesArray, cb)  {
         outerRadius = innerRadius * 1.1;
 
 
-    
+
     //append the svg to the #viz element
     var svg = d3.select('#viz').append('svg')
         .attr('width', width)
@@ -85,13 +83,13 @@ function drawDiagram(matrix, namesArray, cb)  {
         .append('g')
         .attr('transform', 'translate(' + width / 2 + ',' + height / 2 + ')');
 
-    $(document).click(function(d){                
-            tip.hide(d);
-    })
-        
+    $(document).click(function(d) {
+        tip.hide(d);
+    });
+
     svg.call(tip);
-    
-    
+
+
     //create an chord element    
     var chord = d3.layout.chord()
         .matrix(matrix)
@@ -101,25 +99,25 @@ function drawDiagram(matrix, namesArray, cb)  {
     //generate colors
     var fill = d3.scale.category20c();
     var click;
-    
+
     //add to g
     var g = svg.selectAll('g.group')
         .data(chord.groups)
         .enter().append('svg:g')
         .attr('class', 'group')
         .on('click', function(d) {
-        if (!(d === click)) {
-            d3.select(".d3-tip")
-              .transition()
-              .delay(100)
-              .duration(500)
-              .style("opacity",0.8);
-            click = d;
-            tip.show(d);
-        }
-            else click = null;
-       
-            });
+            if (d !== click) {
+                d3.select('.d3-tip')
+                    .transition()
+                    .delay(100)
+                    .duration(500)
+                    .style('opacity', 0.8);
+                click = d;
+                tip.show(d);
+            } else {
+                click = null;
+            }
+        });
 
 
     //create link arcs  
@@ -260,7 +258,7 @@ function redrawDiagramWithFilter(isResized) {
     if (isResized === undefined) {
         $('#viz').height(viz);
     }
-
+    d3.select('#tooltip').remove();
     d3.select('#viz svg').remove();
     $('#fa-spinner').show();
 
@@ -342,15 +340,12 @@ function getStatisticsForYear(dataOfYear, numPubs, numCollabs) {
 $(document).ready(function() {
     //TODO: SAVE TO FILE!
     dataByYear = groupDataByYear();
-
     redrawDiagramWithFilter();
-});
-
-$(function() {
     $('[data-toggle="popover"]').popover();
 });
 
-//ignored @param "event"
+
+//ignored @param 'event'
 function redraw() {
     redrawDiagramWithFilter();
 }
