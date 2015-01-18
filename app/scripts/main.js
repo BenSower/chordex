@@ -50,12 +50,16 @@ function groupDataByYear() {
 
 //generate chord diagram
 function drawDiagram(matrix, namesArray, cb)  {
+    
+    var col = d3.scale.category20c();
 
     //create a tooltip
     var tip = d3.tip()
         .attr('class', 'd3-tip')
+        .attr('id', 999)
         .offset([0,0])
         .html(function(d) {
+            document.getElementById(999).style.backgroundColor = fill(d.index);
             return "<strong>This is name: </strong><span style='color:red'>" + namesArray[d.index] + "</span>";
     })
         
