@@ -272,7 +272,7 @@ function drawDiagram(matrix, namesArray, stats, cb)  {
 }
 
 //redraw if sliders are used
-function redrawDiagramWithFiltPer(isResized) {
+function redrawDiagramWithFilter(isResized) {
 
     //prevent viz from being 0
     if (isResized === undefined) {
