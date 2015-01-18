@@ -51,8 +51,6 @@ function groupDataByYear() {
 //generate chord diagram
 function drawDiagram(matrix, namesArray, cb)  {
     
-    var col = d3.scale.category20c();
-
     //create a tooltip
     var tip = d3.tip()
         .attr('class', 'd3-tip')
@@ -72,13 +70,19 @@ function drawDiagram(matrix, namesArray, cb)  {
         innerRadius = height * 0.31,
         outerRadius = innerRadius * 1.1;
 
+
+    
     //append the svg to the #viz element
     var svg = d3.select('#viz').append('svg')
         .attr('width', width)
         .attr('height', height)
         .append('g')
         .attr('transform', 'translate(' + width / 2 + ',' + height / 2 + ')');
-    
+
+    $(document).click(function(d){                
+            tip.hide(d);
+    })
+        
     svg.call(tip);
     
     
@@ -96,7 +100,15 @@ function drawDiagram(matrix, namesArray, cb)  {
         .data(chord.groups)
         .enter().append('svg:g')
         .attr('class', 'group')
-        .on('click', tip.show);
+        .on('click', function(d) {
+            
+        d3.select(".d3-tip")
+          .transition()
+          .delay(100)
+          .duration(500)
+          .style("opacity",1);
+        tip.show(d);
+            });
 
 
     //create link arcs  
