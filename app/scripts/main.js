@@ -58,8 +58,14 @@ function drawDiagram(matrix, namesArray, cb)  {
         .offset([0,0])
         .html(function(d) {
             document.getElementById(999).style.backgroundColor = fill(d.index);
-            return "<strong>This is name: </strong><span style='color:red'>" + namesArray[d.index] + "</span>";
-    })
+            console.log(namesArray[d.index]);
+            console.log(d.index);
+            return  "<strong>Author: </strong><span style='color:red'>" + namesArray[d.index] + "</span></br>"
+            + "<strong>Publications: </strong><span style='color:red'>" + namesArray[d.index] + "</span></br>"
+            + "<strong>Collaborations: </strong><span style='color:red'>" + namesArray[d.index] + "</span></br>"
+            + "<strong>Website: </strong><span style='color:red'>" + namesArray[d.index] + "</span>";
+
+        })
         
         
     //set the svg width and height and the chord radius
@@ -94,20 +100,25 @@ function drawDiagram(matrix, namesArray, cb)  {
 
     //generate colors
     var fill = d3.scale.category20c();
-
+    var click;
+    
     //add to g
     var g = svg.selectAll('g.group')
         .data(chord.groups)
         .enter().append('svg:g')
         .attr('class', 'group')
         .on('click', function(d) {
-            
-        d3.select(".d3-tip")
-          .transition()
-          .delay(100)
-          .duration(500)
-          .style("opacity",1);
-        tip.show(d);
+        if (!(d === click)) {
+            d3.select(".d3-tip")
+              .transition()
+              .delay(100)
+              .duration(500)
+              .style("opacity",0.8);
+            click = d;
+            tip.show(d);
+        }
+            else click = null;
+       
             });
 
 
