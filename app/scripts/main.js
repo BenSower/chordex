@@ -12,14 +12,29 @@ function groupDataByYear() {
     });
 
     //count unique people per year
+
     $.each(dataByYear, function(year, publicationsInYear) {
-        var namesPerYear = [];
+        var namesPerYear = [],
+            tmpStats = {};
+
         $.each(publicationsInYear, function(key, publication) {
             //Filter publications with only one author
             if (publication.authors.length > 1) {
                 $.each(publication.authors, function(index, scientist) {
                     namesPerYear.push(scientist.name);
+
+                    //calculate collaborations
+                    // "-1" to remove author himself
+                    if (tmpStats[scientist.name] === undefined) {
+                        tmpStats[scientist.name] = {
+                            'collaborations': publication.authors.length - 1,
+                            'url': scientist.url
+                        };
+                    } else {
+                        tmpStats[scientist.name].collaborations += publication.authors.length - 1;
+                    }
                 });
+
             }
         });
 
@@ -31,11 +46,11 @@ function groupDataByYear() {
                 uniqueNamesPerYear.push(el);
                 stats[el] = {
                     'publications': 1,
-                    'collaborations': 1
+                    'collaborations': tmpStats[el].collaborations,
+                    'url': tmpStats[el].url
                 };
             } else {
                 stats[el].publications++;
-                stats[el].collaborations++;
             }
         });
         dataByYear[year].peoplePerYear = uniqueNamesPerYear;
@@ -49,18 +64,23 @@ function groupDataByYear() {
 
 
 //generate chord diagram
-function drawDiagram(matrix, namesArray, cb)  {
+function drawDiagram(matrix, namesArray, stats, cb)  {
 
     //create a tooltip
     var tip = d3.tip()
         .attr('class', 'd3-tip')
-        .attr('id', 'tooltip')
+        .attr('id', 'd3tooltip')
         .html(function(d) {
-            document.getElementById('tooltip').style.backgroundColor = fill(d.index);
+            $('#d3tooltip').css('background-color', fill(d.index));
+            
             //console.log(namesArray[d.index]);
             //console.log(d.index);
-            var textColor = '"color:black"',
-                tip = '<strong>Author: </strong><span style=' + textColor + '>' + namesArray[d.index] + '</span></br>' + '<strong>Publications: </strong><span style=' + textColor + '>' + namesArray[d.index] + '</span></br>' + '<strong>Collaborations: </strong><span style=' + textColor + '>' + namesArray[d.index] + '</span></br>' + '<strong>Website: </strong><span style=' + textColor + '>' + namesArray[d.index] + '</span>';
+            var name = namesArray[d.index],
+                websiteHtml = (stats[name].url === undefined) ? '' : '<strong>Website: </strong><a href="' + stats[name].url + ' ">' + stats[name].url + '</a>',
+                tip = '<strong>Author: </strong><span>' + name + '</span></br>' +
+                '<strong>Publications: </strong><span>' + stats[name].publications + '</span></br>' +
+                '<strong>Collaborations: </strong><span>' + stats[name].collaborations + '</span></br>' +
+                websiteHtml;
             return tip;
         })
         .offset([0, 0]);
@@ -252,13 +272,13 @@ function drawDiagram(matrix, namesArray, cb)  {
 }
 
 //redraw if sliders are used
-function redrawDiagramWithFilter(isResized) {
+function redrawDiagramWithFiltPer(isResized) {
 
     //prevent viz from being 0
     if (isResized === undefined) {
         $('#viz').height(viz);
     }
-    d3.select('#tooltip').remove();
+    d3.select('#d3tooltip').remove();
     d3.select('#viz svg').remove();
     $('#fa-spinner').show();
 
@@ -268,9 +288,8 @@ function redrawDiagramWithFilter(isResized) {
         collabs = collabSlider.slider('getValue');
 
     var matrix = getStatisticsForYear(dataByYear[year], numPubs, collabs);
-
     //draw new diagram
-    drawDiagram(matrix, names, function() {
+    drawDiagram(matrix, names, dataByYear[year].stats, function() {
         $('#fa-spinner').hide();
         viz = $('#viz').height();
     });
