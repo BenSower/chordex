@@ -25,6 +25,17 @@
         stroke: #000;
         stroke-width: .5px;
     }
+          
+    .d3-tip {
+        line-height: 1;
+        font-weight: bold;
+        padding: 12px;
+        background: rgba(0, 0, 0, 0.8);
+        color: #fff;
+        border-radius: 2px;
+    }
+    
+    
     #viz {
         font: 10px sans-serif;
         font-weight: bold;
@@ -139,6 +150,11 @@
     <script src="bower_components/bootstrap/js/collapse.js"></script>
     <script src="bower_components/bootstrap/js/tab.js"></script>
     <!-- endbuild -->
+    
+    <!-- build:js(.) scripts/plugins.js -->
+    <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+    <!-- endbuild -->
+
 
     <!-- build:js({app,.tmp}) data_assets/pubdb.js -->
     <script src="data_assets/pubdb.js"></script>

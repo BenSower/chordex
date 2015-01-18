@@ -51,6 +51,15 @@ function groupDataByYear() {
 //generate chord diagram
 function drawDiagram(matrix, namesArray, cb)  {
 
+    //create a tooltip
+    var tip = d3.tip()
+        .attr('class', 'd3-tip')
+        .offset([0,0])
+        .html(function(d) {
+            return "<strong>This is name: </strong><span style='color:red'>" + namesArray[d.index] + "</span>";
+    })
+        
+        
     //set the svg width and height and the chord radius
     var vizWidth = $('.jumbotron').width();
 
@@ -65,7 +74,10 @@ function drawDiagram(matrix, namesArray, cb)  {
         .attr('height', height)
         .append('g')
         .attr('transform', 'translate(' + width / 2 + ',' + height / 2 + ')');
-
+    
+    svg.call(tip);
+    
+    
     //create an chord element    
     var chord = d3.layout.chord()
         .matrix(matrix)
@@ -79,7 +91,9 @@ function drawDiagram(matrix, namesArray, cb)  {
     var g = svg.selectAll('g.group')
         .data(chord.groups)
         .enter().append('svg:g')
-        .attr('class', 'group');
+        .attr('class', 'group')
+        .on('click', tip.show);
+
 
     //create link arcs  
     var arc = d3.svg.arc()
