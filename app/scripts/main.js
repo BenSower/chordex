@@ -129,9 +129,9 @@ function drawDiagram(matrix, namesArray, stats, cb)  {
             if (d !== click) {
                 d3.select('.d3-tip')
                     .transition()
-                    .delay(100)
-                    .duration(500)
-                    .style('opacity', 0.8);
+                    .delay(10)
+                    .duration(200)
+                    .style('opacity', 1);
                 click = d;
                 tip.show(d);
             } else {
