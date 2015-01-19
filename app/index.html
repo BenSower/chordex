@@ -24,7 +24,6 @@
         stroke: #000;
         stroke-width: .5px;
     }
-          
     .d3-tip {
         line-height: 1;
         font-weight: bold;
@@ -32,7 +31,6 @@
         color: #000000;
         border-radius: 2px;
     }
-    
     #viz {
         font: 10px sans-serif;
         font-weight: bold;
@@ -47,35 +45,50 @@
 
 
     <div class="container theme-showcase" role="main">
+
         <div class="header">
             <ul class="nav nav-pills pull-right">
-                <li class="active"><a href="#">Home</a>
+                <li id="home" class="active"><a href="javascript:void(0)">Home &nbsp;<i class="fa fa-home"></i> </a>
                 </li>
-                <li><a href="/about">About</a>
-                </li>
-                <li><a href="#">Contact</a>
+                <li id="about"><a href="javascript:void(0)"> About &nbsp; <i class="fa fa-question-circle"></i></a>
                 </li>
             </ul>
             <h3 class="text-muted"> <img src="./favicon.ico" style="width:32px;height:32px"> chordex  </h3>
         </div>
 
         <div class="jumbotron" id="jumbo">
+            <div id="aboutText" class="container" hidden>
+                <h2><strong>Chordex 1.0</strong></h2>
+                </br>
+                <h3><i class="fa fa-bar-chart">&nbsp;&nbsp;</i>General</h3>
+                <p>This project visualizes the relations between different scientists of the media informatics faculty of the LMU Munich. Chordex was written by Yannick Gladow and Benjamin Sauer in the context of the LMU lecture <a href="http://www.medien.ifi.lmu.de/lehre/ws1415/iv/">Information Visualization</a> in the winter semester of 2014/2015.</p>
+                </br>
+                <h3><i class="fa fa-cubes"></i>&nbsp;&nbsp;</i>Technologies</h3>
+                <p> Chordex is based upon the <a href="http://www.medien.ifi.lmu.de/cgi-bin/search.pl?all:all:all:all:all">MI publication database</a> and to allow an easier handling of the raw data, the <a href="https://github.com/wilkoer/pubdb_to_json_converter">pubdb_to_json_converter</a> written by Alexander Schenker has been used. The website itself was build using <a href="http://getbootstrap.com/">Twitter Bootstrap</a> and the graph heavily relies on the Chord Layout of <a href="http://d3js.org/">d3js</a>. If you want to extend or base other works on this project, feel free to fork us on <a href="https://github.com/BenSower/chordex">GitHub!</a></p>
+
+                </br>
+                <h3><i class="fa fa-question">&nbsp;&nbsp;</i>How to use</h3>
+                <p>Either use the different sliders at the bottom of the page to adjust the filter settings directly, or click "Redraw Graph" to redraw. If no graph is drawn, you either have to wait a little or there are no relations matching your filter criteria. Hint: Since the earlier years (1994-2000) don't contain a lot of data, there's a good chance, you will not find a lot of information there...</p>
+            </div>
+            <div id="error" hidden>
+                   <h2> <i class="fa fa-meh-o"></i> Sorry, no data matches your filter criteria! </br> Please check your filter settings!</h2>
+                </div>
             <div id="viz" class="container">
                 <i id="fa-spinner" class="fa fa-spinner fa-4x fa-spin"></i>
             </div>
         </div>
 
-        <div class="row marketing well">
+        <div id="filterRow" class="row marketing well">
             <div class="col-lg-6 ">
                 <h4>The chord diagram</h4>
-                <p>Chord diagrams show relationships among a group of entities. In this example visualizing the PubDb, a database containing the paper-releases of the mmi-faculty of the lmu. Use the filters on the right to only display people who (co-)wrote a certain amount of publications and/or worked with at least a specified number of people in a certain year. Publications with only a single author will be ignored.</p>
+                <p>Chord diagrams show relationships among a group of entities. In this example visualizing the PubDb, a database containing the paper-releases of the MI-faculty of the lmu. Use the filters on the right to only display people who (co-)wrote a certain amount of publications and/or worked with at least a specified number of people in a certain year. Single-author publications will be generously ignored.</p>
             </div>
 
             <div class="col-lg-6 ">
                 <h4>Filters</h4>
 
                 <div class="input-group">
-                    <p>Year</p>
+                    <p><i class="fa fa-calendar">&nbsp;&nbsp;</i>Year</p>
                     <span class="input-group-btn">
                             <b>1994&nbsp;&nbsp;&nbsp;</b>
                             <input id="yearFilter" data-slider-id='ex1Slider' type="text" class="span2" value="" data-slider-min="1994" data-slider-max="2015" data-slider-step="1" data-slider-value="2008" />
@@ -85,7 +98,7 @@
                 </div>
 
                 <div class="input-group">
-                    <p>Publications</p>
+                    <p><i class="fa fa-share-alt"></i>&nbsp;&nbsp;Publications</p>
                     <span class="input-group-btn">
                         <b>1&nbsp;&nbsp;&nbsp;</b>
                         <input id="pubFilter" data-slider-id='ex1Slider' type="text" class="span2" value="" data-slider-min="1" data-slider-max="20" data-slider-step="1" data-slider-value="1" />
@@ -94,7 +107,7 @@
                 </div>
 
                 <div class="input-group">
-                    <p>Number of collaborations</p>
+                    <p><i class="fa fa-users"></i>&nbsp;&nbsp;Number of collaborations</p>
                     <span class="input-group-btn">
                         <b>1&nbsp;</b>
                         <input id="collabFilter" data-slider-id='ex1Slider' type="text" class="span2" value="" data-slider-min="1" data-slider-max="20" data-slider-step="1" data-slider-value="1" />
@@ -103,7 +116,7 @@
                 </div>
 
                 <p>
-                    <button type="send" id="redraw" class="btn btn-primary">Redraw Graph</span>
+                    <button type="send" id="redraw" class="btn btn-primary">Redraw &nbsp;<i class="fa fa-paint-brush"></i></span>
                     </button>
                 </p>
 
@@ -114,7 +127,7 @@
 
         <div class="footer">
             <p>We <span class="glyphicon glyphicon-heart"></span> graphs.</p>
-            <div id = 'json'/>
+            <div id='json' />
         </div>
 
     </div>
@@ -146,7 +159,7 @@
     <script src="bower_components/bootstrap/js/collapse.js"></script>
     <script src="bower_components/bootstrap/js/tab.js"></script>
     <!-- endbuild -->
-    
+
     <!-- build:js({app,.tmp}) data_assets/pubdb.js -->
     <script src="data_assets/pubdb.js"></script>
     <!-- <script src="data_assets/dataByYear.js"></script> -->

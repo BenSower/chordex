@@ -98,3 +98,7 @@ body {
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
+#aboutText {
+  text-align: left;
+}

@@ -72,7 +72,7 @@ function drawDiagram(matrix, namesArray, stats, cb)  {
         .attr('id', 'd3tooltip')
         .html(function(d) {
             $('#d3tooltip').css('background-color', fill(d.index));
-            
+
             //console.log(namesArray[d.index]);
             //console.log(d.index);
             var name = namesArray[d.index],
@@ -273,6 +273,8 @@ function drawDiagram(matrix, namesArray, stats, cb)  {
 
 //redraw if sliders are used
 function redrawDiagramWithFilter(isResized) {
+    //hide error msg
+    $('#error').hide();
 
     //prevent viz from being 0
     if (isResized === undefined) {
@@ -288,11 +290,31 @@ function redrawDiagramWithFilter(isResized) {
         collabs = collabSlider.slider('getValue');
 
     var matrix = getStatisticsForYear(dataByYear[year], numPubs, collabs);
-    //draw new diagram
-    drawDiagram(matrix, names, dataByYear[year].stats, function() {
-        $('#fa-spinner').hide();
-        viz = $('#viz').height();
+    
+    //check if matrix is empty
+    var isMatrixEmpty = true;
+    $.each(matrix, function(index, row) {
+        if (!isMatrixEmpty){
+            return false;
+        }
+        $.each(row, function(rowIndex, element){
+            if (element !== 0){
+                isMatrixEmpty = false;
+                return false;
+            }
+        });
     });
+
+    if (isMatrixEmpty) {
+        $('#error').show();
+    }else {
+        //draw new diagram
+        drawDiagram(matrix, names, dataByYear[year].stats, function() {
+            $('#fa-spinner').hide();
+            viz = $('#viz').height();
+        });
+    }
+    
 }
 
 //helperfunction, creating an array filled with values
@@ -377,8 +399,23 @@ var yearSlider = $('#yearFilter').slider({}),
 yearSlider.on('slide', redraw);
 pubSlider.on('slide', redraw);
 collabSlider.on('slide', redraw);
-$('#redraw').on('click', redraw);
+$('#redraw').click(redraw);
 
+$('#about').click(function() {
+    $('#viz').hide();
+    $('#home').removeClass('active');
+    $('#about').addClass('active');
+    $('#filterRow').hide();
+    $('#aboutText').show();
+});
+
+$('#home').click(function() {
+    $('#aboutText').hide();
+    $('#viz').show();
+    $('#filterRow').show();
+    $('#about').removeClass('active');
+    $('#home').addClass('active');
+});
 
 $(window).resize(function() {
     redrawDiagramWithFilter(true);
