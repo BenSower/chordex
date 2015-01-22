@@ -102,3 +102,20 @@ body {
 #aboutText {
   text-align: left;
 }
+
+.chord path {
+    fill-opacity: 0.8;
+    stroke: #000;
+    stroke-width: 0.1px;
+}
+.d3-tip {
+    line-height: 1;
+    font-weight: bold;
+    padding: 12px;
+    color: #000000;
+    border-radius: 2px;
+}
+#viz {
+    font: 10px sans-serif;
+    font-weight: bold;
+}
